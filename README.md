@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Academic Incentive Ontology: A Model of Blockchain-Based Data Sharing
 
 You can use the [editor on GitHub](https://github.com/sharing-science/academic-incentive-ontology/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
