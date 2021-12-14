@@ -1,15 +1,12 @@
 ---
 layout: default
-title: Explanation Ontology: A Model of Explanations for User-Centered AI
+title: "Academic Incentive Ontology: A Model of Blockchain-Based Data Sharing"
 ---
 
-[Abstract](#abstract) | [Resources](#resources) | [Tools Used](#toolsused) | [Publications](#publications)
 
-
-<h1 class="page-title" style="text-transform:uppercase;" id="header">EXPLANATION ONTOLOGY: A MODEL OF EXPLANATIONS FOR USER-CENTERED AI</h1>
-<h3 style="color:dimgrey;">Shruthi Chari<sup>1</sup>, Oshani Seneviratne<sup>1</sup>, Daniel M. Gruen<sup>2</sup>, Morgan Foreman<sup>2</sup>, Deborah L. McGuinness<sup>1</sup>, Amar K. Das<sup>2</sup></h3>
-<h3><a href="https://www.rpi.edu/"><sup>1</sup>Rensselaer Polytechnic Institute</a> | <a href="https://www.research.ibm.com/labs/cambridge/"><sup>2</sup>IBM Research, Cambridge</a></h3>
-<p class="message">A website to navigate resources open-sourced via the associated and best resource paper award-winning ISWC 2020 submission. Use the side navigation panel to explore different sections of the website and click on an add symbol for more navigation options under some sections.</p>
+<h1 class="page-title" style="text-transform:uppercase;" id="header">Academic Incentive Ontology: A Model of Blockchain-Based Data Sharing</h1>
+<h3 style="color:dimgrey;">Kacy Adams<sup>1</sup>, Oshani Seneviratne<sup>1</sup>, Deborah L. McGuinness<sup>1</sup></h3>
+<h3><a href="https://www.rpi.edu/"><sup>1</sup>Rensselaer Polytechnic Institute</a></h3>
 
 <!-- <table>
   <tbody>
@@ -25,7 +22,7 @@ title: Explanation Ontology: A Model of Explanations for User-Centered AI
   
   
 <h2>Abstract</h2>
-  <p>Explainability has been a goal for Artificial Intelligence systems since their conception, with the need for explanations only growing as machine learning models are increasingly used in critical settings such as healthcare. Currently, explanations are often treated as a nice-to-have feature added in a post-hoc manner. With greater adoption of these systems and emphasis on user-centric explainability, there is a need for a structured representation that treats explainability as a primary consideration, mapping end user needs to specfic explanation types. We design an explanations ontology to formalize the generation of explanations in a machine-readable format, accounting for the system and user attributes in the process. Within our ontology, we support the modeling of different literature-derived explanation types, whose requirements and generational needs were further refined through a requirements gathering exercise conducted with clinicians. Through this ontology, we hope to benefit system designers to include explanation generation facilities in their systems. We evaluate our ontology via competency questions that are inspired by learnings from our clinical requirements gathering exercise and are geared towards a system designer who might use our ontology to learn about the best explanation types to include, given a combination of users' needs and a system's capabilities, both in real-time and system design settings.</p>
+  <p>In fields such as medical research, data collection is slow and rigorous, meaning conclusive findings take years to produce. Due to the closed nature of biomedical research, this leads to the reproduction of similar datasets, while leaving datasets with multiple implications abeyant. Further, there is a lack of complete and useful open datasets in many different fields, which leave researchers with no choice but to collect data on their own. There is a rising need for a secure data sharing ecosystem which recommends, incentivizes, and rewards collaborative efforts between researchers and research groups. Permissionless, public blockchains provide the necessary framework for trustless and fair data sharing. We design an ontology to capture the events associated with blockchain-based data sharing and a corresponding incentive scheme, which includes a reputation-based peer review system and an index to provide recommendations and ratings of possible collaborators. We present a use case indicating the ontology’s plausibility in the biomedical research community and evaluate our ontology with a set of competency questions geared towards participating researchers and other academic stakeholders. Through the use of the ontology, a blockchain ecosystem can be built that will incentivize, encourage, and reward data sharing.</p>
  </content>
  
  <hr/>
@@ -80,9 +77,7 @@ title: Explanation Ontology: A Model of Explanations for User-Centered AI
 <h2>Tools Used during Development</h2>
   <ul>
   <li>Ontology Editor: <a href="https://protege.stanford.edu/products.php#desktop-protege">Protege 5.5.0</a></li>
-  <li>Conceptual Diagram created using <a href="https://www.omnigroup.com/omnigraffle/">Omnigraffle</a></li>
   <li>Ontology documentation tool, <a href="https://github.com/dgarijo/Widoco">Widoco</a></li>
-  <li>RDF Visualization generated with <a href="http://jimmccusker.github.io/rdfviewer/">RDFViewer</a></li>
   </ul>
   </content>
   <!--<iframe src="https://tetherless-world.github.io/explanation-ontology/WidocoDocumentation/index-en.html" style="width:100%;"/>-->
@@ -91,8 +86,6 @@ title: Explanation Ontology: A Model of Explanations for User-Centered AI
 <content>
   <h2>Publications</h2>
   <ul>
-    <li>[<b>Best Resource Paper</b>] Explanation Ontology: A Model of Explanations for User-Centered AI; Shruthi Chari , Oshani Seneviratne , Daniel M. Gruen ,  Morgan A. Foreman , Amar K. Das, Deborah L. McGuinness; Resource Track,19th International Semantic Web Conference 2020</li>
-    <li>Explanation Ontology in Action: A Clinical Use-Case; Shruthi Chari , Oshani Seneviratne , Daniel M. Gruen ,  Morgan A. Foreman , Amar K. Das, Deborah L. McGuinness; Posters and Demo Track,19th International Semantic Web Conference 2020</li>
   </ul>
   </content>
 <!-- 
