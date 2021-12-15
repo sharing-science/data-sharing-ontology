@@ -77,7 +77,7 @@ title: "Academic Incentive Ontology: A Model of Blockchain-Based Data Sharing"
 <h2>Tools Used during Development</h2>
   <ul>
   <li>Ontology Editor: <a href="https://protege.stanford.edu/products.php#desktop-protege">Protege 5.5.0</a></li>
-  <li>Ontology documentation tool, <a href="https://github.com/dgarijo/Widoco">Widoco</a></li>
+  <li>Ontology documentation tool: <a href="https://github.com/dgarijo/Widoco">Widoco</a></li>
   </ul>
   </content>
   <!--<iframe src="https://tetherless-world.github.io/explanation-ontology/WidocoDocumentation/index-en.html" style="width:100%;"/>-->
@@ -127,15 +127,15 @@ title: "Academic Incentive Ontology: A Model of Blockchain-Based Data Sharing"
 <content>
   
   
-<h1 id="ontologyabout">Academic Incentive Ontology</h1>
+<h4 id="ontologyabout">Academic Incentive Ontology</h4>
   <p>The Academic Incentive Ontology (AIO) intends to provide a semantic model to power a blockchain application to handle, confirm, and incentivize research data sharing. The ontology is built upon basic blockchain components such as addresses and transaction hashes and uses simple logic such that it could be easily handled by smart contracts</p>
   
   <caption>Insert full conceptual overview</caption>  
   
   <h3 id="ontologylinks">Ontology Links</h3>
   <ul>
-  <li>Widoco Link</li>
-  <li>RDF Link</li>
+  <li>Widoco Link (insert)</li>
+  <li>RDF Link (insert)</li>
   </ul>
   
   <article class="mb-5" id="ontologymetadata">
