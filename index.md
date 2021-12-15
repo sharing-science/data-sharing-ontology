@@ -122,23 +122,19 @@ title: "Academic Incentive Ontology: A Model of Blockchain-Based Data Sharing"
   {% endif %}
 </div> -->
     
-   ---
-layout: default
-title: Explanation Ontology
----
 
 <article class="mb-5" id="ontology">
 <content>
   
   
-<h2 id="ontologyabout">Academic Incentive Ontology</h2>
+<h1 id="ontologyabout">Academic Incentive Ontology</h1>
   <p>The Academic Incentive Ontology (AIO) intends to provide a semantic model to power a blockchain application to handle, confirm, and incentivize research data sharing. The ontology is built upon basic blockchain components such as addresses and transaction hashes and uses simple logic such that it could be easily handled by smart contracts</p>
   
   <caption>Insert full conceptual overview</caption>  
   
   <h3 id="ontologylinks">Ontology Links</h3>
   <ul>
-  <li>Widoco Link</a></li>
+  <li>Widoco Link</li>
   <li>RDF Link</li>
   </ul>
   
