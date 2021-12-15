@@ -41,7 +41,7 @@ title: "Academic Incentive Ontology: A Model of Blockchain-Based Data Sharing"
   </tr>
   <tr>
     <td>Ontology</td>
-    <td><a href="ontology">Explanation Ontology</a> </td> 
+    <td><a href="ontology">Academic Incentive Ontology</a> </td> 
   </tr>
   <tr>
     <td>Explanation Types</td>
@@ -51,10 +51,6 @@ title: "Academic Incentive Ontology: A Model of Blockchain-Based Data Sharing"
     <td> </td>
     <td> (b) <a href="./application.html">Faceted Browser</a> </td> 
   </tr>-->
-    <tr>
-    <td>Clincal Example</td>
-    <td><a href="clinicalexample">Example of a Contrastive Explanation</a> </td> 
-  </tr>
    <tr>
     <td>Competency Questions </td>
     <td><a href="competencyquestions#sparql">SPARQL Queries</a> </td> 
