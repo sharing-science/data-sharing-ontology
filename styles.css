@@ -8,6 +8,19 @@ body {
     padding-right: 5pt;
     padding-top: 5pt;
   }
+
+.header{
+    background-color: silver;
+    width:100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    position: absolute;
+}
+.page{
+    padding-top: 180px;
+}
+
   h1 {
     font: 18pt Verdana, Geneva, Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -39,7 +52,7 @@ body {
     text-decoration: none;
   }
   a:link, a:visited {
-    color: silver;
+    color: black;
   }
   a:hover, a:active {
     color: white;
