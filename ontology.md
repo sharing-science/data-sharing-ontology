@@ -2,7 +2,8 @@
 
 <article class="mb-5" id="ontology">
 <content>
-  
+
+<h3><a href="ontology">Ontology</a> | <a href="competencyquestions">Competency Questions</a> | <a href="AIODocumentation/index-en.html">Documentation</a></h3>
   
 <h1 id="ontologyabout">Academic Incentive Ontology</h1>
   <p>The Academic Incentive Ontology (AIO) intends to provide a semantic model to power a blockchain application to handle, confirm, and incentivize research data sharing. The ontology is built upon basic blockchain components such as addresses and transaction hashes and uses simple logic such that it could be easily handled by smart contracts</p>

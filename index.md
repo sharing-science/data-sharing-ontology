@@ -1,13 +1,10 @@
----
-layout: default
-title: "Academic Incentive Ontology: A Model of Blockchain-Based Data Sharing"
----
+
 
 <link rel="stylesheet" type="text/css" href="styles.css" />
 
 
 <h1 class="page-title" style="text-transform:uppercase;" id="header">Academic Incentive Ontology: A Model of Blockchain-Based Data Sharing</h1>
-<h2 style="color:dimgrey;">Kacy Adams<sup>1</sup>, Oshani Seneviratne<sup>1</sup>, Deborah L. McGuinness<sup>1</sup></h2>
+<h2>Kacy Adams<sup>1</sup>, Oshani Seneviratne<sup>1</sup>, Deborah L. McGuinness<sup>1</sup></h2>
 <h4><a href="https://www.rpi.edu/"><sup>1</sup>Rensselaer Polytechnic Institute</a></h4>
 
 
