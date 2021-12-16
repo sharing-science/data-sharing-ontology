@@ -1,3 +1,4 @@
+<link rel="stylesheet" type="text/css" href="styles.css" />
 
 <article class="mb-5" id="ontology">
 <content>

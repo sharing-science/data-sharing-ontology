@@ -3,6 +3,8 @@ layout: default
 title: "Academic Incentive Ontology: A Model of Blockchain-Based Data Sharing"
 ---
 
+<link rel="stylesheet" type="text/css" href="styles.css" />
+
 
 <h1 class="page-title" style="text-transform:uppercase;" id="header">Academic Incentive Ontology: A Model of Blockchain-Based Data Sharing</h1>
 <h2 style="color:dimgrey;">Kacy Adams<sup>1</sup>, Oshani Seneviratne<sup>1</sup>, Deborah L. McGuinness<sup>1</sup></h2>
@@ -38,21 +40,9 @@ title: "Academic Incentive Ontology: A Model of Blockchain-Based Data Sharing"
     <td>Ontology</td>
     <td><a href="ontology">Academic Incentive Ontology</a> </td> 
   </tr>
-  <tr>
-    <td>Explanation Types</td>
-    <td><a href="modeling#explanationtypes">Modeling</a> </td> 
-  </tr>
-    <!--<tr>
-    <td> </td>
-    <td> (b) <a href="./application.html">Faceted Browser</a> </td> 
-  </tr>-->
    <tr>
     <td>Competency Questions </td>
-    <td><a href="competencyquestions#sparql">SPARQL Queries</a> </td> 
-  </tr>
-   <tr>
-    <td>Tools Used </td>
-    <td><a href="index#toolsused">References to tools used</a> </td> 
+    <td><a href="competencyquestions">SPARQL Queries</a> </td> 
   </tr>
 </table>
   
