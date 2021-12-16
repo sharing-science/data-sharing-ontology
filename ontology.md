@@ -11,14 +11,14 @@
   
   <h3 id="ontologylinks">Ontology Links</h3>
   <ul>
-  <li>Widoco Link (insert)</li>
-  <li>RDF Link (insert)</li>
+  <li>Ontology Documnetation generated using the Widoco tool can be found here: <a href="https://sharing-science.github.io/academic-incentive-ontology/AIODocumentation/index-en.html"> 
+  AIO Widoco Documentation</a></li>
+  <li>The AIO owl file can found here: <a href="https://github.com/sharing-science/academic-incentive-ontology/blob/main/AIO.owl">aio.owl</a></li>
   </ul>
   
   <article class="mb-5" id="ontologymetadata">
   <content>
     <h3>Ontology Metadata</h3>
-    <p>Metadata that would be useful to navigate our <a href="#resources">resources</a>, i.e., ontology, modeling snippets and SPARQL queries. The content below can also be viewed by inspecting our explanation ontology in an ontology editor, like, <a href="https://protege.stanford.edu/products.php#desktop-protege">Protege 5.5.0</a>.
   <h4 id="ontologiesreused">Ontologies Reused</h4>
   <ul>
   <li><a href="https://raw.githubusercontent.com/MaastrichtU-IDS/semanticscience/master/ontology/sio.owl">SemanticScience Integrated Ontology (SIO)</a></li>
