@@ -32,6 +32,12 @@ body {
     padding: 3pt;
     float: center;
   }
+  table, th, td {
+      border: 2px slategray;
+      width: 80%;
+      float:none;
+      border-collapse: collapse;
+  }
   a {
     text-decoration: none;
   }

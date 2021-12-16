@@ -1,4 +1,6 @@
-
+---
+title: "ACADEMIC INCENTIVE ONTOLOGY: A MODEL OF BLOCKCHAIN-BASED DATA SHARING"
+---
 
 <link rel="stylesheet" type="text/css" href="styles.css" />
 
@@ -24,7 +26,7 @@
 <content>
 <h2>List of Resources </h2>
 <ul>
- <table style="width:100%">
+ <table>
     <tr>
     <th>Resources</th>
     <th>Links</th> 
