@@ -9,7 +9,7 @@ title: "Academic Incentive Ontology: A Model of Blockchain-Based Data Sharing"
 <h4><a href="https://www.rpi.edu/"><sup>1</sup>Rensselaer Polytechnic Institute</a></h4>
 
 
-<h3><a href="ontology">Ontology</a> | <a href="competencyquestions">Competency Questions</a>
+<h3><a href="ontology">Ontology</a> | <a href="competencyquestions">Competency Questions</a> | <a href="AIODocumentation/index-en.html">Documentation</a></h3>
 
 <hr>
 <article class="mb-5" id="abstract">
