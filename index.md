@@ -5,11 +5,11 @@ title: "Academic Incentive Ontology: A Model of Blockchain-Based Data Sharing"
 
 
 <h1 class="page-title" style="text-transform:uppercase;" id="header">Academic Incentive Ontology: A Model of Blockchain-Based Data Sharing</h1>
-<h3 style="color:dimgrey;">Kacy Adams<sup>1</sup>, Oshani Seneviratne<sup>1</sup>, Deborah L. McGuinness<sup>1</sup></h3>
-<h3><a href="https://www.rpi.edu/"><sup>1</sup>Rensselaer Polytechnic Institute</a></h3>
+<h2 style="color:dimgrey;">Kacy Adams<sup>1</sup>, Oshani Seneviratne<sup>1</sup>, Deborah L. McGuinness<sup>1</sup></h2>
+<h4><a href="https://www.rpi.edu/"><sup>1</sup>Rensselaer Polytechnic Institute</a></h4>
 
 
-<a href="ontology">Ontology</a>
+<h3><a href="ontology">Ontology</a> | <a href="competencyquestions">Competency Questions</a>
 
 <hr>
 <article class="mb-5" id="abstract">

@@ -6,8 +6,8 @@
 <h1 id="ontologyabout">Academic Incentive Ontology</h1>
   <p>The Academic Incentive Ontology (AIO) intends to provide a semantic model to power a blockchain application to handle, confirm, and incentivize research data sharing. The ontology is built upon basic blockchain components such as addresses and transaction hashes and uses simple logic such that it could be easily handled by smart contracts</p>
   
-<img src ="../images/AIObroad.jpeg" style="width:100%; height:100%">  
-  <caption>Principle agent, aio:Researcher, and its associations</caption>  
+<p style="text-align:center;"><img src= "images/AIObroad.jpeg" style="width:50%; height:50%"></p>
+  <p style="text-align:center;">Principle agent, aio:Researcher, and its associations</p>  
   
   <h3 id="ontologylinks">Ontology Links</h3>
   <ul>
