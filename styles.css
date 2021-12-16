@@ -52,7 +52,7 @@ body {
     text-decoration: none;
   }
   a:link, a:visited {
-    color: black;
+    color: rgb(175, 136, 118);
   }
   a:hover, a:active {
     color: white;
