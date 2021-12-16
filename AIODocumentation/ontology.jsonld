@@ -5,7 +5,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000253"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#External_Source"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ExternalSource"
   } ]
 }, {
   "@id" : "_:genid10",
@@ -14,7 +14,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000066"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#External_Source"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ExternalSource"
   } ]
 }, {
   "@id" : "_:genid11",
@@ -59,7 +59,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000312"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Publication_using_Research_Artifact"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#PublicationUsingResearchArtifact"
   } ]
 }, {
   "@id" : "_:genid16",
@@ -82,20 +82,20 @@
 }, {
   "@id" : "_:genid18",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://semanticscience.org/resource/SIO_000062"
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Sharer"
   } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Collaboration_Event"
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000066"
   } ]
 }, {
   "@id" : "_:genid19",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://semanticscience.org/resource/SIO_000365"
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Seeker"
   } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Publication_using_Research_Artifact"
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000332"
   } ]
 }, {
   "@id" : "_:genid2",
@@ -110,7 +110,7 @@
   "@id" : "_:genid20",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Sharer"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Seeker"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://semanticscience.org/resource/SIO_000066"
@@ -119,7 +119,7 @@
   "@id" : "_:genid21",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Seeker"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Sharer"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://semanticscience.org/resource/SIO_000332"
@@ -128,49 +128,13 @@
   "@id" : "_:genid22",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://semanticscience.org/resource/SIO_000062"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Collaboration_Event"
-  } ]
-}, {
-  "@id" : "_:genid23",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://semanticscience.org/resource/SIO_000064"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Research_Artifact"
-  } ]
-}, {
-  "@id" : "_:genid24",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Seeker"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://semanticscience.org/resource/SIO_000066"
-  } ]
-}, {
-  "@id" : "_:genid25",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Sharer"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://semanticscience.org/resource/SIO_000332"
-  } ]
-}, {
-  "@id" : "_:genid26",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://semanticscience.org/resource/SIO_000300"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "_:genid27",
+  "@id" : "_:genid23",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://semanticscience.org/resource/SIO_000300"
@@ -179,13 +143,49 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000062"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#CollaborationEvent"
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000365"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#PublicationUsingResearchArtifact"
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000062"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#CollaborationEvent"
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000064"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ResearchArtifact"
+  } ]
+}, {
   "@id" : "_:genid28",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://semanticscience.org/resource/SIO_000068"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Publication_using_Research_Artifact"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#PublicationUsingResearchArtifact"
   } ]
 }, {
   "@id" : "_:genid29",
@@ -194,7 +194,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000008"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#External_Source_Attribute"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ExternalSourceAttribute"
   } ]
 }, {
   "@id" : "_:genid3",
@@ -203,7 +203,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000066"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#External_Source"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ExternalSource"
   } ]
 }, {
   "@id" : "_:genid30",
@@ -221,7 +221,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000066"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#External_Source"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ExternalSource"
   } ]
 }, {
   "@id" : "_:genid32",
@@ -248,7 +248,7 @@
     "@id" : "http://www.w3.org/ns/prov#generated"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-index_Penalty"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-indexPenalty"
   } ]
 }, {
   "@id" : "_:genid35",
@@ -266,7 +266,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000066"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#External_Source"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ExternalSource"
   } ]
 }, {
   "@id" : "_:genid37",
@@ -275,7 +275,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000028"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Actual_Citation"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ActualCitation"
   } ]
 }, {
   "@id" : "_:genid38",
@@ -293,7 +293,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000008"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Expected_Citation"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ExpectedCitation"
   } ]
 }, {
   "@id" : "_:genid4",
@@ -320,7 +320,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000008"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Peer_Review_Score"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#PeerReviewScore"
   } ]
 }, {
   "@id" : "_:genid42",
@@ -329,7 +329,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000008"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher_Attribute"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ResearcherAttribute"
   } ]
 }, {
   "@id" : "_:genid43",
@@ -356,7 +356,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000673"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Ethereum_Address"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#EthereumAddress"
   } ]
 }, {
   "@id" : "_:genid46",
@@ -365,7 +365,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000673"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ORC_id"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ORCid"
   } ]
 }, {
   "@id" : "_:genid47",
@@ -383,7 +383,7 @@
     "@id" : "http://www.w3.org/ns/prov#wasGeneratedBy"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-index_Update_Event"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-indexUpdateEvent"
   } ]
 }, {
   "@id" : "_:genid49",
@@ -410,7 +410,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000217"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-index_Penalty"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-indexPenalty"
   } ]
 }, {
   "@id" : "_:genid51",
@@ -419,7 +419,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000369"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Citation_Count"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#CitationCount"
   } ]
 }, {
   "@id" : "_:genid52",
@@ -428,7 +428,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000369"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Collaborator_Count"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#CollaboratorCount"
   } ]
 }, {
   "@id" : "_:genid53",
@@ -437,7 +437,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000369"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Sharing_History"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#DataSharingHistory"
   } ]
 }, {
   "@id" : "_:genid54",
@@ -446,7 +446,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000369"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Length_of_Career"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#LengthOfCareer"
   } ]
 }, {
   "@id" : "_:genid55",
@@ -455,7 +455,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000369"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Publication_Count"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#PublicationCount"
   } ]
 }, {
   "@id" : "_:genid56",
@@ -473,7 +473,7 @@
     "@id" : "http://www.w3.org/ns/prov#wasGeneratedBy"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-index_Update_Event"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-indexUpdateEvent"
   } ]
 }, {
   "@id" : "_:genid58",
@@ -491,7 +491,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000641"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Policy_Violation_Reporting_Event"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#PolicyViolationReportingEvent"
   } ]
 }, {
   "@id" : "_:genid6",
@@ -500,7 +500,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000369"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Request_Event"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#DataRequestEvent"
   } ]
 }, {
   "@id" : "_:genid60",
@@ -524,7 +524,7 @@
   "@id" : "_:genid62",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Chainlink_Layer"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ChainlinkLayer"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/ns/prov#used"
@@ -554,7 +554,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000066"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#External_Source"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ExternalSource"
   } ]
 }, {
   "@id" : "_:genid7",
@@ -563,7 +563,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000369"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Reuse_Reporting_Event"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#DataReuseReportingEvent"
   } ]
 }, {
   "@id" : "_:genid8",
@@ -572,7 +572,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000369"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Sharing_Event"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#DataSharingEvent"
   } ]
 }, {
   "@id" : "_:genid9",
@@ -623,9 +623,17 @@
     "@id" : "http://www.w3.org/ns/dcat"
   }, {
     "@id" : "http://www.w3.org/ns/prov-o-20130430"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO/1.0"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Actual_Citation",
+  "@id" : "http://semanticscience.org/resource/SIO_000089",
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ResearchArtifact"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ActualCitation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -636,8 +644,8 @@
     "@value" : "Actual Citation"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Actual_Citation_1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/9/AIO#Actual_Citation" ],
+  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ActualCitation_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/9/AIO#ActualCitation" ],
   "http://semanticscience.org/resource/SIO_000300" : [ {
     "@value" : "McGuinness et al."
   } ],
@@ -646,7 +654,7 @@
     "@value" : "Actual Citation 1"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Chainlink_Layer",
+  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ChainlinkLayer",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -663,7 +671,7 @@
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Chainlink_Node",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/9/AIO#Chainlink_Layer" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/9/AIO#ChainlinkLayer" ],
   "http://semanticscience.org/resource/SIO_000253" : [ {
     "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#DBLP_Endpoint"
   }, {
@@ -677,7 +685,7 @@
     "@value" : "Chainlink Node"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Citation_Count",
+  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#CitationCount",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -688,14 +696,14 @@
     "@value" : "Citation Count"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher_Statistic"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ResearcherStatistic"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "_:genid3"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Citation_Count_A",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/9/AIO#Citation_Count" ],
+  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#CitationCount_A",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/9/AIO#CitationCount" ],
   "http://semanticscience.org/resource/SIO_000300" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
     "@value" : "30360"
@@ -709,7 +717,7 @@
     "@value" : "Citation Count A"
   } ],
   "http://www.w3.org/ns/prov#wasGeneratedBy" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-index_Update_Event_1"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-indexUpdateEvent_1"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Codebase",
@@ -723,10 +731,10 @@
     "@value" : "Codebase"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Research_Artifact"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ResearchArtifact"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Collaboration_Event",
+  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#CollaborationEvent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -750,8 +758,8 @@
     "@id" : "_:genid9"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Collaboration_Event_1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/9/AIO#Collaboration_Event" ],
+  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#CollaborationEvent_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/9/AIO#CollaborationEvent" ],
   "http://semanticscience.org/resource/SIO_000132" : [ {
     "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher_A"
   }, {
@@ -762,18 +770,18 @@
     "@value" : "1234"
   } ],
   "http://semanticscience.org/resource/SIO_000369" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Request_Event_1"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#DataRequestEvent_1"
   }, {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Reuse_Reporting_Event_1"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#DataReuseReportingEvent_1"
   }, {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Sharing_Event_1"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#DataSharingEvent_1"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Collaboration Event 1"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Collaborator_Count",
+  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#CollaboratorCount",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -784,14 +792,14 @@
     "@value" : "Collaborator Count"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher_Statistic"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ResearcherStatistic"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "_:genid10"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Collaborator_Count_A",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/9/AIO#Collaborator_Count" ],
+  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#CollaboratorCount_A",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/9/AIO#CollaboratorCount" ],
   "http://semanticscience.org/resource/SIO_000300" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
     "@value" : "22"
@@ -805,7 +813,7 @@
     "@value" : "Collaborator Count A"
   } ],
   "http://www.w3.org/ns/prov#wasGeneratedBy" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-index_Update_Event_1"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-indexUpdateEvent_1"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#DBLP",
@@ -823,7 +831,7 @@
     "@value" : "DBLP"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#External_Source"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ExternalSource"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#DBLP_Endpoint",
@@ -833,7 +841,7 @@
     "@value" : "DBLP Endpoint"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Request_Event",
+  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#DataRequestEvent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -853,8 +861,8 @@
     "@id" : "_:genid14"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Request_Event_1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Request_Event" ],
+  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#DataRequestEvent_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/9/AIO#DataRequestEvent" ],
   "http://semanticscience.org/resource/SIO_000300" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
     "@value" : "true"
@@ -872,7 +880,7 @@
     "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher_B"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Reuse_Reporting_Event",
+  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#DataReuseReportingEvent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -890,8 +898,8 @@
     "@id" : "_:genid17"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Reuse_Reporting_Event_1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Reuse_Reporting_Event" ],
+  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#DataReuseReportingEvent_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/9/AIO#DataReuseReportingEvent" ],
   "http://semanticscience.org/resource/SIO_000300" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
     "@value" : "true"
@@ -904,6 +912,87 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Data Reuse Reporting Event 1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#DataSeekerReview",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The Review of the Data Seeker, provided by the Data Sharer, will provide feedback of their Data Seeker's communication, use of the data, and their willingness to abide by data sharing policies"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Data Seeker Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Review"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid18"
+  }, {
+    "@id" : "_:genid19"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#DataSharerReview",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The review of the Data Sharer, provided by the Data Seeker, provides feedback of the Data Sharer's communication and collaboration skills, as well as a review of the Research Artifact's reproducibility and usefulness."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Data Sharer Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Review"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid20"
+  }, {
+    "@id" : "_:genid21"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#DataSharingEvent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "After a Data Request Event, the Data Sharer provides the Data Seeker access to the Research Artifact"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Data Sharing Event"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid22"
+  }, {
+    "@id" : "_:genid23"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#DataSharingEvent_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/9/AIO#DataSharingEvent" ],
+  "http://semanticscience.org/resource/SIO_000300" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  }, {
+    "@value" : "0x6cf7d774587ed1bb49dc10fe845dcb52b17871aa74e9ad583c26e6cd959631c3"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Data Sharing Event 1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#DataSharingHistory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A metric representing the number of Research Artifacts a Researcher has listed, shared, or received over their career."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Data Sharing History"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ResearcherStatistic"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Seeker",
@@ -920,28 +1009,9 @@
     "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid18"
+    "@id" : "_:genid24"
   }, {
-    "@id" : "_:genid19"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Seeker_Review",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "The Review of the Data Seeker, provided by the Data Sharer, will provide feedback of their Data Seeker's communication, use of the data, and their willingness to abide by data sharing policies"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Data Seeker Review"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Review"
-  } ],
-  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid20"
-  }, {
-    "@id" : "_:genid21"
+    "@id" : "_:genid25"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Sharer",
@@ -958,84 +1028,22 @@
     "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid22"
-  }, {
-    "@id" : "_:genid23"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Sharer_Review",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "The review of the Data Sharer, provided by the Data Seeker, provides feedback of the Data Sharer's communication and collaboration skills, as well as a review of the Research Artifact's reproducibility and usefulness."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Data Sharer Review"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Review"
-  } ],
-  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid24"
-  }, {
-    "@id" : "_:genid25"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Sharing_Event",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "After a Data Request Event, the Data Sharer provides the Data Seeker access to the Research Artifact"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Data Sharing Event"
-  } ],
-  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "_:genid26"
   }, {
     "@id" : "_:genid27"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Sharing_Event_1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Sharing_Event" ],
-  "http://semanticscience.org/resource/SIO_000300" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "@value" : "true"
-  }, {
-    "@value" : "0x6cf7d774587ed1bb49dc10fe845dcb52b17871aa74e9ad583c26e6cd959631c3"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Data Sharing Event 1"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Sharing_History",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A metric representing the number of Research Artifacts a Researcher has listed, shared, or received over their career."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Data Sharing History"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher_Statistic"
-  } ]
-}, {
   "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Dataset_1",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
   "http://semanticscience.org/resource/SIO_000008" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Expected_Citation_1"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ExpectedCitation_1"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Dataset 1"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Ethereum_Address",
+  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#EthereumAddress",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1050,11 +1058,11 @@
     "@value" : "Ethereum Address"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher_Identifier"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ResearcherIdentifier"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Ethereum_Address_A",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/9/AIO#Ethereum_Address" ],
+  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#EthereumAddress_A",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/9/AIO#EthereumAddress" ],
   "http://semanticscience.org/resource/SIO_000300" : [ {
     "@value" : "0x747aD285d4D5d029727DD8445FC618a361256f93"
   } ],
@@ -1066,8 +1074,8 @@
     "@value" : "Ethereum Address A"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Ethereum_Address_B",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/9/AIO#Ethereum_Address" ],
+  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#EthereumAddress_B",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/9/AIO#EthereumAddress" ],
   "http://semanticscience.org/resource/SIO_000300" : [ {
     "@value" : "0x91e7A44d144354e35168Aa0897578d1B3Cd3FcD4"
   } ],
@@ -1079,7 +1087,7 @@
     "@value" : "Ethereum Address B"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Expected_Citation",
+  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ExpectedCitation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1093,8 +1101,8 @@
     "@id" : "_:genid28"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Expected_Citation_1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/9/AIO#Expected_Citation" ],
+  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ExpectedCitation_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/9/AIO#ExpectedCitation" ],
   "http://semanticscience.org/resource/SIO_000300" : [ {
     "@value" : "McGuinness et al."
   } ],
@@ -1103,7 +1111,7 @@
     "@value" : "Expected Citation 1"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#External_Source",
+  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ExternalSource",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1119,7 +1127,7 @@
     "@id" : "_:genid30"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#External_Source_Attribute",
+  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ExternalSourceAttribute",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1130,7 +1138,7 @@
     "@value" : "External Source Attribute"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Length_of_Career",
+  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#LengthOfCareer",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1141,7 +1149,7 @@
     "@value" : "Length of Career"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher_Statistic"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ResearcherStatistic"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "_:genid31"
@@ -1154,7 +1162,7 @@
     "@value" : "Name"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher_Identifier"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ResearcherIdentifier"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Name_A",
@@ -1177,20 +1185,6 @@
     "@value" : "Name B"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ORC_id",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A 16 digit unique identifier"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "ORCid ID"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher_Identifier"
-  } ]
-}, {
   "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ORCiD",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1206,10 +1200,24 @@
     "@value" : "ORCiD"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#External_Source"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ExternalSource"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Peer_Review_Score",
+  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ORCid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A 16 digit unique identifier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ORCid ID"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ResearcherIdentifier"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#PeerReviewScore",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1223,8 +1231,8 @@
     "@id" : "_:genid32"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Peer_Review_Score_A",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/9/AIO#Peer_Review_Score" ],
+  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#PeerReviewScore_A",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/9/AIO#PeerReviewScore" ],
   "http://semanticscience.org/resource/SIO_000300" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
     "@value" : "3"
@@ -1239,8 +1247,8 @@
     "@value" : "Peer Review Score A"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Peer_Review_Score_B",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/9/AIO#Peer_Review_Score" ],
+  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#PeerReviewScore_B",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/9/AIO#PeerReviewScore" ],
   "http://semanticscience.org/resource/SIO_000300" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
     "@value" : "1"
@@ -1250,7 +1258,7 @@
     "@value" : "Peer Review Score B"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Policy_Violation_Reporting_Event",
+  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#PolicyViolationReportingEvent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1268,8 +1276,8 @@
     "@id" : "_:genid35"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Policy_Violation_Reporting_Event_1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/9/AIO#Policy_Violation_Reporting_Event" ],
+  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#PolicyViolationReportingEvent_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/9/AIO#PolicyViolationReportingEvent" ],
   "http://semanticscience.org/resource/SIO_000300" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
     "@value" : "true"
@@ -1284,7 +1292,7 @@
     "@value" : "Policy Violation Reporting Event 1"
   } ],
   "http://www.w3.org/ns/prov#generated" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-index_Penalty_1"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-indexPenalty_1"
   } ],
   "http://www.w3.org/ns/prov#wasGeneratedBy" : [ {
     "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher_A"
@@ -1305,10 +1313,10 @@
     "@value" : "PubMed"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#External_Source"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ExternalSource"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Publication_Count",
+  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#PublicationCount",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1319,14 +1327,14 @@
     "@value" : "Publication Count"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher_Statistic"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ResearcherStatistic"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "_:genid36"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Publication_Count_A",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/9/AIO#Publication_Count" ],
+  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#PublicationCount_A",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/9/AIO#PublicationCount" ],
   "http://semanticscience.org/resource/SIO_000300" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
     "@value" : "406"
@@ -1340,20 +1348,10 @@
     "@value" : "Publication Count A"
   } ],
   "http://www.w3.org/ns/prov#wasGeneratedBy" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-index_Update_Event_1"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-indexUpdateEvent_1"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Publication_using_Dataset_1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/9/AIO#Publication_using_Research_Artifact" ],
-  "http://semanticscience.org/resource/SIO_000028" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Actual_Citation_1"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Publication using Dataset 1"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Publication_using_Research_Artifact",
+  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#PublicationUsingResearchArtifact",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1369,7 +1367,17 @@
     "@id" : "_:genid38"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Research_Artifact",
+  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Publication_using_Dataset_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/9/AIO#PublicationUsingResearchArtifact" ],
+  "http://semanticscience.org/resource/SIO_000028" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ActualCitation_1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Publication using Dataset 1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ResearchArtifact",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1414,15 +1422,59 @@
     "@id" : "_:genid47"
   } ]
 }, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ResearcherAttribute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An attribute specific to an individual Researcher"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Researcher Attribute"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ResearcherIdentifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a unique or non-unique identifier of a researcher"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Researcher Identifier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ResearcherAttribute"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ResearcherStatistic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A statistic about a researcher's career in academia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Researcher Statistic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ResearcherAttribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid48"
+  }, {
+    "@id" : "_:genid49"
+  } ]
+}, {
   "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher_A",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Sharer", "http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher" ],
   "http://semanticscience.org/resource/SIO_000008" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Peer_Review_Score_A"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#PeerReviewScore_A"
   }, {
     "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-index_A"
   } ],
   "http://semanticscience.org/resource/SIO_000062" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Collaboration_Event_1"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#CollaborationEvent_1"
   } ],
   "http://semanticscience.org/resource/SIO_000064" : [ {
     "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Dataset_1"
@@ -1435,26 +1487,15 @@
     "@value" : "Researcher A"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher_Attribute",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "An attribute specific to an individual Researcher"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Researcher Attribute"
-  } ]
-}, {
   "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher_B",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Seeker", "http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher" ],
   "http://semanticscience.org/resource/SIO_000008" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Peer_Review_Score_B"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#PeerReviewScore_B"
   }, {
     "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-index_B"
   } ],
   "http://semanticscience.org/resource/SIO_000062" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Collaboration_Event_1"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#CollaborationEvent_1"
   } ],
   "http://semanticscience.org/resource/SIO_000365" : [ {
     "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Publication_using_Dataset_1"
@@ -1465,39 +1506,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Researcher B"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher_Identifier",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "a unique or non-unique identifier of a researcher"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Researcher Identifier"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher_Attribute"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher_Statistic",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A statistic about a researcher's career in academia"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Researcher Statistic"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher_Attribute"
-  } ],
-  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid48"
-  }, {
-    "@id" : "_:genid49"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Review",
@@ -1512,7 +1520,7 @@
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Review_A_1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Sharer_Review" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/9/AIO#DataSharerReview" ],
   "http://semanticscience.org/resource/SIO_000066" : [ {
     "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher_B"
   } ],
@@ -1529,7 +1537,7 @@
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Review_A_2",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Sharer_Review" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/9/AIO#DataSharerReview" ],
   "http://semanticscience.org/resource/SIO_000300" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
     "@value" : "5"
@@ -1572,44 +1580,7 @@
     "@id" : "_:genid58"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-index_A",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-index" ],
-  "http://semanticscience.org/resource/SIO_000300" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "5"
-  } ],
-  "http://semanticscience.org/resource/SIO_000369" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Citation_Count_A"
-  }, {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Collaborator_Count_A"
-  }, {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Publication_Count_A"
-  }, {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#h-index_A"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "SCIENCE-index A"
-  } ],
-  "http://www.w3.org/ns/prov#wasGeneratedBy" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-index_Update_Event_1"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-index_B",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-index" ],
-  "http://semanticscience.org/resource/SIO_000217" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-index_Penalty_1"
-  } ],
-  "http://semanticscience.org/resource/SIO_000300" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "7"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "SCIENCE-index B"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-index_Penalty",
+  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-indexPenalty",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1625,21 +1596,21 @@
     "@id" : "_:genid60"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-index_Penalty_1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-index_Penalty" ],
+  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-indexPenalty_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-indexPenalty" ],
   "http://semanticscience.org/resource/SIO_000300" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
     "@value" : "-1"
   } ],
   "http://semanticscience.org/resource/SIO_000641" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Policy_Violation_Reporting_Event_1"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#PolicyViolationReportingEvent_1"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "SCIENCE-index Penalty 1"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-index_Update_Event",
+  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-indexUpdateEvent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1659,8 +1630,8 @@
     "@id" : "_:genid64"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-index_Update_Event_1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-index_Update_Event" ],
+  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-indexUpdateEvent_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-indexUpdateEvent" ],
   "http://semanticscience.org/resource/SIO_000300" : [ {
     "@value" : "0x99a4abde5964135868cff10995035ccc834ff7d98e4fcda0d33dd884f2092a42"
   } ],
@@ -1679,6 +1650,43 @@
     "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher_A"
   } ]
 }, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-index_A",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-index" ],
+  "http://semanticscience.org/resource/SIO_000300" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "5"
+  } ],
+  "http://semanticscience.org/resource/SIO_000369" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#CitationCount_A"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#CollaboratorCount_A"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#PublicationCount_A"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#h-index_A"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SCIENCE-index A"
+  } ],
+  "http://www.w3.org/ns/prov#wasGeneratedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-indexUpdateEvent_1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-index_B",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-index" ],
+  "http://semanticscience.org/resource/SIO_000217" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-indexPenalty_1"
+  } ],
+  "http://semanticscience.org/resource/SIO_000300" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "7"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SCIENCE-index B"
+  } ]
+}, {
   "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#SemanticScholar",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1694,7 +1702,7 @@
     "@value" : "Semantic Scholar"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#External_Source"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ExternalSource"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#SemanticScholarID",
@@ -1708,7 +1716,7 @@
     "@value" : "Semantic Scholar ID"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher_Identifier"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ResearcherIdentifier"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Semantic_Scholar_Endpoint",
@@ -1718,7 +1726,7 @@
     "@value" : "Semantic Scholar Endpoint"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Time_of_Access",
+  "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#TimeOfAccess",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1729,7 +1737,7 @@
     "@value" : "Time of Access"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#External_Source_Attribute"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ExternalSourceAttribute"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#URL",
@@ -1743,7 +1751,7 @@
     "@value" : "URL"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#External_Source_Attribute"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ExternalSourceAttribute"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#h-index",
@@ -1761,7 +1769,7 @@
     "@value" : "h-index"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher_Statistic"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#ResearcherStatistic"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "_:genid65"
@@ -1782,7 +1790,7 @@
     "@value" : "h-index A"
   } ],
   "http://www.w3.org/ns/prov#wasGeneratedBy" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-index_Update_Event_1"
+    "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-indexUpdateEvent_1"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ontologies/2021/9/AIO#has_SCIENCE-index_weight",
