@@ -1,10 +1,5 @@
 title: "Academic Incentive Ontology: A Model of Blockchain-Based Data Sharing"
 
-
-#Dependencies
-markdown:     redcarpet
-highlighter:  pygments
-
 #setup
 url:          https://sharing-science.github.io/
 baseurl:      https://sharing-science.github.io/academic-incentive-ontology
