@@ -1,61 +1,222 @@
-<link rel="stylesheet" type="text/css" href="styles.css" />
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="header">
-  <h1 class="page-title" style="text-transform:uppercase;" id="header">Academic Incentive Ontology: A Model of Blockchain-Based Data Sharing</h1>
-  <h2>Kacy Adams<sup>1</sup>, Oshani Seneviratne<sup>1</sup>, Deborah L. McGuinness<sup>1</sup></h2>
-  <h4><a href="https://www.rpi.edu/"><sup>1</sup>Rensselaer Polytechnic Institute</a></h4>
-  <h3><a href="index.html">About</a> | <a href="ontology.html">Ontology</a> | <a href="competencyquestions.html">Competency Questions</a> | <a href="AIODocumentation/index-en.html">Documentation</a></h3>
-</div>
+<head>
 
-<div class="page">
-<article class="mb-5" id="abstract">
-<content>
-   
-<h2>Abstract</h2>
-  <p>In fields such as medical research, data collection is slow and rigorous, meaning conclusive findings take years to produce. Due to the closed nature of biomedical research, this leads to the reproduction of similar datasets, while leaving datasets with multiple implications abeyant. Further, there is a lack of complete and useful open datasets in many different fields, which leave researchers with no choice but to collect data on their own. There is a rising need for a secure data sharing ecosystem which recommends, incentivizes, and rewards collaborative efforts between researchers and research groups. Permissionless, public blockchains provide the necessary framework for trustless and fair data sharing. We design an ontology to capture the events associated with blockchain-based data sharing and a corresponding incentive scheme, which includes a reputation-based peer review system and an index to provide recommendations and ratings of possible collaborators. We present a use case indicating the ontology’s plausibility in the biomedical research community and evaluate our ontology with a set of competency questions geared towards participating researchers and other academic stakeholders. Through the use of the ontology, a blockchain ecosystem can be built that will incentivize, encourage, and reward data sharing.</p>
- </content>
- 
- <hr/>
- <article class="mb-5" id="resources">
-<content>
-<h2>List of Resources </h2>
-<ul>
- <table>
-    <tr>
-    <th>Resources</th>
-    <th>Links</th> 
-  </tr>
-  <tr>
-    <td>Ontology</td>
-    <td><a href="ontology">Academic Incentive Ontology</a> </td> 
-  </tr>
-   <tr>
-    <td>Competency Questions </td>
-    <td><a href="competencyquestions">SPARQL Queries</a> </td> 
-  </tr>
-  <tr>
-    <td>Documentation generated with <a href="https://github.com/dgarijo/Widoco">Widoco</a></td>
-    <td><a href="AIODocumentation/index-en.html">AIO Documentation</a> </td> 
-  </tr>
-</table>
-  
- </ul>
- </content>
- 
- <hr/>
- 
- <article class="mb-5" id="toolsused">
-<content>
-  
-  
-<h2>Tools Used during Development</h2>
-  <ul>
-  <li>Ontology Editor: <a href="https://protege.stanford.edu/products.php#desktop-protege">Protege 5.5.0</a></li>
-  <li>Ontology documentation tool: <a href="https://github.com/dgarijo/Widoco">Widoco</a></li>
-  </ul>
-  </content>
-  <!--<iframe src="https://tetherless-world.github.io/explanation-ontology/WidocoDocumentation/index-en.html" style="width:100%;"/>-->
-</div>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
+    <title>The Academic Incentive Ontology Overview</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-text mx-3">The AIO</div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                    <span>Overview</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Ontology
+            </div>
+
+            <!-- Nav Item - The Ontology -->
+            <li class="nav-item">
+                <a class="nav-link" href="ontology.html">
+                    <span>The Ontology</span></a>
+            </li>
+
+             <!-- Nav Item - Documentation -->
+            <li class="nav-item">
+                <a class="nav-link" href="AIODocumentation/index-en.html">
+                    <span>Documentation</span></a>
+            </li>
+
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Resources
+            </div>
+
+            <!-- Nav Item - Competency Questions -->
+                <li class="nav-item">
+                <a class="nav-link" href="competencyquestions.html">
+                    <span>Competency Questions</span></a>
+            </li>
+
+            <!-- Nav Item - Charts -->
+            <li class="nav-item">
+                <a class="nav-link" href="links.html">
+                    <span>Links</span></a>
+            </li>
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item">
+                <a class="nav-link" href="furtherresources.html">
+                    <span>Further Resources</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+        </ul>
+        <!-- End of Sidebar -->
+
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">    
+                    <h2 style="text-align: center; width: 100%;">The Academic Incentive Ontology</h2>
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+                    
+                    <h1 class="h3 mb-2 text-gray-800">About</h1>
+                    <p class="mb-4">The Academic Incentive Ontology (AIO) is an OWL ontology which captures the difficult semantics of Blockchain-based data sharing. The AIO attempts to handle data-sharing while utilizing blockchain to implement an incentivize scheme to encourage peer-to-peer data sharing. The ontology has been developed as part of the ongoing SCIENCE project within Rensselaer Polytechnic Institute's Tetherless World Constellation and Institute for Data Exploration and Analysis.</p>
+
+                    <hr/>
+
+                    <h1 class="h3 mb-2 text-gray-800">Authors</h1>
+                        <ul>
+                            <h6 style="font-size: 14pt; font-weight: bold;">Kacy Adams<sup>1,3</sup>, Oshani Seneviratne<sup>1,2</sup>, Deborah L. McGuinness<sup>1,2,3</sup></h6>  
+                        </ul>
+                    <h6>Affiliations</h6>
+                    <ul>
+                        <li><a style="font-size: 10pt;" href="https://www.rpi.edu/"><sup>1</sup>Rensselaer Polytechnic Institute</a></li>
+                        <li><a style="font-size: 10pt;" href="https://tw.rpi.edu/"><sup>2</sup>Institute for Data Exploration and Analysis</a></li> 
+                        <li><a style="font-size: 10pt;" href="https://idea.rpi.edu/"><sup>3</sup>Tetherless World Constellation</a></li>   
+                    </ul>
+
+                    <hr/>
+
+                    <h1 class="h3 mb-2 text-gray-800">Publication</h5>
+                    <p class="mb-4">Click <a href="404.html">here</a> for a PDF of the associated publication.</p>
+
+                    <hr/>
+
+                    <h1 class="h3 mb-2 text-gray-800">Abstract</h1>
+                    <p class="mb-4">In fields such as medical research, data collection is slow and rigorous, meaning conclusive findings take years to produce. Due to the closed nature of biomedical research, this leads to the reproduction of similar datasets, while leaving datasets with multiple implications abeyant. Further, there is a lack of complete and useful open datasets in many different fields, which leave researchers with no choice but to collect data on their own. There is a rising need for a secure data sharing ecosystem which recommends, incentivizes, and rewards collaborative efforts between researchers and research groups. Permissionless, public blockchains provide the necessary framework for trustless and fair data sharing. We design an ontology to capture the events associated with blockchain-based data sharing and a corresponding incentive scheme, which includes a reputation-based peer review system and an index to provide recommendations and ratings of possible collaborators. We present a use case indicating the ontology’s plausibility in the biomedical research community and evaluate our ontology with a set of competency questions geared towards participating researchers and other academic stakeholders. Through the use of the ontology, a blockchain ecosystem can be built that will incentivize, encourage, and reward data sharing.</p>
+                    
+                    
+                    <hr/>
 
     
+                    <article class="mb-5" id="resources">
+                            <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h6 class="m-0 font-weight-bold text-primary">List of Resources</h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                        <thead>
+                                            <tr>
+                                                <th>Resources</th>
+                                                <th>Links</th> 
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Ontology</td>
+                                                <td><a href="ontology">Academic Incentive Ontology</a> </td> 
+                                            </tr>
+                                            <tr>
+                                                <td>Competency Questions </td>
+                                                <td><a href="competencyquestions">SPARQL Queries</a> </td> 
+                                            </tr>
+                                            <tr>
+                                                <td>Documentation generated with <a href="https://github.com/dgarijo/Widoco">Widoco</a></td>
+                                                <td><a href="AIODocumentation/index-en.html">AIO Documentation</a> </td> 
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    
+
+                <hr/>
+                              
+                
+                <h1 class="h3 mb-2 text-gray-800">Tools Used during Development</h1>
+                    <ul>
+                        <li>Ontology Editor: <a href="https://protege.stanford.edu/products.php#desktop-protege">Protege 5.5.0</a></li>
+                        <li>Ontology documentation tool: <a href="https://github.com/dgarijo/Widoco">Widoco</a></li>
+                    </ul>
+                </div>
+
+     <!-- Footer -->
+     <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+                <span>Tetherless World Constellation, Rensselaer Polytechnic Institute 2021</span>
+            </div>
+        </div>
+    </footer>
+    <!-- End of Footer -->
+
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
+
+</body>
+
+</html>

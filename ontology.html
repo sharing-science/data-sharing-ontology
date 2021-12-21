@@ -1,76 +1,244 @@
-<link rel="stylesheet" type="text/css" href="styles.css" />
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="header">
-  <h1 class="page-title" style="text-transform:uppercase;" id="header">Academic Incentive Ontology: A Model of Blockchain-Based Data Sharing</h1>
-  <h2>Kacy Adams<sup>1</sup>, Oshani Seneviratne<sup>1</sup>, Deborah L. McGuinness<sup>1</sup></h2>
-  <h4><a href="https://www.rpi.edu/"><sup>1</sup>Rensselaer Polytechnic Institute</a></h4>
-  <h3><a href="index.html">About</a> | <a href="ontology.html">Ontology</a> | <a href="competencyquestions.html">Competency Questions</a> | <a href="AIODocumentation/index-en.html">Documentation</a></h3>
-</div>
+<head>
 
-<article class="mb-5" id="ontology">
-<content>
-<div class="page"> 
-<h2 id="ontologyabout"> The Academic Incentive Ontology</h2>
-  <p>The Academic Incentive Ontology (AIO) intends to provide a semantic model to power a blockchain application to handle, confirm, and incentivize research data sharing. The ontology is built upon basic blockchain components such as addresses and transaction hashes and uses simple logic such that it could be easily handled by smart contracts</p>
-  
-<p style="text-align:center;"><img src= "images/AIObroad.jpeg" style="width:50%; height:60%"></p>
-  <p style="text-align:center;">Principle agent, aio:Researcher, and its associations</p>  
-  
-  <hr>
-  <h2 id="ontologylinks">Ontology Links</h2>
-  <ul>
-  <li>Ontology Documnetation generated using the Widoco tool can be found here: <a href="https://sharing-science.github.io/academic-incentive-ontology/AIODocumentation/index-en.html"> 
-  AIO Widoco Documentation</a></li>
-  <li>The AIO owl file can found here: <a href="https://github.com/sharing-science/academic-incentive-ontology/blob/main/AIO.owl">aio.owl</a></li>
-  </ul>
-  
-  <hr>
-  <article class="mb-5" id="ontologymetadata">
-  <content>
-    <h2>Ontology Metadata</h2>
-  <h4 id="ontologiesreused">Ontologies Reused</h4>
-  <ul>
-  <li><a href="https://raw.githubusercontent.com/MaastrichtU-IDS/semanticscience/master/ontology/sio.owl">SemanticScience Integrated Ontology (SIO)</a></li>
-  <li><a href="https://www.w3.org/TR/prov-o/">The Provenance Ontology (PROV-O)</a></li>
-  </ul>
-    
-  <h4> Ontology Prefixes </h4>
-  <table style="width:100%">
-    <tr>
-    <th>Prefix</th>
-    <th>Links</th> 
-  </tr>
-  <tr>
-    <td>rdf</td>
-    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns">Resource Description Framework</a></td> 
-  </tr>
-  <tr>
-    <td>rdfs</td>
-    <td><a href="http://www.w3.org/2000/01/rdf-schema"> RDF Schema</a> </td> 
-  </tr>
-  <tr>
-    <td>owl</td>
-    <td><a href="http://www.w3.org/2002/07/owl#">Web Ontology Language </a> </td> 
-  </tr>
-    <tr>
-    <td> xsd</td>
-    <td> <a href="http://www.w3.org/2001/XMLSchema#"></a> XML Schema Definition</td> 
-  </tr>
-   <tr>
-    <td>skos</td>
-    <td> <a href="http://www.w3.org/2004/02/skos/core#"></a>  Simple Knowledge Organization System</td> 
-  </tr>
-    <tr>
-    <td>aio</td>
-    <td> <a> Academic Incentive Ontology</a> </td> 
-  </tr>   
-    <tr>
-    <td>sio</td>
-    <td> <a href="http://semanticscience.org/resource/">SemanticScience Integrated Ontology</a> </td> 
-  </tr>
-  <tr>
-    <td>ep</td>
-    <td> <a href="https://www.w3.org/TR/prov-o/">Provenance Ontology</a> </td> 
-  </tr>
-</table>
-</div> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>The Academic Incentive Ontology - Ontology</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-text mx-3">The AIO</div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                    <span>Overview</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Ontology
+            </div>
+
+            <!-- Nav Item - The Ontology -->
+            <li class="nav-item">
+                <a class="nav-link" href="ontology.html">
+                    <span>The Ontology</span></a>
+            </li>
+
+             <!-- Nav Item - Documentation -->
+            <li class="nav-item">
+                <a class="nav-link" href="AIODocumentation/index-en.html">
+                    <span>Documentation</span></a>
+            </li>
+
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Resources
+            </div>
+
+            <!-- Nav Item - Competency Questions -->
+                <li class="nav-item">
+                <a class="nav-link" href="competencyquestions.html">
+                    <span>Competency Questions</span></a>
+            </li>
+
+            <!-- Nav Item - Charts -->
+            <li class="nav-item">
+                <a class="nav-link" href="links.html">
+                    <span>Links</span></a>
+            </li>
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item">
+                <a class="nav-link" href="furtherresources.html">
+                    <span>Further Resources</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+        </ul>
+        <!-- End of Sidebar -->
+
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">    
+                    <h2 style="text-align: center; width: 100%;">The Ontology</h2>
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid"> 
+                    <h1 class="h3 mb-2 text-gray-800">The AIO</h1>
+                    <p>The Academic Incentive Ontology (AIO) intends to provide a semantic model to power a blockchain application to handle, confirm, and incentivize research data sharing. The ontology is built upon basic blockchain components such as addresses and transaction hashes and uses simple logic such that it could be easily handled by smart contracts</p>
+                      
+                    <p style="text-align:center;"><img src= "img/AIObroad.jpeg" style="width:50%; height:60%"></p>
+                    <p style="text-align:center;">Principle agent, aio:Researcher, and its associations</p>  
+                      
+                    <hr>
+                    <h1 class="h3 mb-2 text-gray-800">Ontology Links</h1>
+                    <ul>
+                    <li>Ontology Documnetation generated using the Widoco tool can be found here: <a href="https://sharing-science.github.io/academic-incentive-ontology/AIODocumentation/index-en.html">AIO Widoco Documentation</a></li>
+                    <li>The AIO owl file can found here: <a href="https://github.com/sharing-science/academic-incentive-ontology/blob/main/AIO.owl">aio.owl</a></li>
+                    </ul>
+                    
+                    <hr>
+                    <h1 class="h3 mb-2 text-gray-800">Ontology Metadata</h2>
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Reused Ontologies</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>Ontology</th>
+                                            <th>Links</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>SemanticScience Integrated Ontology (SIO)</td>
+                                            <td><a href="https://raw.githubusercontent.com/MaastrichtU-IDS/semanticscience/master/ontology/sio.owl">SIO</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>The Provenance Ontology (PROV-O)</td>
+                                            <td><a href="https://www.w3.org/TR/prov-o/">PROV-O</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                        
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Ontology Prefixes</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>Prefix</th>
+                                            <th>Links</th> 
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>rdf</td>
+                                            <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns">Resource Description Framework</a></td> 
+                                        </tr>
+                                        <tr>
+                                            <td>rdfs</td>
+                                            <td><a href="http://www.w3.org/2000/01/rdf-schema"> RDF Schema</a> </td> 
+                                        </tr>
+                                        <tr>
+                                            <td>owl</td>
+                                            <td><a href="http://www.w3.org/2002/07/owl#">Web Ontology Language </a> </td> 
+                                        </tr>
+                                            <tr>
+                                            <td> xsd</td>
+                                            <td> <a href="http://www.w3.org/2001/XMLSchema#"></a> XML Schema Definition</td> 
+                                        </tr>
+                                        <tr>
+                                            <td>skos</td>
+                                            <td> <a href="http://www.w3.org/2004/02/skos/core#"></a>  Simple Knowledge Organization System</td> 
+                                        </tr>
+                                            <tr>
+                                            <td>aio</td>
+                                            <td> <a> Academic Incentive Ontology</a> </td> 
+                                        </tr>   
+                                            <tr>
+                                            <td>sio</td>
+                                            <td> <a href="http://semanticscience.org/resource/">SemanticScience Integrated Ontology</a> </td> 
+                                        </tr>
+                                        <tr>
+                                            <td>ep</td>
+                                            <td> <a href="https://www.w3.org/TR/prov-o/">Provenance Ontology</a> </td> 
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div> 
+                        </div>
+                    </div>
+                
+                              
+                
+     <!-- Footer -->
+     <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+                <span>Tetherless World Constellation, Rensselaer Polytechnic Institute 2021</span>
+            </div>
+        </div>
+    </footer>
+    <!-- End of Footer -->
+
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
+
+</body>
+
+</html>
