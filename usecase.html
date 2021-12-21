@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>The Academic Incentive Ontology Overview</title>
+    <title>The Academic Incentive Ontology Use Case</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -72,9 +72,9 @@
             <div class="sidebar-heading">
                 Resources
             </div>
-            
+
             <!-- Nav Item - Use Case -->
-                <li class="nav-item">
+            <li class="nav-item">
                 <a class="nav-link" href="usecase.html">
                     <span>Use Case</span></a>
             </li>
@@ -108,79 +108,58 @@
 
                 <!-- Topbar -->
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">    
-                    <h2 style="text-align: center; width: 100%;">The Academic Incentive Ontology</h2>
+                    <h2 style="text-align: center; width: 100%;">Use Case</h2>
                 </nav>
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
                     
-                    <h1 class="h3 mb-2 text-gray-800">About</h1>
-                    <p class="mb-4">The Academic Incentive Ontology (AIO) is an OWL ontology which captures the difficult semantics of Blockchain-based data sharing. The AIO attempts to handle data-sharing while utilizing blockchain to implement an incentivize scheme to encourage peer-to-peer data sharing. The ontology has been developed as part of the ongoing SCIENCE project within Rensselaer Polytechnic Institute's Tetherless World Constellation and Institute for Data Exploration and Analysis.</p>
-
-                    <hr/>
-
-                    <h1 class="h3 mb-2 text-gray-800">Authors</h1>
-                        <ul>
-                            <h6 style="font-size: 14pt; font-weight: bold;">Kacy Adams<sup>1,3</sup>, Oshani Seneviratne<sup>1,2</sup>, Deborah L. McGuinness<sup>1,2,3</sup></h6>  
-                        </ul>
-                    <h6>Affiliations</h6>
-                    <ul>
-                        <li><a style="font-size: 10pt;" href="https://www.rpi.edu/"><sup>1</sup>Rensselaer Polytechnic Institute</a></li>
-                        <li><a style="font-size: 10pt;" href="https://tw.rpi.edu/"><sup>2</sup>Institute for Data Exploration and Analysis</a></li> 
-                        <li><a style="font-size: 10pt;" href="https://idea.rpi.edu/"><sup>3</sup>Tetherless World Constellation</a></li>   
-                    </ul>
-
-                    <hr/>
-
-                    <h1 class="h3 mb-2 text-gray-800">Publication</h5>
-                    <p class="mb-4">Click <a href="404.html">here</a> for a PDF of the associated publication.</p>
-
-                    <hr/>
-
-                    <h1 class="h3 mb-2 text-gray-800">Abstract</h1>
-                    <p class="mb-4">In fields such as medical research, data collection is slow and rigorous, meaning conclusive findings take years to produce. Due to the closed nature of biomedical research, this leads to the reproduction of similar datasets, while leaving datasets with multiple implications abeyant. Further, there is a lack of complete and useful open datasets in many different fields, which leave researchers with no choice but to collect data on their own. There is a rising need for a secure data sharing ecosystem which recommends, incentivizes, and rewards collaborative efforts between researchers and research groups. Permissionless, public blockchains provide the necessary framework for trustless and fair data sharing. We design an ontology to capture the events associated with blockchain-based data sharing and a corresponding incentive scheme, which includes a reputation-based peer review system and an index to provide recommendations and ratings of possible collaborators. We present a use case indicating the ontology’s plausibility in the biomedical research community and evaluate our ontology with a set of competency questions geared towards participating researchers and other academic stakeholders. Through the use of the ontology, a blockchain ecosystem can be built that will incentivize, encourage, and reward data sharing.</p>
+                    <p class="mb-4">We demonstrate the use of the AIO with the use of a blockchain protocol, modeled with the AIO, geared towards peer-to-peer data sharing in the field of biomedical research. Studies show it can take up to seventeen years for research to go from bench (basic research) to bedside (clinical applications). This could be mitigated by extending datasets to their full potential. Often, Biomedical datasets have multiple implications, yet researchers only use them for their intended use. Thus, other researchers could greatly reduce the time from bench to bedside by reducing the data collection period and reusing existing data. An application of economic game theory allows us to derive a use case we have coined the “Young Investigator’s Dilemma,” taking inspiration from the infamous Prisoner’s Dilemma.</p>
+                    
+                    <h1 class="h3 mb-2 text-gray-800">User Story</h1>
+                    <p class="mb-4">In our proposed game we have two participants, a young investigator, and a data seeker. The young investigator, Steven Hep, could be described as a young, new researcher seeking to build their reputation. He has a large number of citations to a small number of publications. His most recent work includes a well-cultivated dataset representing the single-nucleotide polymorphism (SNP) profiles of individuals with lung cancer, which he understands would be coveted in the biomedical community, because of rising, novel work regarding personalized gene therapy treatments utilizing SNP profiles. With the proper incentive, such as a citation, recognition, and reputability, Steven would be willing to share the dataset. The data seeker, who we will refer to as Jeff Wen, is an established researcher seeking to surpass the data creation stage in his next project. We do not know if Jeff means to comply with any policy surrounding the transaction. Displayed below are the actions both participants could take. Steven has the option to share the dataset or to not share the dataset, while Jeff can participate dishonestly (violate data use policies) or participate honestly.</p>
                     
                     
-                    <hr/>
-
-    
-                    <article class="mb-5" id="resources">
+                    <article class="mb-5" id="nashgame">
                         <div class="card shadow mb-4">
                             <div class="card-header py-3">
-                                <h6 class="m-0 font-weight-bold text-primary">List of Resources</h6>
+                                <h6 class="m-0 font-weight-bold text-primary">Use Case Game Theory</h6>
                             </div>
                             <div class="card-body">
                                 <div class="table-responsive">
                                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                        <thead>
-                                            <tr>
-                                                <th>Resources</th>
-                                                <th>Links</th> 
-                                            </tr>
-                                        </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Ontology</td>
-                                                <td><a href="ontology">Academic Incentive Ontology</a> </td> 
+                                                <td>Participant</td>
+                                                <td colspan="3" style="font-weight: bold;">Jeff Wen (Data Seeker)</td>
                                             </tr>
                                             <tr>
-                                                <td>Use Case</td>
-                                                <td><a href="usecase.html">Sample Use Case</a></td>
+                                                <td rowspan="3" style="font-weight: bold;">Steven Hep (Young Inestigator)</td>
+                                                <td>Action</td> 
+                                                <td>Participate Dishonestly</td>
+                                                <td>Participate Honestly</td>
                                             </tr>
                                             <tr>
-                                                <td>Competency Questions </td>
-                                                <td><a href="competencyquestions">SPARQL Queries</a> </td> 
+                                                <td>Not Participate</td>
+                                                <td style="font-weight: bold;">State A</td>
+                                                <td style="font-weight: bold;">State B</td>
                                             </tr>
                                             <tr>
-                                                <td>Documentation generated with <a href="https://github.com/dgarijo/Widoco">Widoco</a></td>
-                                                <td><a href="AIODocumentation/index-en.html">AIO Documentation</a> </td> 
+                                                <td>Participate</td>
+                                                <td style="font-weight: bold;">State C</td>
+                                                <td style="font-weight: bold;">State D</td>
                                             </tr>
                                         </tbody>
+                                        <caption>A game theoretic evaluation of the Young Investigator’s Dilemma. In state A, Jeff intends to not give Steven proper recognition (participate dishonestly), and thus Steven chooses to not share the dataset. State D shows the Nash equilibrium we seek to achieve via incentivizing data sharing and discouraging dishonest participation.</caption>
                                     </table>
                                 </div>
                             </div>
                         </div>
+                        
+                        <p class="mb-4">Both participants have joined <a style="font-style: italic">Sharing-Science</a>, a new blockchain protocol, built upon the AIO, and Jeff Wen has come across Steven's dataset listed on the protocol and is interested in the applications of the individual SNP profiles in the set towards other types of cancer. He is concerned by Steven's low SCIENCE-index, but he is able to see that it is because of his low number of publications. His concerns are mitigated by Steven's peer review score, which include several rave reviews of his other datasets and his profile shows four other citations to the SNP dataset. Thus, he requests the SNP dataset. Steven, seeing Jeff's intended use in his data request, is concerned that Jeff will not give his data proper recognition. Understanding that Jeff will be penalized if he does so, Steven approves the request and shares the dataset with Jeff. Jeff has some questions upon attempting to use the data, while also finding the data to be incomplete. He is unable to contact Steven as he is overloaded with other work. Jeff, eventually publishes upon the dataset, citing the data in his work to avoid penalty. This is confirmed by the protocol, rewarding Steven for his contribution. However, the lack of communication and issues with the dataset is documented by the peer review system as Jeff brings up several concerns in his review of the young investigator.</p>
+                        
+                    </div>
                     
 
                 
