@@ -60,7 +60,7 @@
 
              <!-- Nav Item - Documentation -->
             <li class="nav-item">
-                <a class="nav-link" href="AIODocumentation/index-en.html">
+                <a class="nav-link" href="widoco.html">
                     <span>Documentation</span></a>
             </li>
 
@@ -246,7 +246,27 @@
 
                         <hr/>
 
-                        
+                        <h6>Question 3: Which publication of a Data Seeker uses the shared Dataset?</h6>
+                        <h6></h6>
+                        <h6>Query:</h6>
+                        <pre>
+        PREFIX sio: &lt;http://semanticscience/org/resource/&gt;
+        PREFIX aio: &lt;http://semanticweb.org/ontologies/2021/9/AIO#&gt;
+        SELECT ?doi 
+        WHERE {
+            ?event a aio:CollaborationEvent .
+            ?event sio:SIO_000300 ?val .                    //'has value'​
+            FILTER(?val = ?id) .
+            ?event sio:SIO_000369  ?subevent .              //'has component  part'​
+            ?subevent a aio:DataReuseReportingEvent .
+            ?subevent sio:SIO_000312 ?publication .         //'has product'
+            ?publication sio:SIO_000300 ?doi                //'has value'
+        }
+                        </pre>
+                        <h6>Answer:</h6>
+                        <pre>
+        True            //This represents that the data has been shared
+                        </pre>
 
 
 
