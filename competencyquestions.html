@@ -39,7 +39,7 @@
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="index.html">
                     <span>Overview</span></a>
             </li>
@@ -80,7 +80,7 @@
             </li>
 
             <!-- Nav Item - Competency Questions -->
-                <li class="nav-item">
+                <li class="nav-item active">
                 <a class="nav-link" href="competencyquestions.html">
                     <span>Competency Questions</span></a>
             </li>
@@ -177,18 +177,18 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>Q4. How many Researchers have cited a dataset listed on the protocol?</td>
-                                                    <td>Q4. How many researchers have cited Steven's SNP dataset before?</td>
+                                                    <td>Q5. How many Researchers have cited my dataset listed on the protocol?</td>
+                                                    <td>Q5. How many researchers have cited Steven's SNP dataset before?</td>
                                                     <td>4 citations from other researchers to the SNP dataset</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Q5. Why has a researcher left a specific review?</td>
-                                                    <td>Q5. Why has Jeff given Steven a poor communication score in his review?</td> 
+                                                    <td>Q6. Why has a researcher left a specific review?</td>
+                                                    <td>Q6. Why has Jeff given Steven a poor communication score in his review?</td> 
                                                     <td>aio:DataSharerReview includes a communication score and a natural language description. Jeff iterates that Steven was non-communicative during the process</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Q6. What factors are included in the SCIENCE-index?</td>
-                                                    <td>Q6. What factors go in to Steven's SCIENCE-index and why is it low?ging to Jeff used the shared dataset?</td> 
+                                                    <td>Q7. What factors are included in the SCIENCE-index?</td>
+                                                    <td>Q7. What factors go in to Steven's SCIENCE-index and why is it low?</td> 
                                                     <td>aio:ResearchStatistics includes several career statistics that are visible to all participants. Jeff identifies that Steven's SCIENCE-index is low due to a low h-index.</td>
                                                 </tr>
                                             </tbody>
@@ -218,7 +218,7 @@
                         </pre>
                         <h6>Answer:</h6>
                         <pre>
-        Jeff intends to use the SNP profiles towards personalized drug therapy research for othe types of cancer
+        "Jeff intends to use the SNP profiles towards personalized drug therapy research for othe types of cancer"
                         </pre>
 
                         <hr/>
@@ -241,13 +241,13 @@
                         </pre>
                         <h6>Answer:</h6>
                         <pre>
-        True            //This represents that the data has been shared
+        "True"            //This represents that the data has been shared
                         </pre>
 
                         <hr/>
 
                         <h6>Question 3: Which publication of a Data Seeker uses the shared Dataset?</h6>
-                        <h6></h6>
+                        <h6>Upon publication, the Data Seeker must report to the protocol the DOI of his publication. We can search for this via the specific Collaboration event.</h6>
                         <h6>Query:</h6>
                         <pre>
         PREFIX sio: &lt;http://semanticscience/org/resource/&gt;
@@ -265,12 +265,115 @@
                         </pre>
                         <h6>Answer:</h6>
                         <pre>
-        True            //This represents that the data has been shared
+        "doi:10.5281/01479"
                         </pre>
+                        
+                        
+                        <hr/>
+
+                        <h6>Question 4: Does this publication properly cite the Dataset?</h6>
+                        <h6>The Research artifact provided has an expected citation which we compare to the actual citation provided in the reported publication.</h6>
+                        <h6>Query:</h6>
+                        <pre>
+        PREFIX sio: &lt;http://semanticscience/org/resource/&gt;
+        PREFIX aio: &lt;http://semanticweb.org/ontologies/2021/9/AIO#&gt;
+        ASK { 
+            ?event a aio:Collaboration_Event.​
+            ?event sio:SIO_000300 ?val .                    //'has value'​
+            FILTER(?val = ?id) .​
+            ?event sio:SIO_000132 ?participant .            //'has participant'​
+            ?participant sio:SIO_000064 ?artifact .         //'is provider of'​
+            ?artifact sio:SIO_000008 ?expectcit .           //'has attribute'​
+            ?expectcit sio:SIO_000300 ?cit1 .               //'has value'​
+            ​
+            ?event sio:SIO_000369  ?subevent .              //'has component part'​
+            ?subevent a aio:Data_Reuse_Reporting_Event .​
+            ?subevent sio:SIO_000312 ?publication .         //'has product'​
+            ?publication sio:SIO_000028 ?actualcit .        //'has part'​
+            ?actualcit sio:SIO_000300 ?cit2 .               //'has value'​
+            
+            FILTER(?cit1 = ?cit2). 
+        }
+                        </pre>
+                        <h6>Answer:</h6>
+                        <pre>
+        "False"             //This represents that the Data Seeker has not properly cited the dataset and will be penalized.
+                        </pre>
+                        
+                        <h6>Question 5: How many Researchers have cited my dataset listed on the protocol?</h6>
+                        <h6></h6>
+                        <h6>Query:</h6>
+                        <pre>
+        PREFIX sio: &lt;http://semanticscience/org/resource/&gt;
+        PREFIX aio: &lt;http://semanticweb.org/ontologies/2021/9/AIO#&gt;
+        SELECT ?name​
+        WHERE {​
+            ?etherobj a aio:Ethereum_Address .​
+            ?etherobj sio:SIO_000300 ?etheradd .            //’has value’​
+            FILTER(?etheradd = ?queryaddress) . ​
+            ?etherobj sio:SIO_000674 ?researcher .          //’is unique identifier for’
+            
 
 
 
 
+                        </pre>
+                        <h6>Answer:</h6>
+                        <pre>
+        "doi:10.5281/01479"
+                        </pre>
+                        
+                        <h6>Question 6: Why has a researcher left a specific review?</h6>
+                        <h6>We can query a specific review related to a collaboration event and it's natural language description</h6>
+                        <h6>Query:</h6>
+                        <pre>
+        PREFIX sio: &lt;http://semanticscience/org/resource/&gt;
+        PREFIX aio: &lt;http://semanticweb.org/ontologies/2021/9/AIO#&gt;
+        SELECT ?revdescription
+        WHERE { 
+            ?collabevent a aio:CollaborationEvent .
+            ?collabevent sio:SIO_000300 ?val .              //'has value'​
+            FILTER(?val = ?id) .​
+            
+            ?review a aio:DataSharerReview .
+            ?review sio:SIO_001403 ?collabevent .           //'is associated with'
+            ?review sio:SIO_000300 ?revdescription          //'has value'
+        }
+                        </pre>
+                        <h6>Answer:</h6>
+                        <pre>
+        "Steven Hep provided decent quality data, but struggled to 
+         communicate during the process and failed to answer 
+         questions I had about the dataset"
+                        </pre>
+                        
+                        <h6>Question 7: What factors are included in the SCIENCE-index?</h6>
+                        <h6>The SCIENCE-index includes 5 statistics which represent a researcher's career contributions to science via publications and data sharing</h6>
+                        <h6>Query:</h6>
+                        <pre>
+        PREFIX sio: &lt;http://semanticscience/org/resource/&gt;
+        PREFIX aio: &lt;http://semanticweb.org/ontologies/2021/9/AIO#&gt;
+        SELECT ?type​
+        WHERE { ​
+            ?etherobj a aio:Ethereum_Address .​
+            ?etherobj sio:SIO_000300 ?etheradd .            //’has value’​
+            FILTER(?etheradd = ?queryaddress) . ​
+            ?etherobj sio:SIO_000674 ?researcher .          //’is unique identifier for’
+
+            ?researcher sio:SIO_000008 ?SCindex .           //’has attribute’​
+            ?SCindex a aio:SCIENCE-index .​
+            ?SCindex sio:SIO_000369 ?stats .                //’has component part’  ​
+            ?stats a ?type .               
+        }
+                        </pre>
+                        <h6>Answer:</h6>
+                        <pre>
+        "aio:CitationCount"
+        "aio:PublicationCount"
+        "aio:CollaboratorCount"
+        "aio:h-index"
+        "aio:DataSharingHistory"
+                        </pre>
 
                         </div>
                             

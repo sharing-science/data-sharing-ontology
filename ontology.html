@@ -39,7 +39,7 @@
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="index.html">
                     <span>Overview</span></a>
             </li>
@@ -53,7 +53,7 @@
             </div>
 
             <!-- Nav Item - The Ontology -->
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="ontology.html">
                     <span>The Ontology</span></a>
             </li>
@@ -119,11 +119,26 @@
                       
                     <p style="text-align:center;"><img src= "img/AIObroad.jpeg" style="width:50%; height:60%"></p>
                     <p style="text-align:center;">Principle agent, aio:Researcher, and its associations</p>  
-                      
+                    
+                    <p>The Ontology surrounds a principle agent, aio:Researcher. Each researcher has two main attributes, aio:SCIENCE-index and aio:PeerReviewScore. These are determined by their participation in collaboration events (aio:CollaborationEvent). aio:CollaborationEvent and it's associations are shown below.</p>
+                    
+                    <p style="text-align:center;"><img src= "img/AIOcollab.jpeg" style="width:50%; height:60%"></p>
+                    <p style="text-align:center;">Principle event, aio:CollaborationEvent, and its associations</p>  
+                    
+                    <p>After each collaboration event, we ask both participating researcher to review the other participant. This incentivizes the sharing of high quality data and good communication during the sharing and reuse process. An instance of the aio:PeerReviewScore model is shown below.</p>
+                    
+                    <p style="text-align:center;"><img src= "img/AIOreview.jpeg" style="width:50%; height:60%"></p>
+                    <p style="text-align:center;">An instance of aio:DataSharerReview</p>
+                    
+                    <p>To give participants a way to identify researchers who they would be willing to collaborate with, we present the SCIENCE-index. The SCIENCE-index attempts to capture a researcher's career contributions to science via publications while also including their contributions via data sharing.</p>
+                    
+                    <p style="text-align:center;"><img src= "img/AIOsci.jpeg" style="width:50%; height:60%"></p>
+                    <p style="text-align:center;">A researcher's key attribute, aio:SCIENCE-index, and it's included statisitcs</p>
+
                     <hr>
                     <h1 class="h3 mb-2 text-gray-800">Ontology Links</h1>
                     <ul>
-                    <li>Ontology Documnetation generated using the Widoco tool can be found here: <a href="https://sharing-science.github.io/academic-incentive-ontology/AIODocumentation/index-en.html">AIO Widoco Documentation</a></li>
+                    <li>Ontology Documnetation generated using the Widoco tool can be found here: <a href="widoco.html">AIO Widoco Documentation</a></li>
                     <li>The AIO owl file can found here: <a href="https://github.com/sharing-science/academic-incentive-ontology/blob/main/AIO.owl">aio.owl</a></li>
                     </ul>
                     
