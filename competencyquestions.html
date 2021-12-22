@@ -304,23 +304,26 @@
                         <h6></h6>
                         <h6>Query:</h6>
                         <pre>
+        PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
         PREFIX sio: &lt;http://semanticscience/org/resource/&gt;
         PREFIX aio: &lt;http://semanticweb.org/ontologies/2021/9/AIO#&gt;
-        SELECT ?name​
+        SELECT ?title ?citval
         WHERE {​
             ?etherobj a aio:Ethereum_Address .​
-            ?etherobj sio:SIO_000300 ?etheradd .            //’has value’​
+            ?etherobj sio:SIO_000300 ?etheradd .            //'has value'​
             FILTER(?etheradd = ?queryaddress) . ​
-            ?etherobj sio:SIO_000674 ?researcher .          //’is unique identifier for’
-            
+            ?etherobj sio:SIO_000674 ?researcher .          //'is unique identifier for'
 
-
-
-
+            ?researcher sio:SIO_000064 ?artifact .          //'is provider of'
+            ?artifact sio:SIO_000300 ?title .               //'has value'
+            FILTER(?title = ?querytitle) .
+            ?artifact sio:SIO_000300 ?citval .              //'has value'
+            ?citval a xsd:integer .
+        }
                         </pre>
                         <h6>Answer:</h6>
                         <pre>
-        "doi:10.5281/01479"
+        "SNP Profile Dataset" "4"
                         </pre>
                         
                         <h6>Question 6: Why has a researcher left a specific review?</h6>
@@ -356,13 +359,13 @@
         SELECT ?type​
         WHERE { ​
             ?etherobj a aio:Ethereum_Address .​
-            ?etherobj sio:SIO_000300 ?etheradd .            //’has value’​
+            ?etherobj sio:SIO_000300 ?etheradd .            //'has value'​
             FILTER(?etheradd = ?queryaddress) . ​
-            ?etherobj sio:SIO_000674 ?researcher .          //’is unique identifier for’
+            ?etherobj sio:SIO_000674 ?researcher .          //'is unique identifier for'
 
-            ?researcher sio:SIO_000008 ?SCindex .           //’has attribute’​
+            ?researcher sio:SIO_000008 ?SCindex .           //'has attribute'​
             ?SCindex a aio:SCIENCE-index .​
-            ?SCindex sio:SIO_000369 ?stats .                //’has component part’  ​
+            ?SCindex sio:SIO_000369 ?stats .                //'has component part'  ​
             ?stats a ?type .               
         }
                         </pre>
