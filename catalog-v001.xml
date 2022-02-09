@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://semanticscience.org/ontology/sio/v1.54/sio-release.owl" uri="http://semanticscience.org/ontology/sio.owl"/>
+    <uri id="Imports Wizard Entry" name="http://semanticscience.org/ontology/sio/v1.54/sio-release.owl" uri="sio.owl.xml"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1640205831788" name="http://semanticscience.org/ontology/sio/v1.53/sio-release.owl" uri="AIO.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1640205831788" name="shadowed:http://semanticscience.org/ontology/sio/v1.53/sio-release.owl" uri="AIODocumentation/ontology.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1644438759822" name="http://www.semanticweb.org/ontologies/2021/9/AIO" uri="AIO.owl"/>
     </group>
 </catalog>

@@ -1,17 +1,64 @@
-<http://semanticscience.org/ontology/sio/v1.53/sio-release.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://semanticscience.org/ontology/sio/v1.53/sio-release.owl> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.semanticweb.org/ontologies/2021/9/AIO/1.0> .
-<http://semanticscience.org/ontology/sio/v1.53/sio-release.owl> <http://www.w3.org/2002/07/owl#imports> <http://semanticscience.org/ontology/sio/v1.53/sio-release.owl> .
-<http://semanticscience.org/ontology/sio/v1.53/sio-release.owl> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/dcat> .
-<http://semanticscience.org/ontology/sio/v1.53/sio-release.owl> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/prov-o-20130430> .
-<http://semanticscience.org/ontology/sio/v1.53/sio-release.owl> <http://protege.stanford.edu/plugins/owl/protege#defaultLanguage> "en" .
-<http://semanticscience.org/ontology/sio/v1.53/sio-release.owl> <http://purl.org/dc/elements/1.1/description> "The Academic Incentive Ontology (AIO) intends to provide a semantic model to power a blockchain application to handle, confirm, and incentivize research data sharing. The ontology is built upon basic blockchain components such as addresses and transaction hashes and uses simple logic such that it could be easily handled by smart contracts"@en .
-<http://semanticscience.org/ontology/sio/v1.53/sio-release.owl> <http://purl.org/dc/elements/1.1/identifier> "aio.owl" .
-<http://semanticscience.org/ontology/sio/v1.53/sio-release.owl> <http://purl.org/dc/terms/contributor> "Oshani Seneviratne\nDeborah McGuinness\nRukmal Weerawarana"@en .
-<http://semanticscience.org/ontology/sio/v1.53/sio-release.owl> <http://purl.org/dc/terms/creator> "Kacy Adams"@en .
-<http://semanticscience.org/ontology/sio/v1.53/sio-release.owl> <http://purl.org/dc/terms/creator> "https://orcid.org/0000-0003-2873-8616"@en .
-<http://semanticscience.org/ontology/sio/v1.53/sio-release.owl> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0/> .
-<http://semanticscience.org/ontology/sio/v1.53/sio-release.owl> <http://purl.org/dc/terms/title> "Academic Incentive Ontology (AIO)"@en .
-<http://semanticscience.org/ontology/sio/v1.53/sio-release.owl> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.semanticweb.org/ontologies/2021/9/AIO> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.semanticweb.org/ontologies/2021/9/AIO/1.0> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/> <http://www.w3.org/2002/07/owl#imports> <http://semanticscience.org/ontology/sio/v1.54/sio-release.owl> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/dcat> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/prov-o-20130430> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/> <http://protege.stanford.edu/plugins/owl/protege#defaultLanguage> "en" .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/> <http://purl.org/dc/elements/1.1/description> "The Academic Incentive Ontology (AIO) intends to provide a semantic model to power a blockchain application to handle, confirm, and incentivize research data sharing. The ontology is built upon basic blockchain components such as addresses and transaction hashes and uses simple logic such that it could be easily handled by smart contracts"@en .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/> <http://purl.org/dc/elements/1.1/identifier> "aio.owl" .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/> <http://purl.org/dc/terms/contributor> "Oshani Seneviratne\nDeborah McGuinness\nRukmal Weerawarana"@en .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/> <http://purl.org/dc/terms/creator> "Kacy Adams"@en .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0/> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/> <http://purl.org/dc/terms/title> "Academic Incentive Ontology (AIO)"@en .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.semanticweb.org/ontologies/2021/9/AIO> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://protege.stanford.edu/plugins/owl/protege#defaultLanguage
+<http://protege.stanford.edu/plugins/owl/protege#defaultLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://semanticscience.org/resource/SIO_000674
+<http://semanticscience.org/resource/SIO_000674> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://semanticscience.org/resource/SIO_000068
+<http://semanticscience.org/resource/SIO_000068> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://semanticscience.org/resource/SIO_000673
+<http://semanticscience.org/resource/SIO_000673> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
 # 
 # 
 # #################################################################
@@ -20,6 +67,9 @@
 # #
 # #################################################################
 # 
+# 
+# http://semanticscience.org/resource/SIO_000300
+<http://semanticscience.org/resource/SIO_000300> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 # 
 # http://www.semanticweb.org/ontologies/2021/9/AIO#has_SCIENCE-index_weight
 <http://www.semanticweb.org/ontologies/2021/9/AIO#has_SCIENCE-index_weight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -35,6 +85,7 @@
 # 
 # 
 # http://semanticscience.org/resource/SIO_000089
+<http://semanticscience.org/resource/SIO_000089> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://semanticscience.org/resource/SIO_000089> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2021/9/AIO#ResearchArtifact> .
 # 
 # http://www.semanticweb.org/ontologies/2021/9/AIO#ActualCitation
@@ -121,20 +172,20 @@ _:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb
 <http://www.semanticweb.org/ontologies/2021/9/AIO#DataRequestEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#DataRequestEvent> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid11 .
 _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasEndedBy> .
-_:genid11 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Sharer> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000369> .
+_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO/DataRequest> .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#DataRequestEvent> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid12 .
 _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasStartedBy> .
-_:genid12 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Seeker> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasEndedBy> .
+_:genid12 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Sharer> .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#DataRequestEvent> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid13 .
 _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000300> .
-_:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasStartedBy> .
+_:genid13 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Seeker> .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#DataRequestEvent> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid14 .
 _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000300> .
-_:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#DataRequestEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "An event initiated by the Data Seeker submitting a request for a Research Artifact from a Data Sharer. It is ended by the Data Sharer approving or denying the request."@en .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#DataRequestEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Data Request Event"@en .
 # 
@@ -155,44 +206,16 @@ _:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001
 <http://www.semanticweb.org/ontologies/2021/9/AIO#DataReuseReportingEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "After a Data Seeker has reused a Research Artifact, they must report their reuse. If they published, they must show that the publication using the artifact contains the Expected Citation."@en .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#DataReuseReportingEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Data Reuse Reporting Event"@en .
 # 
-# http://www.semanticweb.org/ontologies/2021/9/AIO#DataSeekerReview
-<http://www.semanticweb.org/ontologies/2021/9/AIO#DataSeekerReview> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/ontologies/2021/9/AIO#DataSeekerReview> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid18 .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000066> .
-_:genid18 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Sharer> .
-<http://www.semanticweb.org/ontologies/2021/9/AIO#DataSeekerReview> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid19 .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000332> .
-_:genid19 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Seeker> .
-<http://www.semanticweb.org/ontologies/2021/9/AIO#DataSeekerReview> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2021/9/AIO#Review> .
-<http://www.semanticweb.org/ontologies/2021/9/AIO#DataSeekerReview> <http://www.w3.org/2000/01/rdf-schema#comment> "The Review of the Data Seeker, provided by the Data Sharer, will provide feedback of their Data Seeker's communication, use of the data, and their willingness to abide by data sharing policies"@en .
-<http://www.semanticweb.org/ontologies/2021/9/AIO#DataSeekerReview> <http://www.w3.org/2000/01/rdf-schema#label> "Data Seeker Review"@en .
-# 
-# http://www.semanticweb.org/ontologies/2021/9/AIO#DataSharerReview
-<http://www.semanticweb.org/ontologies/2021/9/AIO#DataSharerReview> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/ontologies/2021/9/AIO#DataSharerReview> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid20 .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000066> .
-_:genid20 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Seeker> .
-<http://www.semanticweb.org/ontologies/2021/9/AIO#DataSharerReview> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid21 .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000332> .
-_:genid21 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Sharer> .
-<http://www.semanticweb.org/ontologies/2021/9/AIO#DataSharerReview> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2021/9/AIO#Review> .
-<http://www.semanticweb.org/ontologies/2021/9/AIO#DataSharerReview> <http://www.w3.org/2000/01/rdf-schema#comment> "The review of the Data Sharer, provided by the Data Seeker, provides feedback of the Data Sharer's communication and collaboration skills, as well as a review of the Research Artifact's reproducibility and usefulness."@en .
-<http://www.semanticweb.org/ontologies/2021/9/AIO#DataSharerReview> <http://www.w3.org/2000/01/rdf-schema#label> "Data Sharer Review"@en .
-# 
 # http://www.semanticweb.org/ontologies/2021/9/AIO#DataSharingEvent
 <http://www.semanticweb.org/ontologies/2021/9/AIO#DataSharingEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/ontologies/2021/9/AIO#DataSharingEvent> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid22 .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000300> .
-_:genid22 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#boolean> .
-<http://www.semanticweb.org/ontologies/2021/9/AIO#DataSharingEvent> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid23 .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000300> .
-_:genid23 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO#DataSharingEvent> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000300> .
+_:genid18 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO#DataSharingEvent> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000300> .
+_:genid19 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#DataSharingEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "After a Data Request Event, the Data Sharer provides the Data Seeker access to the Research Artifact"@en .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#DataSharingEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Data Sharing Event"@en .
 # 
@@ -204,28 +227,28 @@ _:genid23 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001
 # 
 # http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Seeker
 <http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Seeker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Seeker> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid24 .
-_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000062> .
-_:genid24 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#CollaborationEvent> .
-<http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Seeker> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid25 .
-_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000365> .
-_:genid25 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#PublicationUsingResearchArtifact> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Seeker> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000062> .
+_:genid20 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#CollaborationEvent> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Seeker> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000365> .
+_:genid21 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#PublicationUsingResearchArtifact> .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Seeker> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher> .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Seeker> <http://www.w3.org/2000/01/rdf-schema#comment> "A researcher who seeks to use an already exisiting Research Artifact to create new findings and publish on"@en .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Seeker> <http://www.w3.org/2000/01/rdf-schema#label> "Data Seeker"@en .
 # 
 # http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Sharer
 <http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Sharer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Sharer> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid26 .
-_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000062> .
-_:genid26 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#CollaborationEvent> .
-<http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Sharer> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid27 .
-_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000064> .
-_:genid27 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#ResearchArtifact> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Sharer> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000062> .
+_:genid22 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#CollaborationEvent> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Sharer> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000064> .
+_:genid23 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#ResearchArtifact> .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Sharer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher> .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Sharer> <http://www.w3.org/2000/01/rdf-schema#comment> "A researcher with a Research Artifact they have created who would like to share their artifact with other researchers in return for recognition"@en .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Sharer> <http://www.w3.org/2000/01/rdf-schema#label> "Data Sharer"@en .
@@ -239,23 +262,23 @@ _:genid27 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb
 # 
 # http://www.semanticweb.org/ontologies/2021/9/AIO#ExpectedCitation
 <http://www.semanticweb.org/ontologies/2021/9/AIO#ExpectedCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/ontologies/2021/9/AIO#ExpectedCitation> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid28 .
-_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000068> .
-_:genid28 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#PublicationUsingResearchArtifact> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO#ExpectedCitation> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000068> .
+_:genid24 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#PublicationUsingResearchArtifact> .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#ExpectedCitation> <http://www.w3.org/2000/01/rdf-schema#comment> "The existing reference to a Research Artifiact which must be included in a publication which reuses the artifact"@en .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#ExpectedCitation> <http://www.w3.org/2000/01/rdf-schema#label> "Expected Citation"@en .
 # 
 # http://www.semanticweb.org/ontologies/2021/9/AIO#ExternalSource
 <http://www.semanticweb.org/ontologies/2021/9/AIO#ExternalSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/ontologies/2021/9/AIO#ExternalSource> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid29 .
-_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000008> .
-_:genid29 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#ExternalSourceAttribute> .
-<http://www.semanticweb.org/ontologies/2021/9/AIO#ExternalSource> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid30 .
-_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/dcat#accessURL> .
-_:genid30 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#URL> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO#ExternalSource> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000008> .
+_:genid25 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#ExternalSourceAttribute> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO#ExternalSource> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/dcat#accessURL> .
+_:genid26 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#URL> .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#ExternalSource> <http://www.w3.org/2000/01/rdf-schema#comment> "A source which is used to gather the metrics which are included in the SCIENCE-index"@en .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#ExternalSource> <http://www.w3.org/2000/01/rdf-schema#label> "External Source"@en .
 # 
@@ -266,10 +289,10 @@ _:genid30 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb
 # 
 # http://www.semanticweb.org/ontologies/2021/9/AIO#LengthOfCareer
 <http://www.semanticweb.org/ontologies/2021/9/AIO#LengthOfCareer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/ontologies/2021/9/AIO#LengthOfCareer> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid31 .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000066> .
-_:genid31 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#ExternalSource> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO#LengthOfCareer> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000066> .
+_:genid27 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#ExternalSource> .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#LengthOfCareer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2021/9/AIO#ResearcherStatistic> .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#LengthOfCareer> <http://www.w3.org/2000/01/rdf-schema#comment> "The length of a Researcher's career, measured in years, derived from the year of their first publication to the current year"@en .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#LengthOfCareer> <http://www.w3.org/2000/01/rdf-schema#label> "Length of Career"@en .
@@ -294,27 +317,27 @@ _:genid31 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb
 # 
 # http://www.semanticweb.org/ontologies/2021/9/AIO#PeerReviewScore
 <http://www.semanticweb.org/ontologies/2021/9/AIO#PeerReviewScore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/ontologies/2021/9/AIO#PeerReviewScore> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid32 .
-_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000369> .
-_:genid32 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#Review> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO#PeerReviewScore> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000369> .
+_:genid28 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#Review> .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#PeerReviewScore> <http://www.w3.org/2000/01/rdf-schema#comment> "A score representing the aggregate Reviews from collaborators in past Data Sharing Events which a Researcher has participated in"@en .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#PeerReviewScore> <http://www.w3.org/2000/01/rdf-schema#label> "Peer Review Score"@en .
 # 
 # http://www.semanticweb.org/ontologies/2021/9/AIO#PolicyViolationReportingEvent
 <http://www.semanticweb.org/ontologies/2021/9/AIO#PolicyViolationReportingEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/ontologies/2021/9/AIO#PolicyViolationReportingEvent> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid33 .
-_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_001403> .
-_:genid33 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher> .
-<http://www.semanticweb.org/ontologies/2021/9/AIO#PolicyViolationReportingEvent> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid34 .
-_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#generated> .
-_:genid34 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-indexPenalty> .
-<http://www.semanticweb.org/ontologies/2021/9/AIO#PolicyViolationReportingEvent> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid35 .
-_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasGeneratedBy> .
-_:genid35 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO#PolicyViolationReportingEvent> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_001403> .
+_:genid29 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO#PolicyViolationReportingEvent> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#generated> .
+_:genid30 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-indexPenalty> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO#PolicyViolationReportingEvent> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasGeneratedBy> .
+_:genid31 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher> .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#PolicyViolationReportingEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "An event where a Researcher reports another researcher for violating data use policies"@en .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#PolicyViolationReportingEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Policy Violation Reporting Event"@en .
 # 
@@ -327,70 +350,70 @@ _:genid35 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb
 # 
 # http://www.semanticweb.org/ontologies/2021/9/AIO#PublicationCount
 <http://www.semanticweb.org/ontologies/2021/9/AIO#PublicationCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/ontologies/2021/9/AIO#PublicationCount> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid36 .
-_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000066> .
-_:genid36 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#ExternalSource> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO#PublicationCount> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000066> .
+_:genid32 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#ExternalSource> .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#PublicationCount> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2021/9/AIO#ResearcherStatistic> .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#PublicationCount> <http://www.w3.org/2000/01/rdf-schema#comment> "The total number of publications a Researcher has published"@en .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#PublicationCount> <http://www.w3.org/2000/01/rdf-schema#label> "Publication Count"@en .
 # 
 # http://www.semanticweb.org/ontologies/2021/9/AIO#PublicationUsingResearchArtifact
 <http://www.semanticweb.org/ontologies/2021/9/AIO#PublicationUsingResearchArtifact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/ontologies/2021/9/AIO#PublicationUsingResearchArtifact> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid37 .
-_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000028> .
-_:genid37 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#ActualCitation> .
-<http://www.semanticweb.org/ontologies/2021/9/AIO#PublicationUsingResearchArtifact> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid38 .
-_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000300> .
-_:genid38 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO#PublicationUsingResearchArtifact> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000028> .
+_:genid33 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#ActualCitation> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO#PublicationUsingResearchArtifact> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000300> .
+_:genid34 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#PublicationUsingResearchArtifact> <http://www.w3.org/2000/01/rdf-schema#comment> "The publication published by the Data Seeker containing his findings from utilizing the shared research artifact. This must contain the expected citation to the artifact."@en .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#PublicationUsingResearchArtifact> <http://www.w3.org/2000/01/rdf-schema#label> "Publication using Research Artifact"@en .
 # 
 # http://www.semanticweb.org/ontologies/2021/9/AIO#ResearchArtifact
 <http://www.semanticweb.org/ontologies/2021/9/AIO#ResearchArtifact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/ontologies/2021/9/AIO#ResearchArtifact> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid39 .
-_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000008> .
-_:genid39 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#ExpectedCitation> .
-<http://www.semanticweb.org/ontologies/2021/9/AIO#ResearchArtifact> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid40 .
-_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000300> .
-_:genid40 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO#ResearchArtifact> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000008> .
+_:genid35 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#ExpectedCitation> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO#ResearchArtifact> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000300> .
+_:genid36 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#ResearchArtifact> <http://www.w3.org/2000/01/rdf-schema#comment> "An exisiting piece of work that is byproduct from Academic Research"@en .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#ResearchArtifact> <http://www.w3.org/2000/01/rdf-schema#label> "Research Artifact"@en .
 # 
 # http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher
 <http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000008> .
+_:genid37 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#PeerReviewScore> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000008> .
+_:genid38 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#ResearcherAttribute> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000008> .
+_:genid39 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-index> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000671> .
+_:genid40 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#Name> .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid41 .
 _:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000008> .
-_:genid41 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#PeerReviewScore> .
+_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000673> .
+_:genid41 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#EthereumAddress> .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid42 .
 _:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000008> .
-_:genid42 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#ResearcherAttribute> .
+_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000673> .
+_:genid42 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#ORCid> .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid43 .
 _:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000008> .
-_:genid43 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-index> .
-<http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid44 .
-_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000671> .
-_:genid44 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#Name> .
-<http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid45 .
-_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000673> .
-_:genid45 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#EthereumAddress> .
-<http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid46 .
-_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000673> .
-_:genid46 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#ORCid> .
-<http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid47 .
-_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000673> .
-_:genid47 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#SemanticScholarID> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000673> .
+_:genid43 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#SemanticScholarID> .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Person> .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher> <http://www.w3.org/2000/01/rdf-schema#comment> "A person who carries out academic or scientific research"@en .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher> <http://www.w3.org/2000/01/rdf-schema#label> "Researcher"@en .
@@ -408,20 +431,36 @@ _:genid47 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb
 # 
 # http://www.semanticweb.org/ontologies/2021/9/AIO#ResearcherStatistic
 <http://www.semanticweb.org/ontologies/2021/9/AIO#ResearcherStatistic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/ontologies/2021/9/AIO#ResearcherStatistic> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid48 .
-_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasGeneratedBy> .
-_:genid48 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-indexUpdateEvent> .
-<http://www.semanticweb.org/ontologies/2021/9/AIO#ResearcherStatistic> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid49 .
-_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/ontologies/2021/9/AIO#has_SCIENCE-index_weight> .
-_:genid49 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO#ResearcherStatistic> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasGeneratedBy> .
+_:genid44 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#SCIENCE-indexUpdateEvent> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO#ResearcherStatistic> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/ontologies/2021/9/AIO#has_SCIENCE-index_weight> .
+_:genid45 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#integer> .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#ResearcherStatistic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2021/9/AIO#ResearcherAttribute> .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#ResearcherStatistic> <http://www.w3.org/2000/01/rdf-schema#comment> "A statistic about a researcher's career in academia"@en .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#ResearcherStatistic> <http://www.w3.org/2000/01/rdf-schema#label> "Researcher Statistic"@en .
 # 
 # http://www.semanticweb.org/ontologies/2021/9/AIO#Review
 <http://www.semanticweb.org/ontologies/2021/9/AIO#Review> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO#Review> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000008> .
+_:genid46 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO/ReviewField> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO#Review> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000066> .
+_:genid47 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO#Review> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000332> .
+_:genid48 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO#Review> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_001403> .
+_:genid49 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO#CollaborationEvent> .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#Review> <http://www.w3.org/2000/01/rdf-schema#comment> "A score and natural language review similar to that of online shopping. Each participant fills out a specific review after the 'Data Reuse Reporting Event' is concluded. These reviews are then included in their respective 'Peer Review Score'"@en .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#Review> <http://www.w3.org/2000/01/rdf-schema#label> "Review"@en .
 # 
@@ -535,6 +574,99 @@ _:genid65 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb
 <http://www.semanticweb.org/ontologies/2021/9/AIO#h-index> <http://www.w3.org/2000/01/rdf-schema#comment> "The h-index is an author-level metric that measures both the productivity and citation impact of the publications, initially used for an individual scientist or scholar. The h-index is defined as the maximum value of h such that the given author/journal has published at least h papers that have each been cited at least h times."@en .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#h-index> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://doi.org/10.1073/pnas.0507655102"@en .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#h-index> <http://www.w3.org/2000/01/rdf-schema#label> "h-index"@en .
+# 
+# http://www.semanticweb.org/ontologies/2021/9/AIO/AffiliatedInstitutions
+<http://www.semanticweb.org/ontologies/2021/9/AIO/AffiliatedInstitutions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/AffiliatedInstitutions> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2021/9/AIO/DataRequestField> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/AffiliatedInstitutions> <http://www.w3.org/2000/01/rdf-schema#comment> "all institutions associted with the project group requesting the data"@en .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/AffiliatedInstitutions> <http://www.w3.org/2000/01/rdf-schema#label> "Affiliated Institutions"@en .
+# 
+# http://www.semanticweb.org/ontologies/2021/9/AIO/Communication
+<http://www.semanticweb.org/ontologies/2021/9/AIO/Communication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/Communication> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2021/9/AIO/ReviewField> .
+# 
+# http://www.semanticweb.org/ontologies/2021/9/AIO/DataMerge
+<http://www.semanticweb.org/ontologies/2021/9/AIO/DataMerge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/DataMerge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2021/9/AIO/IntendedUseType> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/DataMerge> <http://www.w3.org/2000/01/rdf-schema#comment> "A researcher intends to merge the data with another or multiple datasets"@en .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/DataMerge> <http://www.w3.org/2000/01/rdf-schema#label> "Data Merge"@en .
+# 
+# http://www.semanticweb.org/ontologies/2021/9/AIO/DataRequest
+<http://www.semanticweb.org/ontologies/2021/9/AIO/DataRequest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/DataRequest> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid66 .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid66 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000008> .
+_:genid66 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO/DataRequestField> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/DataRequest> <http://www.w3.org/2000/01/rdf-schema#comment> "The request sent to data sharer from the data seeker"@en .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/DataRequest> <http://www.w3.org/2000/01/rdf-schema#label> "Data Request"@en .
+# 
+# http://www.semanticweb.org/ontologies/2021/9/AIO/DataRequestField
+<http://www.semanticweb.org/ontologies/2021/9/AIO/DataRequestField> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/DataRequestField> <http://www.w3.org/2000/01/rdf-schema#comment> "The fields required to submit a Data Request"@en .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/DataRequestField> <http://www.w3.org/2000/01/rdf-schema#label> "Data Request Field"@en .
+# 
+# http://www.semanticweb.org/ontologies/2021/9/AIO/EaseOfUse
+<http://www.semanticweb.org/ontologies/2021/9/AIO/EaseOfUse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/EaseOfUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2021/9/AIO/ReviewField> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/EaseOfUse> <http://www.w3.org/2000/01/rdf-schema#label> "Ease of Use"@en .
+# 
+# http://www.semanticweb.org/ontologies/2021/9/AIO/GroupMembers
+<http://www.semanticweb.org/ontologies/2021/9/AIO/GroupMembers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/GroupMembers> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2021/9/AIO/DataRequestField> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/GroupMembers> <http://www.w3.org/2000/01/rdf-schema#comment> "Every member of the group requesting the data"@en .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/GroupMembers> <http://www.w3.org/2000/01/rdf-schema#label> "Group Members"@en .
+# 
+# http://www.semanticweb.org/ontologies/2021/9/AIO/IntendedUse
+<http://www.semanticweb.org/ontologies/2021/9/AIO/IntendedUse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/IntendedUse> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid67 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000008> .
+_:genid67 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2021/9/AIO/IntendedUseType> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/IntendedUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2021/9/AIO/DataRequestField> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/IntendedUse> <http://www.w3.org/2000/01/rdf-schema#comment> "The intended use of the data defined by Intended Use Type"@en .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/IntendedUse> <http://www.w3.org/2000/01/rdf-schema#label> "Intended Use"@en .
+# 
+# http://www.semanticweb.org/ontologies/2021/9/AIO/IntendedUseType
+<http://www.semanticweb.org/ontologies/2021/9/AIO/IntendedUseType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/IntendedUseType> <http://www.w3.org/2000/01/rdf-schema#comment> "The intended use of the requested data"@en .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/IntendedUseType> <http://www.w3.org/2000/01/rdf-schema#label> "Intended Use Type"@en .
+# 
+# http://www.semanticweb.org/ontologies/2021/9/AIO/Reproduce
+<http://www.semanticweb.org/ontologies/2021/9/AIO/Reproduce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/Reproduce> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2021/9/AIO/IntendedUseType> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/Reproduce> <http://www.w3.org/2000/01/rdf-schema#comment> "The researcher intends to reproduce the data to confirm its validity"@en .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/Reproduce> <http://www.w3.org/2000/01/rdf-schema#label> "Reproduce"@en .
+# 
+# http://www.semanticweb.org/ontologies/2021/9/AIO/ReproducibilityOfData
+<http://www.semanticweb.org/ontologies/2021/9/AIO/ReproducibilityOfData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/ReproducibilityOfData> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2021/9/AIO/ReviewField> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/ReproducibilityOfData> <http://www.w3.org/2000/01/rdf-schema#label> "Reproducibility of Data"@en .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/ReproducibilityOfData> <http://www.w3.org/2000/01/rdf-schema#label> "The reproducibility of data based on it's quality"@en .
+# 
+# http://www.semanticweb.org/ontologies/2021/9/AIO/Reuse
+<http://www.semanticweb.org/ontologies/2021/9/AIO/Reuse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/Reuse> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid68 .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid68 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000300> .
+_:genid68 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/Reuse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2021/9/AIO/IntendedUseType> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/Reuse> <http://www.w3.org/2000/01/rdf-schema#comment> "The researcher intends to reuse the data in a way it was not originially used. Has a natural language description of the new intended use."@en .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/Reuse> <http://www.w3.org/2000/01/rdf-schema#label> "Reuse"@en .
+# 
+# http://www.semanticweb.org/ontologies/2021/9/AIO/ReviewField
+<http://www.semanticweb.org/ontologies/2021/9/AIO/ReviewField> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/ReviewField> <http://www.w3.org/2000/01/rdf-schema#comment> "A field/topic discussed in a peer review"@en .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/ReviewField> <http://www.w3.org/2000/01/rdf-schema#label> "Review Field"@en .
+# 
+# http://www.semanticweb.org/ontologies/2021/9/AIO/Timeliness
+<http://www.semanticweb.org/ontologies/2021/9/AIO/Timeliness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/Timeliness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2021/9/AIO/ReviewField> .
+# 
+# http://www.semanticweb.org/ontologies/2021/9/AIO/VerifiabilityOfData
+<http://www.semanticweb.org/ontologies/2021/9/AIO/VerifiabilityOfData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/VerifiabilityOfData> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2021/9/AIO/ReviewField> .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/VerifiabilityOfData> <http://www.w3.org/2000/01/rdf-schema#comment> "How well documented and annotated a research arrtifact is"@en .
+<http://www.semanticweb.org/ontologies/2021/9/AIO/VerifiabilityOfData> <http://www.w3.org/2000/01/rdf-schema#label> "Verifiability of Data"@en .
 # 
 # 
 # 
@@ -715,7 +847,6 @@ _:genid65 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb
 # 
 # http://www.semanticweb.org/ontologies/2021/9/AIO#Review_A_1
 <http://www.semanticweb.org/ontologies/2021/9/AIO#Review_A_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/ontologies/2021/9/AIO#Review_A_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2021/9/AIO#DataSharerReview> .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#Review_A_1> <http://semanticscience.org/resource/SIO_000066> <http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher_B> .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#Review_A_1> <http://semanticscience.org/resource/SIO_000332> <http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher_A> .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#Review_A_1> <http://semanticscience.org/resource/SIO_000300> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
@@ -723,7 +854,6 @@ _:genid65 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb
 # 
 # http://www.semanticweb.org/ontologies/2021/9/AIO#Review_A_2
 <http://www.semanticweb.org/ontologies/2021/9/AIO#Review_A_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/ontologies/2021/9/AIO#Review_A_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2021/9/AIO#DataSharerReview> .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#Review_A_2> <http://semanticscience.org/resource/SIO_000332> <http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher_A> .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#Review_A_2> <http://semanticscience.org/resource/SIO_000300> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <http://www.semanticweb.org/ontologies/2021/9/AIO#Review_A_2> <http://www.w3.org/2000/01/rdf-schema#label> "Review A 2"@en .

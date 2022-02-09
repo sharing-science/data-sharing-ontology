@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://semanticscience.org/ontology/sio/v1.53/sio-release.owl#"
-     xml:base="http://semanticscience.org/ontology/sio/v1.53/sio-release.owl"
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/2021/9/AIO/"
+     xml:base="http://www.semanticweb.org/ontologies/2021/9/AIO/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:AIO="http://www.semanticweb.org/ontologies/2021/9/AIO#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -19,9 +19,9 @@
      xmlns:schema="http://schema.org/"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:resource="http://semanticscience.org/resource/">
-    <owl:Ontology rdf:about="http://semanticscience.org/ontology/sio/v1.53/sio-release.owl">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/2021/9/AIO/">
         <owl:versionIRI rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO/1.0"/>
-        <owl:imports rdf:resource="http://semanticscience.org/ontology/sio/v1.53/sio-release.owl"/>
+        <owl:imports rdf:resource="http://semanticscience.org/ontology/sio/v1.54/sio-release.owl"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/dcat"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/prov-o-20130430"/>
         <protege:defaultLanguage>en</protege:defaultLanguage>
@@ -31,11 +31,104 @@
 Deborah McGuinness
 Rukmal Weerawarana</terms:contributor>
         <terms:creator xml:lang="en">Kacy Adams</terms:creator>
-        <terms:creator xml:lang="en">https://orcid.org/0000-0003-2873-8616</terms:creator>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <terms:title xml:lang="en">Academic Incentive Ontology (AIO)</terms:title>
         <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO"/>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://protege.stanford.edu/plugins/owl/protege#defaultLanguage -->
+
+
+    <owl:AnnotationProperty rdf:about="http://protege.stanford.edu/plugins/owl/protege#defaultLanguage"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/identifier -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000674 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://semanticscience.org/resource/SIO_000674"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000068 -->
+
+
+    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000068"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000673 -->
+
+
+    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000673"/>
     
 
 
@@ -48,6 +141,13 @@ Rukmal Weerawarana</terms:contributor>
      -->
 
 
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000300 -->
+
+
+    <owl:DatatypeProperty rdf:about="http://semanticscience.org/resource/SIO_000300"/>
     
 
 
@@ -75,9 +175,9 @@ Rukmal Weerawarana</terms:contributor>
     <!-- http://semanticscience.org/resource/SIO_000089 -->
 
 
-    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000089">
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000089">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO#ResearchArtifact"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -222,6 +322,12 @@ Rukmal Weerawarana</terms:contributor>
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/9/AIO#DataRequestEvent">
         <owl:equivalentClass>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000369"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO/DataRequest"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasEndedBy"/>
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Sharer"/>
             </owl:Restriction>
@@ -236,12 +342,6 @@ Rukmal Weerawarana</terms:contributor>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000300"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000300"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:comment xml:lang="en">An event initiated by the Data Seeker submitting a request for a Research Artifact from a Data Sharer. It is ended by the Data Sharer approving or denying the request.</rdfs:comment>
@@ -274,52 +374,6 @@ Rukmal Weerawarana</terms:contributor>
         </owl:equivalentClass>
         <rdfs:comment xml:lang="en">After a Data Seeker has reused a Research Artifact, they must report their reuse. If they published, they must show that the publication using the artifact contains the Expected Citation.</rdfs:comment>
         <rdfs:label xml:lang="en">Data Reuse Reporting Event</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2021/9/AIO#DataSeekerReview -->
-
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/9/AIO#DataSeekerReview">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000066"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Sharer"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000332"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Seeker"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO#Review"/>
-        <rdfs:comment xml:lang="en">The Review of the Data Seeker, provided by the Data Sharer, will provide feedback of their Data Seeker&apos;s communication, use of the data, and their willingness to abide by data sharing policies</rdfs:comment>
-        <rdfs:label xml:lang="en">Data Seeker Review</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2021/9/AIO#DataSharerReview -->
-
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/9/AIO#DataSharerReview">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000066"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Seeker"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000332"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO#Data_Sharer"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO#Review"/>
-        <rdfs:comment xml:lang="en">The review of the Data Sharer, provided by the Data Seeker, provides feedback of the Data Sharer&apos;s communication and collaboration skills, as well as a review of the Research Artifact&apos;s reproducibility and usefulness.</rdfs:comment>
-        <rdfs:label xml:lang="en">Data Sharer Review</rdfs:label>
     </owl:Class>
     
 
@@ -731,6 +785,30 @@ Rukmal Weerawarana</terms:contributor>
 
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/9/AIO#Review">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000008"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO/ReviewField"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000066"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000332"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_001403"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO#CollaborationEvent"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:comment xml:lang="en">A score and natural language review similar to that of online shopping. Each participant fills out a specific review after the &apos;Data Reuse Reporting Event&apos; is concluded. These reviews are then included in their respective &apos;Peer Review Score&apos;</rdfs:comment>
         <rdfs:label xml:lang="en">Review</rdfs:label>
     </owl:Class>
@@ -916,6 +994,180 @@ Rukmal Weerawarana</terms:contributor>
         <rdfs:comment xml:lang="en">The h-index is an author-level metric that measures both the productivity and citation impact of the publications, initially used for an individual scientist or scholar. The h-index is defined as the maximum value of h such that the given author/journal has published at least h papers that have each been cited at least h times.</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="en">https://doi.org/10.1073/pnas.0507655102</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">h-index</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/9/AIO/AffiliatedInstitutions -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/9/AIO/AffiliatedInstitutions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO/DataRequestField"/>
+        <rdfs:comment xml:lang="en">all institutions associted with the project group requesting the data</rdfs:comment>
+        <rdfs:label xml:lang="en">Affiliated Institutions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/9/AIO/Communication -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/9/AIO/Communication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO/ReviewField"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/9/AIO/DataMerge -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/9/AIO/DataMerge">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO/IntendedUseType"/>
+        <rdfs:comment xml:lang="en">A researcher intends to merge the data with another or multiple datasets</rdfs:comment>
+        <rdfs:label xml:lang="en">Data Merge</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/9/AIO/DataRequest -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/9/AIO/DataRequest">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000008"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO/DataRequestField"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">The request sent to data sharer from the data seeker</rdfs:comment>
+        <rdfs:label xml:lang="en">Data Request</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/9/AIO/DataRequestField -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/9/AIO/DataRequestField">
+        <rdfs:comment xml:lang="en">The fields required to submit a Data Request</rdfs:comment>
+        <rdfs:label xml:lang="en">Data Request Field</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/9/AIO/EaseOfUse -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/9/AIO/EaseOfUse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO/ReviewField"/>
+        <rdfs:label xml:lang="en">Ease of Use</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/9/AIO/GroupMembers -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/9/AIO/GroupMembers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO/DataRequestField"/>
+        <rdfs:comment xml:lang="en">Every member of the group requesting the data</rdfs:comment>
+        <rdfs:label xml:lang="en">Group Members</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/9/AIO/IntendedUse -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/9/AIO/IntendedUse">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000008"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO/IntendedUseType"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO/DataRequestField"/>
+        <rdfs:comment xml:lang="en">The intended use of the data defined by Intended Use Type</rdfs:comment>
+        <rdfs:label xml:lang="en">Intended Use</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/9/AIO/IntendedUseType -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/9/AIO/IntendedUseType">
+        <rdfs:comment xml:lang="en">The intended use of the requested data</rdfs:comment>
+        <rdfs:label xml:lang="en">Intended Use Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/9/AIO/Reproduce -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/9/AIO/Reproduce">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO/IntendedUseType"/>
+        <rdfs:comment xml:lang="en">The researcher intends to reproduce the data to confirm its validity</rdfs:comment>
+        <rdfs:label xml:lang="en">Reproduce</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/9/AIO/ReproducibilityOfData -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/9/AIO/ReproducibilityOfData">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO/ReviewField"/>
+        <rdfs:label xml:lang="en">Reproducibility of Data</rdfs:label>
+        <rdfs:label xml:lang="en">The reproducibility of data based on it&apos;s quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/9/AIO/Reuse -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/9/AIO/Reuse">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000300"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO/IntendedUseType"/>
+        <rdfs:comment xml:lang="en">The researcher intends to reuse the data in a way it was not originially used. Has a natural language description of the new intended use.</rdfs:comment>
+        <rdfs:label xml:lang="en">Reuse</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/9/AIO/ReviewField -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/9/AIO/ReviewField">
+        <rdfs:comment xml:lang="en">A field/topic discussed in a peer review</rdfs:comment>
+        <rdfs:label xml:lang="en">Review Field</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/9/AIO/Timeliness -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/9/AIO/Timeliness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO/ReviewField"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/9/AIO/VerifiabilityOfData -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/9/AIO/VerifiabilityOfData">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO/ReviewField"/>
+        <rdfs:comment xml:lang="en">How well documented and annotated a research arrtifact is</rdfs:comment>
+        <rdfs:label xml:lang="en">Verifiability of Data</rdfs:label>
     </owl:Class>
     
 
@@ -1214,7 +1466,6 @@ Rukmal Weerawarana</terms:contributor>
 
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/9/AIO#Review_A_1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO#DataSharerReview"/>
         <resource:SIO_000066 rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher_B"/>
         <resource:SIO_000332 rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher_A"/>
         <resource:SIO_000300 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</resource:SIO_000300>
@@ -1227,7 +1478,6 @@ Rukmal Weerawarana</terms:contributor>
 
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/9/AIO#Review_A_2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO#DataSharerReview"/>
         <resource:SIO_000332 rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher_A"/>
         <resource:SIO_000300 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</resource:SIO_000300>
         <rdfs:label xml:lang="en">Review A 2</rdfs:label>
