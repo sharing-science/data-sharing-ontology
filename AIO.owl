@@ -176,16 +176,6 @@ Rukmal Weerawarana</terms:contributor>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2021/9/AIO#Codebase -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/9/AIO#Codebase">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO#ResearchArtifact"/>
-        <rdfs:comment xml:lang="en">a collection of source code used to build a particular item such as a dataset or an application or to examine and analyze large sets of data</rdfs:comment>
-        <rdfs:label xml:lang="en">Codebase</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/ontologies/2021/9/AIO#CollaborationEvent -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/9/AIO#CollaborationEvent">
@@ -358,6 +348,12 @@ Rukmal Weerawarana</terms:contributor>
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/9/AIO#PublicationUsingResearchArtifact">
         <owl:equivalentClass>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000008"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO/publicationMetadata"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000277"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
                 <owl:onClass rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO#ResearchArtifact"/>
@@ -368,12 +364,6 @@ Rukmal Weerawarana</terms:contributor>
                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000224"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000300"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:comment xml:lang="en">The publication published by the Data Seeker containing his findings from utilizing the shared research artifact. This must contain the expected citation to the artifact.</rdfs:comment>
@@ -387,15 +377,15 @@ Rukmal Weerawarana</terms:contributor>
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/9/AIO#ResearchArtifact">
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000224"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher"/>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000008"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO/researchartifactMetadata"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000300"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000224"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:comment xml:lang="en">An exisiting piece of work that is byproduct from Academic Research</rdfs:comment>
@@ -858,6 +848,22 @@ Rukmal Weerawarana</terms:contributor>
     
 
 
+    <!-- http://www.semanticweb.org/ontologies/2021/9/AIO/authors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/9/AIO/authors">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000300"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO/publicationMetadata"/>
+        <rdfs:label xml:lang="en">Authors</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ontologies/2021/9/AIO/cite -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/9/AIO/cite">
@@ -868,11 +874,74 @@ Rukmal Weerawarana</terms:contributor>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2021/9/AIO/dataset -->
+    <!-- http://www.semanticweb.org/ontologies/2021/9/AIO/description -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/9/AIO/dataset">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO#ResearchArtifact"/>
-        <rdfs:label xml:lang="en">Dataset</rdfs:label>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/9/AIO/description">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000300"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO/researchartifactMetadata"/>
+        <rdfs:label xml:lang="en">Description</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/9/AIO/doi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/9/AIO/doi">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000300"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO/publicationMetadata"/>
+        <rdfs:label xml:lang="en">DOI</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/9/AIO/locationofpublication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/9/AIO/locationofpublication">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000300"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO/publicationMetadata"/>
+        <rdfs:label xml:lang="en">Location of Publication</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/9/AIO/owner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/9/AIO/owner">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000008"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO/researchartifactMetadata"/>
+        <rdfs:label xml:lang="en">Owner</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/9/AIO/publicationMetadata -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/9/AIO/publicationMetadata">
+        <rdfs:label xml:lang="en">Publication Metadata</rdfs:label>
     </owl:Class>
     
 
@@ -896,6 +965,20 @@ Rukmal Weerawarana</terms:contributor>
     <!-- http://www.semanticweb.org/ontologies/2021/9/AIO/reportReuse -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/9/AIO/reportReuse">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000028"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO#PublicationUsingResearchArtifact"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000300"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO/researcheractivity"/>
         <rdfs:label xml:lang="en">Report Reuse</rdfs:label>
     </owl:Class>
@@ -905,8 +988,23 @@ Rukmal Weerawarana</terms:contributor>
     <!-- http://www.semanticweb.org/ontologies/2021/9/AIO/report_policy_violation -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/9/AIO/report_policy_violation">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000332"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO/researcheractivity"/>
         <rdfs:label xml:lang="en">Report Policy Violation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/9/AIO/researchartifactMetadata -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/9/AIO/researchartifactMetadata">
+        <rdfs:label xml:lang="en">Research Artifact Metadata</rdfs:label>
     </owl:Class>
     
 
@@ -914,6 +1012,13 @@ Rukmal Weerawarana</terms:contributor>
     <!-- http://www.semanticweb.org/ontologies/2021/9/AIO/researcheractivity -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/9/AIO/researcheractivity">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#atTime"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <rdfs:label xml:lang="en">Researcher Activity</rdfs:label>
     </owl:Class>
@@ -968,9 +1073,48 @@ Rukmal Weerawarana</terms:contributor>
     
 
 
+    <!-- http://www.semanticweb.org/ontologies/2021/9/AIO/title -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/9/AIO/title">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000300"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO/publicationMetadata"/>
+        <rdfs:label xml:lang="en">Title</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/9/AIO/type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/9/AIO/type">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000300"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO/researchartifactMetadata"/>
+        <rdfs:label xml:lang="en">Type</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ontologies/2021/9/AIO/updateSCIENCEindex -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/9/AIO/updateSCIENCEindex">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000332"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO#Researcher"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/9/AIO/researcheractivity"/>
         <rdfs:label xml:lang="en">Update SCIENCE-index</rdfs:label>
     </owl:Class>
