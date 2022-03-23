@@ -3,6 +3,10 @@
     <uri id="Imports Wizard Entry" name="http://semanticscience.org/ontology/sio/v1.54/sio-release.owl" uri="http://semanticscience.org/ontology/sio.owl"/>
     <uri id="Imports Wizard Entry" name="http://semanticscience.org/ontology/sio/v1.54/sio-release.owl" uri="sio.owl.xml"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1644438759822" name="http://www.semanticweb.org/ontologies/2021/9/AIO" uri="AIO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1648054759521" name="http://semanticscience.org/ontology/sio.owl" uri="sio.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1648054759521" name="http://www.semanticweb.org/ontologies/2021/9/AIO" uri="AIO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1648054759521" name="http://www.semanticweb.org/ontologies/2021/9/AIO/" uri="AIODocumentation/doc/ontology.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1648054759521" name="http://www.w3.org/ns/dcat" uri="dcat.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1648054759521" name="http://www.w3.org/ns/prov" uri="prov-0.owl"/>
     </group>
 </catalog>
