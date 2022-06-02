@@ -115,8 +115,39 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
                     
-                    <p class="mb-4">We demonstrate the use of the AIO with the use of a blockchain protocol, modeled with the AIO, geared towards peer-to-peer data sharing in the field of biomedical research. Studies show it can take up to seventeen years for research to go from bench (basic research) to bedside (clinical applications). This could be mitigated by extending datasets to their full potential. Often, Biomedical datasets have multiple implications, yet researchers only use them for their intended use. Thus, other researchers could greatly reduce the time from bench to bedside by reducing the data collection period and reusing existing data. An application of economic game theory allows us to derive a use case we have coined the “Young Investigator’s Dilemma,” taking inspiration from the infamous Prisoner’s Dilemma.</p>
+                    <p class="mb-4">We demonstrate the use of the AIO with the use of a decentralized application,
+                        built with our AIO-driven smart contracts, geared towards peer-to-peer data
+                        sharing in the field of biomedical research. Studies show it can take up to seventeen years for research to go from the bench (basic research) to bedside (clinical
+                        applications). This could be mitigated by extending datasets to their full
+                        potential. Often, Biomedical datasets have multiple implications, yet researchers</p>
                     
+                        <hr/>
+                    <h1 class="h3 mb-2 text-gray-800">Smart Contract-managed Distributed Knowledge Graphs</h1>
+                    <p class="mb-4">With distributed systems continually showing their advantages over centralized
+                        protocols, we present a use case for the AIO to build a fully decentralized knowledge graph managed by smart contracts. The IPFS network gives us a great
+                        solution for data storage. Specifically utilizing JSON Linked Data (JSON-LD),
+                        a system for linking data similar to RDF in JSON file format, to create AIO
+                        ontology instances. JSON-LD is lightweight solution that would allow us to store
+                        knowledge graphs in fragmented JSON files. However, instead of storing these
+                        instances of the AIO in a centralized manner, we can store them utilizing IPFS. Below a sequence diagram displays the process between the layers of the application of a researcher joining the protocol.</p>
+                    
+                        <p style="text-align:center;"><img src= "img/dkg-sequence.png" style="width:70%; height:80%"></p>
+                        <p class="mb-4">We utilize IPNS as a naming system to add mutability to immutable IPFS hashes.
+                            Each JSON-LD file would contain the aio attributes and the respective IPNS hashes they point to. We can
+                            then from any instance in IPNS, traverse the graph by following the contained
+                            IPNS hashes. We further our decentralization by utilizing smart contracts to
+                            manage events and activites in the AIO in order to build and modify the graph.
+                            Our current design flow utilizes smart contracts to manage the entities within
+                            the knowledge graph. For example, when a researcher joins the protocol, our
+                            application reaches out to the smart contract to get any necessary IPNS hashes
+                            to be included in their JSON-LD file, builds the file, and publishes this file to
+                            IPNS. A smart contract interaction then adds their IPNS hash to a mapping
+                            within the smart contract. We can then search and traverse, by looking up an
+                            IPNS hash stored within the smart contract, following then hash to the JSONLD file, and traverse in any direction necessary by continuing to follow the IPNS
+                            hashes. Given below is a snapshot of a sample IPNS instance resolved through an IPFS gateway</p>
+                        <p style="text-align:center;"><img src= "img/ipns-snip.png" style="width:70%; height:80%"></p>
+                            
+                            <hr/>
                     <h1 class="h3 mb-2 text-gray-800">User Story</h1>
                     <p class="mb-4">In our proposed game we have two participants, a young investigator, and a data seeker. The young investigator, Steven Hep, could be described as a young, new researcher seeking to build their reputation. He has a large number of citations to a small number of publications. His most recent work includes a well-cultivated dataset representing the single-nucleotide polymorphism (SNP) profiles of individuals with lung cancer, which he understands would be coveted in the biomedical community, because of rising, novel work regarding personalized gene therapy treatments utilizing SNP profiles. With the proper incentive, such as a citation, recognition, and reputability, Steven would be willing to share the dataset. The data seeker, who we will refer to as Jeff Wen, is an established researcher seeking to surpass the data creation stage in his next project. We do not know if Jeff means to comply with any policy surrounding the transaction. Displayed below are the actions both participants could take. Steven has the option to share the dataset or to not share the dataset, while Jeff can participate dishonestly (violate data use policies) or participate honestly.</p>
                     

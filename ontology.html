@@ -117,23 +117,24 @@
                     <h1 class="h3 mb-2 text-gray-800">The AIO</h1>
                     <p>The Academic Incentive Ontology (AIO) intends to provide a semantic model to power a blockchain application to handle, confirm, and incentivize research data sharing. The ontology is built upon basic blockchain components such as addresses and transaction hashes and uses simple logic such that it could be easily handled by smart contracts</p>
                       
-                    <p style="text-align:center;"><img src= "img/AIObroad.jpeg" style="width:50%; height:60%"></p>
-                    <p style="text-align:center;">Principle agent, aio:Researcher, and its associations</p>  
+                    <p style="text-align:center;"><img src= "img/AIObroad.png" style="width:70%; height:80%"></p>
+
+                    <hr/>
+
+                <p>Our ontology focuses around a single entity, the collaboration event (aio:collaborationevent). Each collaboration event is between two researchers (aio:researcher). The first is a data seeker, referenced by (aio:hasdataseeker), who is seeking a research artifact (aio:researchartifact). The other is a data sharer, referenced by (aio:hasdatasharer) who is the owner of the specific research artifact. The collaboration event then follows a set of enumerated states within a custom datatype, (aio:collaborationstate), beginning with `Awaiting Data Request' and ends with  `Contract Destroyed'. Each participant has a set of activities (sio:activity) that trigger the collaboration event to move to its next state. The states and activities are shown below.</p>
                     
-                    <p>The Ontology surrounds a principle agent, aio:Researcher. Each researcher has two main attributes, aio:SCIENCE-index and aio:PeerReviewScore. These are determined by their participation in collaboration events (aio:CollaborationEvent). aio:CollaborationEvent and it's associations are shown below.</p>
+                    <p style="text-align:center;"><img src= "img/aio-composition.png" style="width:70%; height:80%"></p>
+
                     
-                    <p style="text-align:center;"><img src= "img/AIOcollab.jpeg" style="width:50%; height:60%"></p>
-                    <p style="text-align:center;">Principle event, aio:CollaborationEvent, and its associations</p>  
-                    
-                    <p>After each collaboration event, we ask both participating researcher to review the other participant. This incentivizes the sharing of high quality data and good communication during the sharing and reuse process. An instance of the aio:PeerReviewScore model is shown below.</p>
-                    
-                    <p style="text-align:center;"><img src= "img/AIOreview.jpeg" style="width:50%; height:60%"></p>
-                    <p style="text-align:center;">An instance of aio:DataSharerReview</p>
-                    
-                    <p>To give participants a way to identify researchers who they would be willing to collaborate with, we present the SCIENCE-index. The SCIENCE-index attempts to capture a researcher's career contributions to science via publications while also including their contributions via data sharing.</p>
-                    
-                    <p style="text-align:center;"><img src= "img/AIOsci.jpeg" style="width:50%; height:60%"></p>
-                    <p style="text-align:center;">A researcher's key attribute, aio:SCIENCE-index, and it's included statisitcs</p>
+                    <p>Several of the different activities of the participants require the submission of
+                        data. In order to effectively store entities and their information, we capture
+                        semantics surrounding these entities by defining fields of information which must
+                        be included. The aim in these definitions is to be able to effectively capture these
+                        entities while utilizing a decentralized storage system such as the Inter-Planetary
+                        File System (IPFS) with a JSON format. These semantics are shown below.</p>
+                        
+                        <p style="text-align:center;"><img src= "img/aio-jsontemplates.png" style="width:70%; height:80%"></p>
+                        
 
                     <hr>
                     <h1 class="h3 mb-2 text-gray-800">Ontology Links</h1>
