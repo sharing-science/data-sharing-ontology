@@ -1,0 +1,1419 @@
+<h2 id="crossreference" class="list">Cross-reference for Academic Incentive Ontology (AIO) classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Academic Incentive Ontology (AIO).
+<div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#answerrequest" title="http://www.purl.org/rpi/aio#answerrequest">answer request</a>
+      </li>
+      <li>
+         <a href="#collaborationevent" title="http://www.purl.org/rpi/aio#collaborationevent">collaboration event</a>
+      </li>
+      <li>
+         <a href="#datarequest" title="http://www.purl.org/rpi/aio#datarequest">data request</a>
+      </li>
+      <li>
+         <a href="#publicationusingresearchartifact"
+            title="http://www.purl.org/rpi/aio#publicationusingresearchartifact">publication using research artifact</a>
+      </li>
+      <li>
+         <a href="#receivedata" title="http://www.purl.org/rpi/aio#receivedata">receive data</a>
+      </li>
+      <li>
+         <a href="#reportpolicyviolation"
+            title="http://www.purl.org/rpi/aio#reportpolicyviolation">report policy violation</a>
+      </li>
+      <li>
+         <a href="#reportreuse" title="http://www.purl.org/rpi/aio#reportreuse">report reuse</a>
+      </li>
+      <li>
+         <a href="#researchartifact" title="http://www.purl.org/rpi/aio#researchartifact">research artifact</a>
+      </li>
+      <li>
+         <a href="#researcher" title="http://www.purl.org/rpi/aio#researcher">researcher</a>
+      </li>
+      <li>
+         <a href="#researcheractivity" title="http://www.purl.org/rpi/aio#researcheractivity">researcher activity</a>
+      </li>
+      <li>
+         <a href="#review" title="http://www.purl.org/rpi/aio#review">review</a>
+      </li>
+      <li>
+         <a href="#sharedata" title="http://www.purl.org/rpi/aio#sharedata">share data</a>
+      </li>
+      <li>
+         <a href="#submitrequest" title="http://www.purl.org/rpi/aio#submitrequest">submit request</a>
+      </li>
+      <li>
+         <a href="#submitreview" title="http://www.purl.org/rpi/aio#submitreview">submit review</a>
+      </li>
+      <li>
+         <a href="#updateSCIENCEindex" title="http://www.purl.org/rpi/aio#updateSCIENCEindex">update SCIENCE-index</a>
+      </li>
+   </ul>
+   <div class="entity" id="answerrequest">
+      <h3>answer request<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.purl.org/rpi/aio#answerrequest</p>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="http://www.w3.org/ns/prov#value"
+               target="_blank"
+               title="http://www.w3.org/ns/prov#value">value</a> 
+            <span class="logic">exactly</span> 1</dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#researcheractivity" title="http://www.purl.org/rpi/aio#researcheractivity">researcher activity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="collaborationevent">
+      <h3>collaboration event<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.purl.org/rpi/aio#collaborationevent</p>
+      <div class="comment">
+         <span class="markdown">An event encompassing the entire collaboration between two or more researchers from start to finish</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="http://semanticscience.org/resource/SIO_000332"
+               target="_blank"
+               title="http://semanticscience.org/resource/SIO_000332">s i o 000332</a> 
+            <span class="logic">exactly</span> 1 <a href="#researchartifact" title="http://www.purl.org/rpi/aio#researchartifact">research artifact</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#hasdatarequest" title="http://www.purl.org/rpi/aio#hasdatarequest">has data request</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">exactly</span> 1 <a href="#datarequest" title="http://www.purl.org/rpi/aio#datarequest">data request</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#hasdataseeker" title="http://www.purl.org/rpi/aio#hasdataseeker">has data seeker</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">exactly</span> 1 <a href="#researcher" title="http://www.purl.org/rpi/aio#researcher">researcher</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#hasdatasharer" title="http://www.purl.org/rpi/aio#hasdatasharer">has data sharer</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">exactly</span> 1 <a href="#researcher" title="http://www.purl.org/rpi/aio#researcher">researcher</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="http://www.w3.org/ns/prov#activity"
+               target="_blank"
+               title="http://www.w3.org/ns/prov#activity">activity</a> 
+            <span class="logic">max</span> 7 <a href="#researcheractivity" title="http://www.purl.org/rpi/aio#researcheractivity">researcher activity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#hascollaborationstate"
+               title="http://www.purl.org/rpi/aio#hascollaborationstate">has collaboration state</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">exactly</span> 1</dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hascollaborationstate"
+               title="http://www.purl.org/rpi/aio#hascollaborationstate">has collaboration state</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasdatarequest" title="http://www.purl.org/rpi/aio#hasdatarequest">has data request</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasdataseeker" title="http://www.purl.org/rpi/aio#hasdataseeker">has data seeker</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasdatasharer" title="http://www.purl.org/rpi/aio#hasdatasharer">has data sharer</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="datarequest">
+      <h3>data request<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.purl.org/rpi/aio#datarequest</p>
+      <div class="comment">
+         <span class="markdown">The request sent to data sharer from the data seeker</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="http://semanticscience.org/resource/SIO_001403"
+               target="_blank"
+               title="http://semanticscience.org/resource/SIO_001403">s i o 001403</a> 
+            <span class="logic">min</span> 1 <a href="#researcher" title="http://www.purl.org/rpi/aio#researcher">researcher</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#affiliatedinstitution"
+               title="http://www.purl.org/rpi/aio#affiliatedinstitution">affiliated institutions</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">min</span> 1</dd>
+         <dd>
+            <a href="#intendedUse" title="http://www.purl.org/rpi/aio#intendedUse">intended use</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">min</span> 1</dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#affiliatedinstitution"
+               title="http://www.purl.org/rpi/aio#affiliatedinstitution">affiliated institutions</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#intendedUse" title="http://www.purl.org/rpi/aio#intendedUse">intended use</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasdatarequest" title="http://www.purl.org/rpi/aio#hasdatarequest">has data request</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="publicationusingresearchartifact">
+      <h3>publication using research artifact<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.purl.org/rpi/aio#publicationusingresearchartifact</p>
+      <div class="comment">
+         <span class="markdown">The publication published by the Data Seeker containing his findings from utilizing the shared research artifact. This must contain the expected citation to the artifact.</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="http://semanticscience.org/resource/SIO_000277"
+               target="_blank"
+               title="http://semanticscience.org/resource/SIO_000277">s i o 000277</a> 
+            <span class="logic">min</span> 1 <a href="#researchartifact" title="http://www.purl.org/rpi/aio#researchartifact">research artifact</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="http://semanticscience.org/resource/SIO_000364"
+               target="_blank"
+               title="http://semanticscience.org/resource/SIO_000364">s i o 000364</a> 
+            <span class="logic">min</span> 1 <a href="#researcher" title="http://www.purl.org/rpi/aio#researcher">researcher</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#hasDOI" title="http://www.purl.org/rpi/aio#hasDOI">has DOI</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">exactly</span> 1</dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasDOI" title="http://www.purl.org/rpi/aio#hasDOI">has DOI</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="receivedata">
+      <h3>receive data<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.purl.org/rpi/aio#receivedata</p>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="http://www.w3.org/ns/prov#value"
+               target="_blank"
+               title="http://www.w3.org/ns/prov#value">value</a> 
+            <span class="logic">exactly</span> 1</dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#researcheractivity" title="http://www.purl.org/rpi/aio#researcheractivity">researcher activity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="reportpolicyviolation">
+      <h3>report policy violation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.purl.org/rpi/aio#reportpolicyviolation</p>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="http://semanticscience.org/resource/SIO_000332"
+               target="_blank"
+               title="http://semanticscience.org/resource/SIO_000332">s i o 000332</a> 
+            <span class="logic">exactly</span> 1 <a href="#researcher" title="http://www.purl.org/rpi/aio#researcher">researcher</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#researcheractivity" title="http://www.purl.org/rpi/aio#researcheractivity">researcher activity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="reportreuse">
+      <h3>report reuse<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.purl.org/rpi/aio#reportreuse</p>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="http://semanticscience.org/resource/SIO_000230"
+               target="_blank"
+               title="http://semanticscience.org/resource/SIO_000230">s i o 000230</a> 
+            <span class="logic">exactly</span> 1 <a href="#publicationusingresearchartifact"
+               title="http://www.purl.org/rpi/aio#publicationusingresearchartifact">publication using research artifact</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="http://semanticscience.org/resource/SIO_000300"
+               target="_blank"
+               title="http://semanticscience.org/resource/SIO_000300">s i o 000300</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">exactly</span> 1</dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#researcheractivity" title="http://www.purl.org/rpi/aio#researcheractivity">researcher activity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="researchartifact">
+      <h3>research artifact<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.purl.org/rpi/aio#researchartifact</p>
+      <div class="comment">
+         <span class="markdown">An exisiting piece of work that is byproduct from Academic Research</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="http://semanticscience.org/resource/SIO_000278"
+               target="_blank"
+               title="http://semanticscience.org/resource/SIO_000278">s i o 000278</a> 
+            <span class="logic">some</span> 
+            <a href="#publicationusingresearchartifact"
+               title="http://www.purl.org/rpi/aio#publicationusingresearchartifact">publication using research artifact</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="http://semanticscience.org/resource/SIO_000224"
+               target="_blank"
+               title="http://semanticscience.org/resource/SIO_000224">s i o 000224</a> 
+            <span class="logic">exactly</span> 1 <a href="#researcher" title="http://www.purl.org/rpi/aio#researcher">researcher</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#hasformat" title="http://www.purl.org/rpi/aio#hasformat">has format</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">min</span> 1</dd>
+         <dd>
+            <a href="#hasdescription" title="http://www.purl.org/rpi/aio#hasdescription">has description</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">exactly</span> 1</dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasdescription" title="http://www.purl.org/rpi/aio#hasdescription">has description</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasformat" title="http://www.purl.org/rpi/aio#hasformat">has format</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="researcher">
+      <h3>researcher<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.purl.org/rpi/aio#researcher</p>
+      <div class="comment">
+         <span class="markdown">A person who carries out academic or scientific research</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#affiliatedinstitution"
+               title="http://www.purl.org/rpi/aio#affiliatedinstitution">affiliated institutions</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">min</span> 1</dd>
+         <dd>
+            <a href="#blockchainaddress" title="http://www.purl.org/rpi/aio#blockchainaddress">blockchain address</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">exactly</span> 1</dd>
+         <dd>
+            <a href="#citationcount" title="http://www.purl.org/rpi/aio#citationcount">citation count</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">exactly</span> 1</dd>
+         <dd>
+            <a href="#collaboratorcount" title="http://www.purl.org/rpi/aio#collaboratorcount">collaborator count</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">exactly</span> 1</dd>
+         <dd>
+            <a href="#hasSCIENCEindex" title="http://www.purl.org/rpi/aio#hasSCIENCEindex">has SCIENCE-index</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">exactly</span> 1</dd>
+         <dd>
+            <a href="#haspeerreviewscore" title="http://www.purl.org/rpi/aio#haspeerreviewscore">has peer review score</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">exactly</span> 1</dd>
+         <dd>
+            <a href="#hindex" title="http://www.purl.org/rpi/aio#hindex">h-index</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">exactly</span> 1</dd>
+         <dd>
+            <a href="#lengthofcareer" title="http://www.purl.org/rpi/aio#lengthofcareer">length of career</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">exactly</span> 1</dd>
+         <dd>
+            <a href="#name" title="http://www.purl.org/rpi/aio#name">name</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">exactly</span> 1</dd>
+         <dd>
+            <a href="#orcidid" title="http://www.purl.org/rpi/aio#orcidid">ORCID id</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">exactly</span> 1</dd>
+         <dd>
+            <a href="#publicationcount" title="http://www.purl.org/rpi/aio#publicationcount">publication count</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">exactly</span> 1</dd>
+         <dd>
+            <a href="#semanticscholarid" title="http://www.purl.org/rpi/aio#semanticscholarid">semantic scholar ID</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">exactly</span> 1</dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://www.w3.org/ns/prov#Person"
+               target="_blank"
+               title="http://www.w3.org/ns/prov#Person">person</a>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#orcidid" title="http://www.purl.org/rpi/aio#orcidid">ORCID id</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#affiliatedinstitution"
+               title="http://www.purl.org/rpi/aio#affiliatedinstitution">affiliated institutions</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#blockchainaddress" title="http://www.purl.org/rpi/aio#blockchainaddress">blockchain address</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#citationcount" title="http://www.purl.org/rpi/aio#citationcount">citation count</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#collaboratorcount" title="http://www.purl.org/rpi/aio#collaboratorcount">collaborator count</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hindex" title="http://www.purl.org/rpi/aio#hindex">h-index</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasSCIENCEindex" title="http://www.purl.org/rpi/aio#hasSCIENCEindex">has SCIENCE-index</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#haspeerreviewscore" title="http://www.purl.org/rpi/aio#haspeerreviewscore">has peer review score</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#lengthofcareer" title="http://www.purl.org/rpi/aio#lengthofcareer">length of career</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#name" title="http://www.purl.org/rpi/aio#name">name</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#publicationcount" title="http://www.purl.org/rpi/aio#publicationcount">publication count</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#semanticscholarid" title="http://www.purl.org/rpi/aio#semanticscholarid">semantic scholar ID</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasdataseeker" title="http://www.purl.org/rpi/aio#hasdataseeker">has data seeker</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasdatasharer" title="http://www.purl.org/rpi/aio#hasdatasharer">has data sharer</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="researcheractivity">
+      <h3>researcher activity<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.purl.org/rpi/aio#researcheractivity</p>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="http://www.w3.org/ns/prov#atTime"
+               target="_blank"
+               title="http://www.w3.org/ns/prov#atTime">at time</a> 
+            <span class="logic">exactly</span> 1</dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://www.w3.org/ns/prov#Activity"
+               target="_blank"
+               title="http://www.w3.org/ns/prov#Activity">activity</a>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#answerrequest" title="http://www.purl.org/rpi/aio#answerrequest">answer request</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#receivedata" title="http://www.purl.org/rpi/aio#receivedata">receive data</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#reportpolicyviolation"
+               title="http://www.purl.org/rpi/aio#reportpolicyviolation">report policy violation</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#reportreuse" title="http://www.purl.org/rpi/aio#reportreuse">report reuse</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#sharedata" title="http://www.purl.org/rpi/aio#sharedata">share data</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#submitrequest" title="http://www.purl.org/rpi/aio#submitrequest">submit request</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#submitreview" title="http://www.purl.org/rpi/aio#submitreview">submit review</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#updateSCIENCEindex" title="http://www.purl.org/rpi/aio#updateSCIENCEindex">update SCIENCE-index</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="review">
+      <h3>review<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.purl.org/rpi/aio#review</p>
+      <div class="comment">
+         <span class="markdown">A score and natural language review similar to that of online shopping. Each participant fills out a specific review after the 'Data Reuse Reporting Event' is concluded. These reviews are then included in their respective 'Peer Review Score'</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="http://semanticscience.org/resource/SIO_000066"
+               target="_blank"
+               title="http://semanticscience.org/resource/SIO_000066">s i o 000066</a> 
+            <span class="logic">some</span> 
+            <a href="#researcher" title="http://www.purl.org/rpi/aio#researcher">researcher</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="http://semanticscience.org/resource/SIO_000332"
+               target="_blank"
+               title="http://semanticscience.org/resource/SIO_000332">s i o 000332</a> 
+            <span class="logic">some</span> 
+            <a href="#researcher" title="http://www.purl.org/rpi/aio#researcher">researcher</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="http://semanticscience.org/resource/SIO_001403"
+               target="_blank"
+               title="http://semanticscience.org/resource/SIO_001403">s i o 001403</a> 
+            <span class="logic">some</span> 
+            <a href="#collaborationevent" title="http://www.purl.org/rpi/aio#collaborationevent">collaboration event</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#communicationscore" title="http://www.purl.org/rpi/aio#communicationscore">communication score</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">max</span> 5</dd>
+         <dd>
+            <a href="#datareproducibility" title="http://www.purl.org/rpi/aio#datareproducibility">data reproducibility</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">max</span> 5</dd>
+         <dd>
+            <a href="#dataverifiability" title="http://www.purl.org/rpi/aio#dataverifiability">data verifiability</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">max</span> 5</dd>
+         <dd>
+            <a href="#hasdescription" title="http://www.purl.org/rpi/aio#hasdescription">has description</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">max</span> 5</dd>
+         <dd>
+            <a href="#timelinessscore" title="http://www.purl.org/rpi/aio#timelinessscore">timeliness score</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">max</span> 5</dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#communicationscore" title="http://www.purl.org/rpi/aio#communicationscore">communication score</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#datareproducibility" title="http://www.purl.org/rpi/aio#datareproducibility">data reproducibility</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#dataverifiability" title="http://www.purl.org/rpi/aio#dataverifiability">data verifiability</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasdescription" title="http://www.purl.org/rpi/aio#hasdescription">has description</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#reviewscore" title="http://www.purl.org/rpi/aio#reviewscore">review score</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#timelinessscore" title="http://www.purl.org/rpi/aio#timelinessscore">timeliness score</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="sharedata">
+      <h3>share data<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.purl.org/rpi/aio#sharedata</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#researcheractivity" title="http://www.purl.org/rpi/aio#researcheractivity">researcher activity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="submitrequest">
+      <h3>submit request<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.purl.org/rpi/aio#submitrequest</p>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="http://semanticscience.org/resource/SIO_000230"
+               target="_blank"
+               title="http://semanticscience.org/resource/SIO_000230">s i o 000230</a> 
+            <span class="logic">exactly</span> 1 <a href="#datarequest" title="http://www.purl.org/rpi/aio#datarequest">data request</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#researcheractivity" title="http://www.purl.org/rpi/aio#researcheractivity">researcher activity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="submitreview">
+      <h3>submit review<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.purl.org/rpi/aio#submitreview</p>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="http://semanticscience.org/resource/SIO_000230"
+               target="_blank"
+               title="http://semanticscience.org/resource/SIO_000230">s i o 000230</a> 
+            <span class="logic">exactly</span> 1 <a href="#review" title="http://www.purl.org/rpi/aio#review">review</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#researcheractivity" title="http://www.purl.org/rpi/aio#researcheractivity">researcher activity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="updateSCIENCEindex">
+      <h3>update SCIENCE-index<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.purl.org/rpi/aio#updateSCIENCEindex</p>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="http://semanticscience.org/resource/SIO_000332"
+               target="_blank"
+               title="http://semanticscience.org/resource/SIO_000332">s i o 000332</a> 
+            <span class="logic">exactly</span> 1 <a href="#researcher" title="http://www.purl.org/rpi/aio#researcher">researcher</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#researcheractivity" title="http://www.purl.org/rpi/aio#researcheractivity">researcher activity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#hasdatarequest" title="http://www.purl.org/rpi/aio#hasdatarequest">has data request</a>
+      </li>
+      <li>
+         <a href="#hasdataseeker" title="http://www.purl.org/rpi/aio#hasdataseeker">has data seeker</a>
+      </li>
+      <li>
+         <a href="#hasdatasharer" title="http://www.purl.org/rpi/aio#hasdatasharer">has data sharer</a>
+      </li>
+      <li>
+         <a href="#hasstate" title="http://www.purl.org/rpi/aio#hasstate">has state</a>
+      </li>
+   </ul>
+   <div class="entity" id="hasdatarequest">
+      <h3>has data request<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.purl.org/rpi/aio#hasdatarequest</p>
+      <div class="comment">
+         <span class="markdown">The data request submitted by the data seeker in a collaboration</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://semanticscience.org/resource/SIO_000001"
+                  target="_blank"
+                  title="http://semanticscience.org/resource/SIO_000001">s i o 000001</a>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#collaborationevent" title="http://www.purl.org/rpi/aio#collaborationevent">collaboration event</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#datarequest" title="http://www.purl.org/rpi/aio#datarequest">data request</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasdataseeker">
+      <h3>has data seeker<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.purl.org/rpi/aio#hasdataseeker</p>
+      <div class="comment">
+         <span class="markdown">The Data Seeker in a collaboration event</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://semanticscience.org/resource/SIO_000001"
+                  target="_blank"
+                  title="http://semanticscience.org/resource/SIO_000001">s i o 000001</a>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#collaborationevent" title="http://www.purl.org/rpi/aio#collaborationevent">collaboration event</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#researcher" title="http://www.purl.org/rpi/aio#researcher">researcher</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasdatasharer">
+      <h3>has data sharer<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.purl.org/rpi/aio#hasdatasharer</p>
+      <div class="comment">
+         <span class="markdown">The Data Sharer in a collaboration event</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://semanticscience.org/resource/SIO_000001"
+                  target="_blank"
+                  title="http://semanticscience.org/resource/SIO_000001">s i o 000001</a>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#collaborationevent" title="http://www.purl.org/rpi/aio#collaborationevent">collaboration event</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#researcher" title="http://www.purl.org/rpi/aio#researcher">researcher</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasstate">
+      <h3>has state<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.purl.org/rpi/aio#hasstate</p>
+      <div class="comment">
+         <span class="markdown">Identifies the state which an entity is in</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://semanticscience.org/resource/SIO_000008"
+                  target="_blank"
+                  title="http://semanticscience.org/resource/SIO_000008">s i o 000008</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#affiliatedinstitution"
+            title="http://www.purl.org/rpi/aio#affiliatedinstitution">affiliated institutions</a>
+      </li>
+      <li>
+         <a href="#blockchainaddress" title="http://www.purl.org/rpi/aio#blockchainaddress">blockchain address</a>
+      </li>
+      <li>
+         <a href="#citationcount" title="http://www.purl.org/rpi/aio#citationcount">citation count</a>
+      </li>
+      <li>
+         <a href="#collaboratorcount" title="http://www.purl.org/rpi/aio#collaboratorcount">collaborator count</a>
+      </li>
+      <li>
+         <a href="#communicationscore" title="http://www.purl.org/rpi/aio#communicationscore">communication score</a>
+      </li>
+      <li>
+         <a href="#datareproducibility" title="http://www.purl.org/rpi/aio#datareproducibility">data reproducibility</a>
+      </li>
+      <li>
+         <a href="#dataverifiability" title="http://www.purl.org/rpi/aio#dataverifiability">data verifiability</a>
+      </li>
+      <li>
+         <a href="#hindex" title="http://www.purl.org/rpi/aio#hindex">h-index</a>
+      </li>
+      <li>
+         <a href="#hascollaborationstate"
+            title="http://www.purl.org/rpi/aio#hascollaborationstate">has collaboration state</a>
+      </li>
+      <li>
+         <a href="#hasdescription" title="http://www.purl.org/rpi/aio#hasdescription">has description</a>
+      </li>
+      <li>
+         <a href="#hasDOI" title="http://www.purl.org/rpi/aio#hasDOI">has DOI</a>
+      </li>
+      <li>
+         <a href="#hasformat" title="http://www.purl.org/rpi/aio#hasformat">has format</a>
+      </li>
+      <li>
+         <a href="#haspeerreviewscore" title="http://www.purl.org/rpi/aio#haspeerreviewscore">has peer review score</a>
+      </li>
+      <li>
+         <a href="#hasSCIENCEindex" title="http://www.purl.org/rpi/aio#hasSCIENCEindex">has SCIENCE-index</a>
+      </li>
+      <li>
+         <a href="#intendedUse" title="http://www.purl.org/rpi/aio#intendedUse">intended use</a>
+      </li>
+      <li>
+         <a href="#lengthofcareer" title="http://www.purl.org/rpi/aio#lengthofcareer">length of career</a>
+      </li>
+      <li>
+         <a href="#name" title="http://www.purl.org/rpi/aio#name">name</a>
+      </li>
+      <li>
+         <a href="#orcidid" title="http://www.purl.org/rpi/aio#orcidid">ORCID id</a>
+      </li>
+      <li>
+         <a href="#publicationcount" title="http://www.purl.org/rpi/aio#publicationcount">publication count</a>
+      </li>
+      <li>
+         <a href="#reviewscore" title="http://www.purl.org/rpi/aio#reviewscore">review score</a>
+      </li>
+      <li>
+         <a href="#semanticscholarid" title="http://www.purl.org/rpi/aio#semanticscholarid">semantic scholar ID</a>
+      </li>
+      <li>
+         <a href="#timelinessscore" title="http://www.purl.org/rpi/aio#timelinessscore">timeliness score</a>
+      </li>
+   </ul>
+   <div class="entity" id="affiliatedinstitution">
+      <h3>affiliated institutions<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.purl.org/rpi/aio#affiliatedinstitution</p>
+      <div class="comment">
+         <span class="markdown">The affiliated institutions of a researcher or project</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#datarequest" title="http://www.purl.org/rpi/aio#datarequest">data request</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dd>
+               <a href="#researcher" title="http://www.purl.org/rpi/aio#researcher">researcher</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="blockchainaddress">
+      <h3>blockchain address<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.purl.org/rpi/aio#blockchainaddress</p>
+      <div class="comment">
+         <span class="markdown">A researcher's blockchain address</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#researcher" title="http://www.purl.org/rpi/aio#researcher">researcher</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="citationcount">
+      <h3>citation count<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.purl.org/rpi/aio#citationcount</p>
+      <div class="comment">
+         <span class="markdown">The total number of citations a Researcher has</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#researcher" title="http://www.purl.org/rpi/aio#researcher">researcher</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="collaboratorcount">
+      <h3>collaborator count<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.purl.org/rpi/aio#collaboratorcount</p>
+      <div class="comment">
+         <span class="markdown">The total number of co-authors and collaborators a Researcher has had over their career</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#researcher" title="http://www.purl.org/rpi/aio#researcher">researcher</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="communicationscore">
+      <h3>communication score<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.purl.org/rpi/aio#communicationscore</p>
+      <div class="comment">
+         <span class="markdown">A researcher's ability to communicate</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#reviewscore" title="http://www.purl.org/rpi/aio#reviewscore">review score</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#review" title="http://www.purl.org/rpi/aio#review">review</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd/>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="datareproducibility">
+      <h3>data reproducibility<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.purl.org/rpi/aio#datareproducibility</p>
+      <div class="comment">
+         <span class="markdown">The reproducibility of a shared research artifact</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#reviewscore" title="http://www.purl.org/rpi/aio#reviewscore">review score</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#review" title="http://www.purl.org/rpi/aio#review">review</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd/>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="dataverifiability">
+      <h3>data verifiability<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.purl.org/rpi/aio#dataverifiability</p>
+      <div class="comment">
+         <span class="markdown">The verifiability of a shared research artifact</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#reviewscore" title="http://www.purl.org/rpi/aio#reviewscore">review score</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#review" title="http://www.purl.org/rpi/aio#review">review</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd/>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hindex">
+      <h3>h-index<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.purl.org/rpi/aio#hindex</p>
+      <div class="comment">
+         <span class="markdown">The h-index is an author-level metric that measures both the productivity and citation impact of the publications, initially used for an individual scientist or scholar. The h-index is defined as the maximum value of h such that the given author/journal has published at least h papers that have each been cited at least h times.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://www.purl.org/rpi/aio#</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#researcher" title="http://www.purl.org/rpi/aio#researcher">researcher</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hascollaborationstate">
+      <h3>has collaboration state<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.purl.org/rpi/aio#hascollaborationstate</p>
+      <div class="comment">
+         <span class="markdown">The collaboration state which a given collaboration is in</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#collaborationevent" title="http://www.purl.org/rpi/aio#collaborationevent">collaboration event</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.purl.org/rpi/aio#collaborationstate"
+                  target="_blank"
+                  title="http://www.purl.org/rpi/aio#collaborationstate">collaboration state</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasdescription">
+      <h3>has description<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.purl.org/rpi/aio#hasdescription</p>
+      <div class="comment">
+         <span class="markdown">A natural language description of a research artifact or review of a researcher</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#topDataProperty"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</a>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#researchartifact" title="http://www.purl.org/rpi/aio#researchartifact">research artifact</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dd>
+               <a href="#review" title="http://www.purl.org/rpi/aio#review">review</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasDOI">
+      <h3>has DOI<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.purl.org/rpi/aio#hasDOI</p>
+      <div class="comment">
+         <span class="markdown">The digital object identifier of a publication in the form of a string</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#publicationusingresearchartifact"
+                  title="http://www.purl.org/rpi/aio#publicationusingresearchartifact">publication using research artifact</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasformat">
+      <h3>has format<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.purl.org/rpi/aio#hasformat</p>
+      <div class="comment">
+         <span class="markdown">The format of a research artifact, including the technology used/required to interact with the dataset</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#researchartifact" title="http://www.purl.org/rpi/aio#researchartifact">research artifact</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="haspeerreviewscore">
+      <h3>has peer review score<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.purl.org/rpi/aio#haspeerreviewscore</p>
+      <div class="comment">
+         <span class="markdown">The peer review score of a given researcher, in the form xsd:float</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#researcher" title="http://www.purl.org/rpi/aio#researcher">researcher</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#float"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#float">float</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasSCIENCEindex">
+      <h3>has SCIENCE-index<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.purl.org/rpi/aio#hasSCIENCEindex</p>
+      <div class="comment">
+         <span class="markdown">The SCIENCE-index of a given researcher, in the form of xsd:float</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#researcher" title="http://www.purl.org/rpi/aio#researcher">researcher</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#float"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#float">float</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="intendedUse">
+      <h3>intended use<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.purl.org/rpi/aio#intendedUse</p>
+      <div class="comment">
+         <span class="markdown">A natural language description for the intended use of a requested dataset</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#datarequest" title="http://www.purl.org/rpi/aio#datarequest">data request</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="lengthofcareer">
+      <h3>length of career<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.purl.org/rpi/aio#lengthofcareer</p>
+      <div class="comment">
+         <span class="markdown">The length of a Researcher's career, measured in years, derived from the year of their first publication to the current year</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#researcher" title="http://www.purl.org/rpi/aio#researcher">researcher</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="name">
+      <h3>name<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.purl.org/rpi/aio#name</p>
+      <div class="comment">
+         <span class="markdown">a researcher's name</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#researcher" title="http://www.purl.org/rpi/aio#researcher">researcher</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="orcidid">
+      <h3>ORCID id<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.purl.org/rpi/aio#orcidid</p>
+      <div class="comment">
+         <span class="markdown">A 16 alphanumeric identifier for a researcher within the ORCID database</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#researcher" title="http://www.purl.org/rpi/aio#researcher">researcher</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="publicationcount">
+      <h3>publication count<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.purl.org/rpi/aio#publicationcount</p>
+      <div class="comment">
+         <span class="markdown">The total number of publications a Researcher has published</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#researcher" title="http://www.purl.org/rpi/aio#researcher">researcher</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="reviewscore">
+      <h3>review score<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.purl.org/rpi/aio#reviewscore</p>
+      <div class="comment">
+         <span class="markdown">The associated scores of a collaborating researcher's provided review</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#communicationscore" title="http://www.purl.org/rpi/aio#communicationscore">communication score</a>
+               <sup class="type-dp" title="data property">dp</sup>, <a href="#datareproducibility" title="http://www.purl.org/rpi/aio#datareproducibility">data reproducibility</a>
+               <sup class="type-dp" title="data property">dp</sup>, <a href="#dataverifiability" title="http://www.purl.org/rpi/aio#dataverifiability">data verifiability</a>
+               <sup class="type-dp" title="data property">dp</sup>, <a href="#timelinessscore" title="http://www.purl.org/rpi/aio#timelinessscore">timeliness score</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#review" title="http://www.purl.org/rpi/aio#review">review</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd/>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="semanticscholarid">
+      <h3>semantic scholar ID<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.purl.org/rpi/aio#semanticscholarid</p>
+      <div class="comment">
+         <span class="markdown">A unique 7 digit identifier for a researcher with Semantic Scholar's open academic knowledge graph</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#researcher" title="http://www.purl.org/rpi/aio#researcher">researcher</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="timelinessscore">
+      <h3>timeliness score<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.purl.org/rpi/aio#timelinessscore</p>
+      <div class="comment">
+         <span class="markdown">A researcher's ability to respond and collaborate in a distributed setting in a timely manner</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#reviewscore" title="http://www.purl.org/rpi/aio#reviewscore">review score</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#review" title="http://www.purl.org/rpi/aio#review">review</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd/>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+</div>
+</div>
