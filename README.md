@@ -1,4 +1,4 @@
-## Academic Incentive Ontology: A Model of Blockchain-Based Data Sharing
+## Sharing Science Ontology: A Model for Incentivized Data Sharing
 
 # Abstract
 In fields such as medical research, data collection is slow
