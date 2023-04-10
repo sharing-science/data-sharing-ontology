@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.purl.org/dso#"
-     xml:base="http://www.purl.org/dso#"
+<rdf:RDF xmlns="https://purl.org/rpi/dso#"
+     xml:base="https://purl.org/rpi/dso#"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -17,8 +17,8 @@
      xmlns:schema="http://schema.org/"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:resource="http://semanticscience.org/resource/">
-    <owl:Ontology rdf:about="http://www.purl.org/dso#">
-        <owl:versionIRI rdf:resource="http://www.purl.org/dso/1.0"/>
+    <owl:Ontology rdf:about="https://purl.org/rpi/dso#">
+        <owl:versionIRI rdf:resource="https://purl.org/rpi/dso/1.0"/>
         <owl:imports rdf:resource="http://semanticscience.org/ontology/sio/v1.54/sio-release.owl"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/prov-o-20130430"/>
         <protege:defaultLanguage>en</protege:defaultLanguage>
@@ -26,7 +26,7 @@
         <dc:identifier>dso.owl</dc:identifier>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <terms:title xml:lang="en">Data Sharing Ontology (dso)</terms:title>
-        <rdfs:isDefinedBy rdf:resource="http://www.purl.org/dso"/>
+        <rdfs:isDefinedBy rdf:resource="https://purl.org/rpi/dso"/>
     </owl:Ontology>
     
 
@@ -101,9 +101,9 @@
     
 
 
-    <!-- http://www.purl.org/dso#collaborationstate -->
+    <!-- https://purl.org/rpi/dso#collaborationstate -->
 
-    <rdfs:Datatype rdf:about="http://www.purl.org/dso#collaborationstate">
+    <rdfs:Datatype rdf:about="https://purl.org/rpi/dso#collaborationstate">
         <rdfs:comment xml:lang="en">An enumeration of set states which a collaboration follows</rdfs:comment>
         <rdfs:label xml:lang="en">collaboration state</rdfs:label>
         <owl:equivalentClass>
@@ -180,45 +180,45 @@
     
 
 
-    <!-- http://www.purl.org/dso#hasdatarequest -->
+    <!-- https://purl.org/rpi/dso#hasdatarequest -->
 
-    <owl:ObjectProperty rdf:about="http://www.purl.org/dso#hasdatarequest">
+    <owl:ObjectProperty rdf:about="https://purl.org/rpi/dso#hasdatarequest">
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000001"/>
-        <rdfs:domain rdf:resource="http://www.purl.org/dso#collaborationevent"/>
-        <rdfs:range rdf:resource="http://www.purl.org/dso#datarequest"/>
+        <rdfs:domain rdf:resource="https://purl.org/rpi/dso#collaborationevent"/>
+        <rdfs:range rdf:resource="https://purl.org/rpi/dso#datarequest"/>
         <rdfs:comment xml:lang="en">The data request submitted by the data seeker in a collaboration</rdfs:comment>
         <rdfs:label xml:lang="en">has data request</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.purl.org/dso#hasdataseeker -->
+    <!-- https://purl.org/rpi/dso#hasdataseeker -->
 
-    <owl:ObjectProperty rdf:about="http://www.purl.org/dso#hasdataseeker">
+    <owl:ObjectProperty rdf:about="https://purl.org/rpi/dso#hasdataseeker">
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000001"/>
-        <rdfs:domain rdf:resource="http://www.purl.org/dso#collaborationevent"/>
-        <rdfs:range rdf:resource="http://www.purl.org/dso#researcher"/>
+        <rdfs:domain rdf:resource="https://purl.org/rpi/dso#collaborationevent"/>
+        <rdfs:range rdf:resource="https://purl.org/rpi/dso#researcher"/>
         <rdfs:comment xml:lang="en">The Data Seeker in a collaboration event</rdfs:comment>
         <rdfs:label xml:lang="en">has data seeker</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.purl.org/dso#hasdatasharer -->
+    <!-- https://purl.org/rpi/dso#hasdatasharer -->
 
-    <owl:ObjectProperty rdf:about="http://www.purl.org/dso#hasdatasharer">
+    <owl:ObjectProperty rdf:about="https://purl.org/rpi/dso#hasdatasharer">
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000001"/>
-        <rdfs:domain rdf:resource="http://www.purl.org/dso#collaborationevent"/>
-        <rdfs:range rdf:resource="http://www.purl.org/dso#researcher"/>
+        <rdfs:domain rdf:resource="https://purl.org/rpi/dso#collaborationevent"/>
+        <rdfs:range rdf:resource="https://purl.org/rpi/dso#researcher"/>
         <rdfs:comment xml:lang="en">The Data Sharer in a collaboration event</rdfs:comment>
         <rdfs:label xml:lang="en">has data sharer</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.purl.org/dso#hasstate -->
+    <!-- https://purl.org/rpi/dso#hasstate -->
 
-    <owl:ObjectProperty rdf:about="http://www.purl.org/dso#hasstate">
+    <owl:ObjectProperty rdf:about="https://purl.org/rpi/dso#hasstate">
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000008"/>
         <rdfs:comment xml:lang="en">Identifies the state which an entity is in</rdfs:comment>
         <rdfs:label xml:lang="en">has state</rdfs:label>
@@ -243,11 +243,11 @@
     
 
 
-    <!-- http://www.purl.org/dso#affiliatedinstitution -->
+    <!-- https://purl.org/rpi/dso#affiliatedinstitution -->
 
-    <owl:DatatypeProperty rdf:about="http://www.purl.org/dso#affiliatedinstitution">
-        <rdfs:domain rdf:resource="http://www.purl.org/dso#datarequest"/>
-        <rdfs:domain rdf:resource="http://www.purl.org/dso#researcher"/>
+    <owl:DatatypeProperty rdf:about="https://purl.org/rpi/dso#affiliatedinstitution">
+        <rdfs:domain rdf:resource="https://purl.org/rpi/dso#datarequest"/>
+        <rdfs:domain rdf:resource="https://purl.org/rpi/dso#researcher"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">The affiliated institutions of a researcher or project</rdfs:comment>
         <rdfs:label xml:lang="en">affiliated institutions</rdfs:label>
@@ -255,10 +255,10 @@
     
 
 
-    <!-- http://www.purl.org/dso#blockchainaddress -->
+    <!-- https://purl.org/rpi/dso#blockchainaddress -->
 
-    <owl:DatatypeProperty rdf:about="http://www.purl.org/dso#blockchainaddress">
-        <rdfs:domain rdf:resource="http://www.purl.org/dso#researcher"/>
+    <owl:DatatypeProperty rdf:about="https://purl.org/rpi/dso#blockchainaddress">
+        <rdfs:domain rdf:resource="https://purl.org/rpi/dso#researcher"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">A researcher&apos;s blockchain address</rdfs:comment>
         <rdfs:label xml:lang="en">blockchain address</rdfs:label>
@@ -266,10 +266,10 @@
     
 
 
-    <!-- http://www.purl.org/dso#citationcount -->
+    <!-- https://purl.org/rpi/dso#citationcount -->
 
-    <owl:DatatypeProperty rdf:about="http://www.purl.org/dso#citationcount">
-        <rdfs:domain rdf:resource="http://www.purl.org/dso#researcher"/>
+    <owl:DatatypeProperty rdf:about="https://purl.org/rpi/dso#citationcount">
+        <rdfs:domain rdf:resource="https://purl.org/rpi/dso#researcher"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:comment xml:lang="en">The total number of citations a Researcher has</rdfs:comment>
         <rdfs:label xml:lang="en">citation count</rdfs:label>
@@ -277,10 +277,10 @@
     
 
 
-    <!-- http://www.purl.org/dso#collaboratorcount -->
+    <!-- https://purl.org/rpi/dso#collaboratorcount -->
 
-    <owl:DatatypeProperty rdf:about="http://www.purl.org/dso#collaboratorcount">
-        <rdfs:domain rdf:resource="http://www.purl.org/dso#researcher"/>
+    <owl:DatatypeProperty rdf:about="https://purl.org/rpi/dso#collaboratorcount">
+        <rdfs:domain rdf:resource="https://purl.org/rpi/dso#researcher"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:comment xml:lang="en">The total number of co-authors and collaborators a Researcher has had over their career</rdfs:comment>
         <rdfs:label xml:lang="en">collaborator count</rdfs:label>
@@ -288,11 +288,11 @@
     
 
 
-    <!-- http://www.purl.org/dso#communicationscore -->
+    <!-- https://purl.org/rpi/dso#communicationscore -->
 
-    <owl:DatatypeProperty rdf:about="http://www.purl.org/dso#communicationscore">
-        <rdfs:subPropertyOf rdf:resource="http://www.purl.org/dso#reviewscore"/>
-        <rdfs:domain rdf:resource="http://www.purl.org/dso#review"/>
+    <owl:DatatypeProperty rdf:about="https://purl.org/rpi/dso#communicationscore">
+        <rdfs:subPropertyOf rdf:resource="https://purl.org/rpi/dso#reviewscore"/>
+        <rdfs:domain rdf:resource="https://purl.org/rpi/dso#review"/>
         <rdfs:range>
             <rdfs:Datatype>
                 <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
@@ -312,11 +312,11 @@
     
 
 
-    <!-- http://www.purl.org/dso#datareproducibility -->
+    <!-- https://purl.org/rpi/dso#datareproducibility -->
 
-    <owl:DatatypeProperty rdf:about="http://www.purl.org/dso#datareproducibility">
-        <rdfs:subPropertyOf rdf:resource="http://www.purl.org/dso#reviewscore"/>
-        <rdfs:domain rdf:resource="http://www.purl.org/dso#review"/>
+    <owl:DatatypeProperty rdf:about="https://purl.org/rpi/dso#datareproducibility">
+        <rdfs:subPropertyOf rdf:resource="https://purl.org/rpi/dso#reviewscore"/>
+        <rdfs:domain rdf:resource="https://purl.org/rpi/dso#review"/>
         <rdfs:range>
             <rdfs:Datatype>
                 <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
@@ -336,11 +336,11 @@
     
 
 
-    <!-- http://www.purl.org/dso#dataverifiability -->
+    <!-- https://purl.org/rpi/dso#dataverifiability -->
 
-    <owl:DatatypeProperty rdf:about="http://www.purl.org/dso#dataverifiability">
-        <rdfs:subPropertyOf rdf:resource="http://www.purl.org/dso#reviewscore"/>
-        <rdfs:domain rdf:resource="http://www.purl.org/dso#review"/>
+    <owl:DatatypeProperty rdf:about="https://purl.org/rpi/dso#dataverifiability">
+        <rdfs:subPropertyOf rdf:resource="https://purl.org/rpi/dso#reviewscore"/>
+        <rdfs:domain rdf:resource="https://purl.org/rpi/dso#review"/>
         <rdfs:range>
             <rdfs:Datatype>
                 <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
@@ -360,10 +360,10 @@
     
 
 
-    <!-- http://www.purl.org/dso#hasDOI -->
+    <!-- https://purl.org/rpi/dso#hasDOI -->
 
-    <owl:DatatypeProperty rdf:about="http://www.purl.org/dso#hasDOI">
-        <rdfs:domain rdf:resource="http://www.purl.org/dso#ResearchArtifactReuse"/>
+    <owl:DatatypeProperty rdf:about="https://purl.org/rpi/dso#hasDOI">
+        <rdfs:domain rdf:resource="https://purl.org/rpi/dso#ResearchArtifactReuse"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">The digital object identifier of a publication in the form of a string</rdfs:comment>
         <rdfs:label xml:lang="en">has DOI</rdfs:label>
@@ -371,10 +371,10 @@
     
 
 
-    <!-- http://www.purl.org/dso#hasSCIENCEindex -->
+    <!-- https://purl.org/rpi/dso#hasSCIENCEindex -->
 
-    <owl:DatatypeProperty rdf:about="http://www.purl.org/dso#hasSCIENCEindex">
-        <rdfs:domain rdf:resource="http://www.purl.org/dso#researcher"/>
+    <owl:DatatypeProperty rdf:about="https://purl.org/rpi/dso#hasSCIENCEindex">
+        <rdfs:domain rdf:resource="https://purl.org/rpi/dso#researcher"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">The SCIENCE-index of a given researcher, in the form of xsd:float</rdfs:comment>
         <rdfs:label xml:lang="en">has SCIENCE-index</rdfs:label>
@@ -382,23 +382,23 @@
     
 
 
-    <!-- http://www.purl.org/dso#hascollaborationstate -->
+    <!-- https://purl.org/rpi/dso#hascollaborationstate -->
 
-    <owl:DatatypeProperty rdf:about="http://www.purl.org/dso#hascollaborationstate">
-        <rdfs:domain rdf:resource="http://www.purl.org/dso#collaborationevent"/>
-        <rdfs:range rdf:resource="http://www.purl.org/dso#collaborationstate"/>
+    <owl:DatatypeProperty rdf:about="https://purl.org/rpi/dso#hascollaborationstate">
+        <rdfs:domain rdf:resource="https://purl.org/rpi/dso#collaborationevent"/>
+        <rdfs:range rdf:resource="https://purl.org/rpi/dso#collaborationstate"/>
         <rdfs:comment xml:lang="en">The collaboration state which a given collaboration is in</rdfs:comment>
         <rdfs:label xml:lang="en">has collaboration state</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.purl.org/dso#hasdescription -->
+    <!-- https://purl.org/rpi/dso#hasdescription -->
 
-    <owl:DatatypeProperty rdf:about="http://www.purl.org/dso#hasdescription">
+    <owl:DatatypeProperty rdf:about="https://purl.org/rpi/dso#hasdescription">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.purl.org/dso#researchartifact"/>
-        <rdfs:domain rdf:resource="http://www.purl.org/dso#review"/>
+        <rdfs:domain rdf:resource="https://purl.org/rpi/dso#researchartifact"/>
+        <rdfs:domain rdf:resource="https://purl.org/rpi/dso#review"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">A natural language description of a research artifact or review of a researcher</rdfs:comment>
         <rdfs:label xml:lang="en">has description</rdfs:label>
@@ -406,10 +406,10 @@
     
 
 
-    <!-- http://www.purl.org/dso#hasformat -->
+    <!-- https://purl.org/rpi/dso#hasformat -->
 
-    <owl:DatatypeProperty rdf:about="http://www.purl.org/dso#hasformat">
-        <rdfs:domain rdf:resource="http://www.purl.org/dso#researchartifact"/>
+    <owl:DatatypeProperty rdf:about="https://purl.org/rpi/dso#hasformat">
+        <rdfs:domain rdf:resource="https://purl.org/rpi/dso#researchartifact"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">The format of a research artifact, including the technology used/required to interact with the dataset</rdfs:comment>
         <rdfs:label xml:lang="en">has format</rdfs:label>
@@ -417,10 +417,10 @@
     
 
 
-    <!-- http://www.purl.org/dso#haspeerreviewscore -->
+    <!-- https://purl.org/rpi/dso#haspeerreviewscore -->
 
-    <owl:DatatypeProperty rdf:about="http://www.purl.org/dso#haspeerreviewscore">
-        <rdfs:domain rdf:resource="http://www.purl.org/dso#researcher"/>
+    <owl:DatatypeProperty rdf:about="https://purl.org/rpi/dso#haspeerreviewscore">
+        <rdfs:domain rdf:resource="https://purl.org/rpi/dso#researcher"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">The peer review score of a given researcher, in the form xsd:float</rdfs:comment>
         <rdfs:label xml:lang="en">has peer review score</rdfs:label>
@@ -428,10 +428,10 @@
     
 
 
-    <!-- http://www.purl.org/dso#hindex -->
+    <!-- https://purl.org/rpi/dso#hindex -->
 
-    <owl:DatatypeProperty rdf:about="http://www.purl.org/dso#hindex">
-        <rdfs:domain rdf:resource="http://www.purl.org/dso#researcher"/>
+    <owl:DatatypeProperty rdf:about="https://purl.org/rpi/dso#hindex">
+        <rdfs:domain rdf:resource="https://purl.org/rpi/dso#researcher"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:comment xml:lang="en">The h-index is an author-level metric that measures both the productivity and citation impact of the publications, initially used for an individual scientist or scholar. The h-index is defined as the maximum value of h such that the given author/journal has published at least h papers that have each been cited at least h times.</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="en">https://doi.org/10.1073/pnas.0507655102</rdfs:isDefinedBy>
@@ -440,10 +440,10 @@
     
 
 
-    <!-- http://www.purl.org/dso#intendedUse -->
+    <!-- https://purl.org/rpi/dso#intendedUse -->
 
-    <owl:DatatypeProperty rdf:about="http://www.purl.org/dso#intendedUse">
-        <rdfs:domain rdf:resource="http://www.purl.org/dso#datarequest"/>
+    <owl:DatatypeProperty rdf:about="https://purl.org/rpi/dso#intendedUse">
+        <rdfs:domain rdf:resource="https://purl.org/rpi/dso#datarequest"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">A natural language description for the intended use of a requested dataset</rdfs:comment>
         <rdfs:label xml:lang="en">intended use</rdfs:label>
@@ -451,10 +451,10 @@
     
 
 
-    <!-- http://www.purl.org/dso#lengthofcareer -->
+    <!-- https://purl.org/rpi/dso#lengthofcareer -->
 
-    <owl:DatatypeProperty rdf:about="http://www.purl.org/dso#lengthofcareer">
-        <rdfs:domain rdf:resource="http://www.purl.org/dso#researcher"/>
+    <owl:DatatypeProperty rdf:about="https://purl.org/rpi/dso#lengthofcareer">
+        <rdfs:domain rdf:resource="https://purl.org/rpi/dso#researcher"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:comment xml:lang="en">The length of a Researcher&apos;s career, measured in years, derived from the year of their first publication to the current year</rdfs:comment>
         <rdfs:label xml:lang="en">length of career</rdfs:label>
@@ -462,10 +462,10 @@
     
 
 
-    <!-- http://www.purl.org/dso#name -->
+    <!-- https://purl.org/rpi/dso#name -->
 
-    <owl:DatatypeProperty rdf:about="http://www.purl.org/dso#name">
-        <rdfs:domain rdf:resource="http://www.purl.org/dso#researcher"/>
+    <owl:DatatypeProperty rdf:about="https://purl.org/rpi/dso#name">
+        <rdfs:domain rdf:resource="https://purl.org/rpi/dso#researcher"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">a researcher&apos;s name</rdfs:comment>
         <rdfs:label xml:lang="en">name</rdfs:label>
@@ -473,10 +473,10 @@
     
 
 
-    <!-- http://www.purl.org/dso#orcidid -->
+    <!-- https://purl.org/rpi/dso#orcidid -->
 
-    <owl:DatatypeProperty rdf:about="http://www.purl.org/dso#orcidid">
-        <rdfs:domain rdf:resource="http://www.purl.org/dso#researcher"/>
+    <owl:DatatypeProperty rdf:about="https://purl.org/rpi/dso#orcidid">
+        <rdfs:domain rdf:resource="https://purl.org/rpi/dso#researcher"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">A 16 alphanumeric identifier for a researcher within the ORCID database</rdfs:comment>
         <rdfs:label xml:lang="en">ORCID id</rdfs:label>
@@ -484,10 +484,10 @@
     
 
 
-    <!-- http://www.purl.org/dso#publicationcount -->
+    <!-- https://purl.org/rpi/dso#publicationcount -->
 
-    <owl:DatatypeProperty rdf:about="http://www.purl.org/dso#publicationcount">
-        <rdfs:domain rdf:resource="http://www.purl.org/dso#researcher"/>
+    <owl:DatatypeProperty rdf:about="https://purl.org/rpi/dso#publicationcount">
+        <rdfs:domain rdf:resource="https://purl.org/rpi/dso#researcher"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:comment xml:lang="en">The total number of publications a Researcher has published</rdfs:comment>
         <rdfs:label xml:lang="en">publication count</rdfs:label>
@@ -495,10 +495,10 @@
     
 
 
-    <!-- http://www.purl.org/dso#reviewscore -->
+    <!-- https://purl.org/rpi/dso#reviewscore -->
 
-    <owl:DatatypeProperty rdf:about="http://www.purl.org/dso#reviewscore">
-        <rdfs:domain rdf:resource="http://www.purl.org/dso#review"/>
+    <owl:DatatypeProperty rdf:about="https://purl.org/rpi/dso#reviewscore">
+        <rdfs:domain rdf:resource="https://purl.org/rpi/dso#review"/>
         <rdfs:range>
             <rdfs:Datatype>
                 <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
@@ -518,10 +518,10 @@
     
 
 
-    <!-- http://www.purl.org/dso#semanticscholarid -->
+    <!-- https://purl.org/rpi/dso#semanticscholarid -->
 
-    <owl:DatatypeProperty rdf:about="http://www.purl.org/dso#semanticscholarid">
-        <rdfs:domain rdf:resource="http://www.purl.org/dso#researcher"/>
+    <owl:DatatypeProperty rdf:about="https://purl.org/rpi/dso#semanticscholarid">
+        <rdfs:domain rdf:resource="https://purl.org/rpi/dso#researcher"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:comment xml:lang="en">A unique 7 digit identifier for a researcher with Semantic Scholar&apos;s open academic knowledge graph</rdfs:comment>
         <rdfs:label xml:lang="en">semantic scholar ID</rdfs:label>
@@ -529,11 +529,11 @@
     
 
 
-    <!-- http://www.purl.org/dso#timelinessscore -->
+    <!-- https://purl.org/rpi/dso#timelinessscore -->
 
-    <owl:DatatypeProperty rdf:about="http://www.purl.org/dso#timelinessscore">
-        <rdfs:subPropertyOf rdf:resource="http://www.purl.org/dso#reviewscore"/>
-        <rdfs:domain rdf:resource="http://www.purl.org/dso#review"/>
+    <owl:DatatypeProperty rdf:about="https://purl.org/rpi/dso#timelinessscore">
+        <rdfs:subPropertyOf rdf:resource="https://purl.org/rpi/dso#reviewscore"/>
+        <rdfs:domain rdf:resource="https://purl.org/rpi/dso#review"/>
         <rdfs:range>
             <rdfs:Datatype>
                 <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
@@ -564,9 +564,9 @@
     
 
 
-    <!-- http://www.purl.org/dso#answerrequest -->
+    <!-- https://purl.org/rpi/dso#answerrequest -->
 
-    <owl:Class rdf:about="http://www.purl.org/dso#answerrequest">
+    <owl:Class rdf:about="https://purl.org/rpi/dso#answerrequest">
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#value"/>
@@ -574,55 +574,55 @@
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subCladsof rdf:resource="http://www.purl.org/dso#researcheractivity"/>
+        <rdfs:subCladsof rdf:resource="https://purl.org/rpi/dso#researcheractivity"/>
         <rdfs:label xml:lang="en">answer request</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.purl.org/dso#collaborationevent -->
+    <!-- https://purl.org/rpi/dso#collaborationevent -->
 
-    <owl:Class rdf:about="http://www.purl.org/dso#collaborationevent">
+    <owl:Class rdf:about="https://purl.org/rpi/dso#collaborationevent">
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000332"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.purl.org/dso#researchartifact"/>
+                <owl:onClass rdf:resource="https://purl.org/rpi/dso#researchartifact"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.purl.org/dso#hasdatarequest"/>
+                <owl:onProperty rdf:resource="https://purl.org/rpi/dso#hasdatarequest"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.purl.org/dso#datarequest"/>
+                <owl:onClass rdf:resource="https://purl.org/rpi/dso#datarequest"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.purl.org/dso#hasdataseeker"/>
+                <owl:onProperty rdf:resource="https://purl.org/rpi/dso#hasdataseeker"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.purl.org/dso#researcher"/>
+                <owl:onClass rdf:resource="https://purl.org/rpi/dso#researcher"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.purl.org/dso#hasdatasharer"/>
+                <owl:onProperty rdf:resource="https://purl.org/rpi/dso#hasdatasharer"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.purl.org/dso#researcher"/>
+                <owl:onClass rdf:resource="https://purl.org/rpi/dso#researcher"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#activity"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">7</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.purl.org/dso#researcheractivity"/>
+                <owl:onClass rdf:resource="https://purl.org/rpi/dso#researcheractivity"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.purl.org/dso#hascollaborationstate"/>
+                <owl:onProperty rdf:resource="https://purl.org/rpi/dso#hascollaborationstate"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.purl.org/dso#collaborationstate"/>
+                <owl:onDataRange rdf:resource="https://purl.org/rpi/dso#collaborationstate"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:comment xml:lang="en">An event encompassing the entire collaboration between two or more researchers from start to finish</rdfs:comment>
@@ -631,26 +631,26 @@
     
 
 
-    <!-- http://www.purl.org/dso#datarequest -->
+    <!-- https://purl.org/rpi/dso#datarequest -->
 
-    <owl:Class rdf:about="http://www.purl.org/dso#datarequest">
+    <owl:Class rdf:about="https://purl.org/rpi/dso#datarequest">
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_001403"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.purl.org/dso#researcher"/>
+                <owl:onClass rdf:resource="https://purl.org/rpi/dso#researcher"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.purl.org/dso#affiliatedinstitution"/>
+                <owl:onProperty rdf:resource="https://purl.org/rpi/dso#affiliatedinstitution"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.purl.org/dso#intendedUse"/>
+                <owl:onProperty rdf:resource="https://purl.org/rpi/dso#intendedUse"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -661,26 +661,26 @@
     
 
 
-    <!-- http://www.purl.org/dso#ResearchArtifactReuse -->
+    <!-- https://purl.org/rpi/dso#ResearchArtifactReuse -->
 
-    <owl:Class rdf:about="http://www.purl.org/dso#ResearchArtifactReuse">
+    <owl:Class rdf:about="https://purl.org/rpi/dso#ResearchArtifactReuse">
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000277"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.purl.org/dso#researchartifact"/>
+                <owl:onClass rdf:resource="https://purl.org/rpi/dso#researchartifact"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000364"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.purl.org/dso#researcher"/>
+                <owl:onClass rdf:resource="https://purl.org/rpi/dso#researcher"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.purl.org/dso#hasDOI"/>
+                <owl:onProperty rdf:resource="https://purl.org/rpi/dso#hasDOI"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -691,9 +691,9 @@
     
 
 
-    <!-- http://www.purl.org/dso#receivedata -->
+    <!-- https://purl.org/rpi/dso#receivedata -->
 
-    <owl:Class rdf:about="http://www.purl.org/dso#receivedata">
+    <owl:Class rdf:about="https://purl.org/rpi/dso#receivedata">
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#value"/>
@@ -701,36 +701,36 @@
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subCladsof rdf:resource="http://www.purl.org/dso#researcheractivity"/>
+        <rdfs:subCladsof rdf:resource="https://purl.org/rpi/dso#researcheractivity"/>
         <rdfs:label xml:lang="en">receive data</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.purl.org/dso#reportpolicyviolation -->
+    <!-- https://purl.org/rpi/dso#reportpolicyviolation -->
 
-    <owl:Class rdf:about="http://www.purl.org/dso#reportpolicyviolation">
+    <owl:Class rdf:about="https://purl.org/rpi/dso#reportpolicyviolation">
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000332"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.purl.org/dso#researcher"/>
+                <owl:onClass rdf:resource="https://purl.org/rpi/dso#researcher"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subCladsof rdf:resource="http://www.purl.org/dso#researcheractivity"/>
+        <rdfs:subCladsof rdf:resource="https://purl.org/rpi/dso#researcheractivity"/>
         <rdfs:label xml:lang="en">report policy violation</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.purl.org/dso#reportreuse -->
+    <!-- https://purl.org/rpi/dso#reportreuse -->
 
-    <owl:Class rdf:about="http://www.purl.org/dso#reportreuse">
+    <owl:Class rdf:about="https://purl.org/rpi/dso#reportreuse">
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000230"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.purl.org/dso#ResearchArtifactReuse"/>
+                <owl:onClass rdf:resource="https://purl.org/rpi/dso#ResearchArtifactReuse"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
@@ -740,38 +740,38 @@
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subCladsof rdf:resource="http://www.purl.org/dso#researcheractivity"/>
+        <rdfs:subCladsof rdf:resource="https://purl.org/rpi/dso#researcheractivity"/>
         <rdfs:label xml:lang="en">report reuse</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.purl.org/dso#researchartifact -->
+    <!-- https://purl.org/rpi/dso#researchartifact -->
 
-    <owl:Class rdf:about="http://www.purl.org/dso#researchartifact">
+    <owl:Class rdf:about="https://purl.org/rpi/dso#researchartifact">
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000278"/>
-                <owl:someValuesFrom rdf:resource="http://www.purl.org/dso#ResearchArtifactReuse"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/rpi/dso#ResearchArtifactReuse"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000224"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.purl.org/dso#researcher"/>
+                <owl:onClass rdf:resource="https://purl.org/rpi/dso#researcher"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.purl.org/dso#hasformat"/>
+                <owl:onProperty rdf:resource="https://purl.org/rpi/dso#hasformat"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.purl.org/dso#hasdescription"/>
+                <owl:onProperty rdf:resource="https://purl.org/rpi/dso#hasdescription"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -782,89 +782,89 @@
     
 
 
-    <!-- http://www.purl.org/dso#researcher -->
+    <!-- https://purl.org/rpi/dso#researcher -->
 
-    <owl:Class rdf:about="http://www.purl.org/dso#researcher">
+    <owl:Class rdf:about="https://purl.org/rpi/dso#researcher">
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.purl.org/dso#affiliatedinstitution"/>
+                <owl:onProperty rdf:resource="https://purl.org/rpi/dso#affiliatedinstitution"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.purl.org/dso#blockchainaddress"/>
+                <owl:onProperty rdf:resource="https://purl.org/rpi/dso#blockchainaddress"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.purl.org/dso#citationcount"/>
+                <owl:onProperty rdf:resource="https://purl.org/rpi/dso#citationcount"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.purl.org/dso#collaboratorcount"/>
+                <owl:onProperty rdf:resource="https://purl.org/rpi/dso#collaboratorcount"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.purl.org/dso#hasSCIENCEindex"/>
+                <owl:onProperty rdf:resource="https://purl.org/rpi/dso#hasSCIENCEindex"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.purl.org/dso#haspeerreviewscore"/>
+                <owl:onProperty rdf:resource="https://purl.org/rpi/dso#haspeerreviewscore"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.purl.org/dso#hindex"/>
+                <owl:onProperty rdf:resource="https://purl.org/rpi/dso#hindex"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.purl.org/dso#lengthofcareer"/>
+                <owl:onProperty rdf:resource="https://purl.org/rpi/dso#lengthofcareer"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.purl.org/dso#name"/>
+                <owl:onProperty rdf:resource="https://purl.org/rpi/dso#name"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.purl.org/dso#orcidid"/>
+                <owl:onProperty rdf:resource="https://purl.org/rpi/dso#orcidid"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.purl.org/dso#publicationcount"/>
+                <owl:onProperty rdf:resource="https://purl.org/rpi/dso#publicationcount"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.purl.org/dso#semanticscholarid"/>
+                <owl:onProperty rdf:resource="https://purl.org/rpi/dso#semanticscholarid"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
             </owl:Restriction>
@@ -876,9 +876,9 @@
     
 
 
-    <!-- http://www.purl.org/dso#researcheractivity -->
+    <!-- https://purl.org/rpi/dso#researcheractivity -->
 
-    <owl:Class rdf:about="http://www.purl.org/dso#researcheractivity">
+    <owl:Class rdf:about="https://purl.org/rpi/dso#researcheractivity">
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#atTime"/>
@@ -892,58 +892,58 @@
     
 
 
-    <!-- http://www.purl.org/dso#review -->
+    <!-- https://purl.org/rpi/dso#review -->
 
-    <owl:Class rdf:about="http://www.purl.org/dso#review">
+    <owl:Class rdf:about="https://purl.org/rpi/dso#review">
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000066"/>
-                <owl:someValuesFrom rdf:resource="http://www.purl.org/dso#researcher"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/rpi/dso#researcher"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000332"/>
-                <owl:someValuesFrom rdf:resource="http://www.purl.org/dso#researcher"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/rpi/dso#researcher"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_001403"/>
-                <owl:someValuesFrom rdf:resource="http://www.purl.org/dso#collaborationevent"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/rpi/dso#collaborationevent"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.purl.org/dso#communicationscore"/>
+                <owl:onProperty rdf:resource="https://purl.org/rpi/dso#communicationscore"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.purl.org/dso#datareproducibility"/>
+                <owl:onProperty rdf:resource="https://purl.org/rpi/dso#datareproducibility"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.purl.org/dso#dataverifiability"/>
+                <owl:onProperty rdf:resource="https://purl.org/rpi/dso#dataverifiability"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.purl.org/dso#hasdescription"/>
+                <owl:onProperty rdf:resource="https://purl.org/rpi/dso#hasdescription"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.purl.org/dso#timelinessscore"/>
+                <owl:onProperty rdf:resource="https://purl.org/rpi/dso#timelinessscore"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
             </owl:Restriction>
@@ -954,58 +954,58 @@
     
 
 
-    <!-- http://www.purl.org/dso#sharedata -->
+    <!-- https://purl.org/rpi/dso#sharedata -->
 
-    <owl:Class rdf:about="http://www.purl.org/dso#sharedata">
-        <rdfs:subCladsof rdf:resource="http://www.purl.org/dso#researcheractivity"/>
+    <owl:Class rdf:about="https://purl.org/rpi/dso#sharedata">
+        <rdfs:subCladsof rdf:resource="https://purl.org/rpi/dso#researcheractivity"/>
         <rdfs:label xml:lang="en">share data</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.purl.org/dso#submitrequest -->
+    <!-- https://purl.org/rpi/dso#submitrequest -->
 
-    <owl:Class rdf:about="http://www.purl.org/dso#submitrequest">
+    <owl:Class rdf:about="https://purl.org/rpi/dso#submitrequest">
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000230"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.purl.org/dso#datarequest"/>
+                <owl:onClass rdf:resource="https://purl.org/rpi/dso#datarequest"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subCladsof rdf:resource="http://www.purl.org/dso#researcheractivity"/>
+        <rdfs:subCladsof rdf:resource="https://purl.org/rpi/dso#researcheractivity"/>
         <rdfs:label xml:lang="en">submit request</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.purl.org/dso#submitreview -->
+    <!-- https://purl.org/rpi/dso#submitreview -->
 
-    <owl:Class rdf:about="http://www.purl.org/dso#submitreview">
+    <owl:Class rdf:about="https://purl.org/rpi/dso#submitreview">
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000230"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.purl.org/dso#review"/>
+                <owl:onClass rdf:resource="https://purl.org/rpi/dso#review"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subCladsof rdf:resource="http://www.purl.org/dso#researcheractivity"/>
+        <rdfs:subCladsof rdf:resource="https://purl.org/rpi/dso#researcheractivity"/>
         <rdfs:label xml:lang="en">submit review</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.purl.org/dso#updateSCIENCEindex -->
+    <!-- https://purl.org/rpi/dso#updateSCIENCEindex -->
 
-    <owl:Class rdf:about="http://www.purl.org/dso#updateSCIENCEindex">
+    <owl:Class rdf:about="https://purl.org/rpi/dso#updateSCIENCEindex">
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000332"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.purl.org/dso#researcher"/>
+                <owl:onClass rdf:resource="https://purl.org/rpi/dso#researcher"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subCladsof rdf:resource="http://www.purl.org/dso#researcheractivity"/>
+        <rdfs:subCladsof rdf:resource="https://purl.org/rpi/dso#researcheractivity"/>
         <rdfs:label xml:lang="en">update SCIENCE-index</rdfs:label>
     </owl:Class>
 </rdf:RDF>
