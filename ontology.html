@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>The Academic Incentive Ontology - Ontology</title>
+    <title>The Data Sharing Ontology - Ontology</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -32,7 +32,7 @@
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-                <div class="sidebar-brand-text mx-3">The AIO</div>
+                <div class="sidebar-brand-text mx-3">The DSO</div>
             </a>
 
             <!-- Divider -->
@@ -114,16 +114,16 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid"> 
-                    <h1 class="h3 mb-2 text-gray-800">The AIO</h1>
-                    <p>The Academic Incentive Ontology (AIO) intends to provide a semantic model to power a blockchain application to handle, confirm, and incentivize research data sharing. The ontology is built upon basic blockchain components such as addresses and transaction hashes and uses simple logic such that it could be easily handled by smart contracts</p>
+                    <h1 class="h3 mb-2 text-gray-800">The DSO</h1>
+                    <p>The Data Sharing Ontology (DSO) intends to provide a semantic model to power a blockchain application to handle, confirm, and incentivize research data sharing. The ontology is built upon basic blockchain components such as addresses and transaction hashes and uses simple logic such that it could be easily handled by smart contracts</p>
                       
-                    <p style="text-align:center;"><img src= "img/AIObroad.png" style="width:70%; height:80%"></p>
+                    <p style="text-align:center;"><img src= "img/DSOHighlevel.jpeg" style="width:70%; height:80%"></p>
 
                     <hr/>
 
-                <p>Our ontology focuses around a single entity, the collaboration event (aio:collaborationevent). Each collaboration event is between two researchers (aio:researcher). The first is a data seeker, referenced by (aio:hasdataseeker), who is seeking a research artifact (aio:researchartifact). The other is a data sharer, referenced by (aio:hasdatasharer) who is the owner of the specific research artifact. The collaboration event then follows a set of enumerated states within a custom datatype, (aio:collaborationstate), beginning with `Awaiting Data Request' and ends with  `Contract Destroyed'. Each participant has a set of activities (sio:activity) that trigger the collaboration event to move to its next state. The states and activities are shown below.</p>
+                <p>Our ontology focuses around a single entity, the collaboration event (dso:collaborationevent). Each collaboration event is between two researchers (dso:researcher). The first is a data seeker, referenced by (dso:hasdataseeker), who is seeking a research artifact (dso:researchartifact). The other is a data sharer, referenced by (dso:hasdatasharer) who is the owner of the specific research artifact. The collaboration event then follows a set of enumerated states within a custom datatype, (dso:collaborationstate), beginning with `Awaiting Data Request' and ends with  `Contract Destroyed'. Each participant has a set of activities (sio:activity) that trigger the collaboration event to move to its next state. The states and activities are shown below.</p>
                     
-                    <p style="text-align:center;"><img src= "img/aio-composition.png" style="width:70%; height:80%"></p>
+                    <p style="text-align:center;"><img src= "img/DSOCollabEvent.png" style="width:70%; height:80%"></p>
 
                     
                     <p>Several of the different activities of the participants require the submission of
@@ -133,14 +133,14 @@
                         entities while utilizing a decentralized storage system such as the Inter-Planetary
                         File System (IPFS) with a JSON format. These semantics are shown below.</p>
                         
-                        <p style="text-align:center;"><img src= "img/aio-jsontemplates.png" style="width:70%; height:80%"></p>
+                        <p style="text-align:center;"><img src= "img/DSOJSON.png" style="width:70%; height:80%"></p>
                         
 
                     <hr>
                     <h1 class="h3 mb-2 text-gray-800">Ontology Links</h1>
                     <ul>
-                    <li>Ontology Documnetation generated using the Widoco tool can be found here: <a href="widoco.html">AIO Widoco Documentation</a></li>
-                    <li>The AIO owl file can found here: <a href="https://github.com/sharing-science/academic-incentive-ontology/blob/main/AIO.owl">aio.owl</a></li>
+                    <li>Ontology Documnetation generated using the Widoco tool can be found here: <a href="widoco.html">DSO Widoco Documentation</a></li>
+                    <li>The DSO owl file can found here: <a href="https://raw.githubusercontent.com/sharing-science/data-sharing-ontology/main/dso.owl">dso.owl</a></li>
                     </ul>
                     
                     <hr>
@@ -208,7 +208,7 @@
                                             <td> <a href="http://www.w3.org/2004/02/skos/core#"></a>  Simple Knowledge Organization System</td> 
                                         </tr>
                                             <tr>
-                                            <td>aio</td>
+                                            <td>dso</td>
                                             <td> <a> Academic Incentive Ontology</a> </td> 
                                         </tr>   
                                             <tr>
