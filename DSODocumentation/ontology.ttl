@@ -1,0 +1,669 @@
+@prefix : <https://purl.org/rpi/dso#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://purl.org/rpi/dso#> .
+
+<https://purl.org/rpi/dso#> rdf:type owl:Ontology ;
+                             owl:versionIRI <https://purl.org/rpi/dso/1.0> ;
+                             owl:imports <http://semanticscience.org/ontology/sio/v1.54/sio-release.owl> ,
+                                         <http://www.w3.org/ns/prov-o-20130430> ;
+                             <http://protege.stanford.edu/plugins/owl/protege#defaultLanguage> "en" ;
+                             <http://purl.org/dc/elements/1.1/description> "The Data Sharing Ontology (DSO) intends to provide a semantic model to power a blockchain application to handle, confirm, and incentivize research data sharing. The ontology is built upon basic blockchain components such as addresses and transaction hashes and uses simple logic such that it could be easily handled by smart contracts"@en ;
+                             <http://purl.org/dc/elements/1.1/identifier> "dso.owl" ;
+                             <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0/> ;
+                             <http://purl.org/dc/terms/title> "Data Sharing Ontology (dso)"@en ;
+                             rdfs:isDefinedBy <https://purl.org/rpi/dso> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://protege.stanford.edu/plugins/owl/protege#defaultLanguage
+<http://protege.stanford.edu/plugins/owl/protege#defaultLanguage> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://semanticscience.org/resource/SIO_000674
+<http://semanticscience.org/resource/SIO_000674> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  https://purl.org/rpi/dso#collaborationstate
+:collaborationstate rdf:type rdfs:Datatype ;
+                    rdfs:comment "An enumeration of set states which a collaboration follows"@en ;
+                    rdfs:label "collaboration state"@en ;
+                    owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                          owl:oneOf [ rdf:type rdf:List ;
+                                                      rdf:first "awaiting data receive confirm" ;
+                                                      rdf:rest [ rdf:type rdf:List ;
+                                                                 rdf:first "awaiting data request" ;
+                                                                 rdf:rest [ rdf:type rdf:List ;
+                                                                            rdf:first "awaiting data request approval" ;
+                                                                            rdf:rest [ rdf:type rdf:List ;
+                                                                                       rdf:first "awaiting data share confirm" ;
+                                                                                       rdf:rest [ rdf:type rdf:List ;
+                                                                                                  rdf:first "awaiting reuse report" ;
+                                                                                                  rdf:rest [ rdf:type rdf:List ;
+                                                                                                             rdf:first "awaiting reviews" ;
+                                                                                                             rdf:rest [ rdf:type rdf:List ;
+                                                                                                                        rdf:first "collaboration destroyed" ;
+                                                                                                                        rdf:rest rdf:nil
+                                                                                                                      ]
+                                                                                                           ]
+                                                                                                ]
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                        ] .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://semanticscience.org/resource/SIO_000068
+<http://semanticscience.org/resource/SIO_000068> rdf:type owl:ObjectProperty .
+
+
+###  http://semanticscience.org/resource/SIO_000673
+<http://semanticscience.org/resource/SIO_000673> rdf:type owl:ObjectProperty .
+
+
+###  https://purl.org/rpi/dso#hasdatarequest
+:hasdatarequest rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf <http://semanticscience.org/resource/SIO_000001> ;
+                rdfs:domain :collaborationevent ;
+                rdfs:range :datarequest ;
+                rdfs:comment "The data request submitted by the data seeker in a collaboration"@en ;
+                rdfs:label "has data request"@en .
+
+
+###  https://purl.org/rpi/dso#hasdataseeker
+:hasdataseeker rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf <http://semanticscience.org/resource/SIO_000001> ;
+               rdfs:domain :collaborationevent ;
+               rdfs:range :researcher ;
+               rdfs:comment "The Data Seeker in a collaboration event"@en ;
+               rdfs:label "has data seeker"@en .
+
+
+###  https://purl.org/rpi/dso#hasdatasharer
+:hasdatasharer rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf <http://semanticscience.org/resource/SIO_000001> ;
+               rdfs:domain :collaborationevent ;
+               rdfs:range :researcher ;
+               rdfs:comment "The Data Sharer in a collaboration event"@en ;
+               rdfs:label "has data sharer"@en .
+
+
+###  https://purl.org/rpi/dso#hasstate
+:hasstate rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf <http://semanticscience.org/resource/SIO_000008> ;
+          rdfs:comment "Identifies the state which an entity is in"@en ;
+          rdfs:label "has state"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://semanticscience.org/resource/SIO_000300
+<http://semanticscience.org/resource/SIO_000300> rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/rpi/dso#affiliatedinstitution
+:affiliatedinstitution rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :datarequest ,
+                                   :researcher ;
+                       rdfs:range xsd:string ;
+                       rdfs:comment "The affiliated institutions of a researcher or project"@en ;
+                       rdfs:label "affiliated institutions"@en .
+
+
+###  https://purl.org/rpi/dso#blockchainaddress
+:blockchainaddress rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :researcher ;
+                   rdfs:range xsd:string ;
+                   rdfs:comment "A researcher's blockchain address"@en ;
+                   rdfs:label "blockchain address"@en .
+
+
+###  https://purl.org/rpi/dso#citationcount
+:citationcount rdf:type owl:DatatypeProperty ;
+               rdfs:domain :researcher ;
+               rdfs:range xsd:integer ;
+               rdfs:comment "The total number of citations a Researcher has"@en ;
+               rdfs:label "citation count"@en .
+
+
+###  https://purl.org/rpi/dso#collaboratorcount
+:collaboratorcount rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :researcher ;
+                   rdfs:range xsd:integer ;
+                   rdfs:comment "The total number of co-authors and collaborators a Researcher has had over their career"@en ;
+                   rdfs:label "collaborator count"@en .
+
+
+###  https://purl.org/rpi/dso#communicationscore
+:communicationscore rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :reviewscore ;
+                    rdfs:domain :review ;
+                    rdfs:range [ rdf:type rdfs:Datatype ;
+                                 owl:onDatatype xsd:integer ;
+                                 owl:withRestrictions ( [ xsd:minInclusive 1
+                                                        ]
+                                                        [ xsd:maxInclusive 5
+                                                        ]
+                                                      )
+                               ] ;
+                    rdfs:comment "A researcher's ability to communicate"@en ;
+                    rdfs:label "communication score"@en .
+
+
+###  https://purl.org/rpi/dso#datareproducibility
+:datareproducibility rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf :reviewscore ;
+                     rdfs:domain :review ;
+                     rdfs:range [ rdf:type rdfs:Datatype ;
+                                  owl:onDatatype xsd:integer ;
+                                  owl:withRestrictions ( [ xsd:minInclusive 1
+                                                         ]
+                                                         [ xsd:maxInclusive 5
+                                                         ]
+                                                       )
+                                ] ;
+                     rdfs:comment "The reproducibility of a shared research artifact"@en ;
+                     rdfs:label "data reproducibility"@en .
+
+
+###  https://purl.org/rpi/dso#dataverifiability
+:dataverifiability rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf :reviewscore ;
+                   rdfs:domain :review ;
+                   rdfs:range [ rdf:type rdfs:Datatype ;
+                                owl:onDatatype xsd:integer ;
+                                owl:withRestrictions ( [ xsd:minInclusive 1
+                                                       ]
+                                                       [ xsd:maxInclusive 5
+                                                       ]
+                                                     )
+                              ] ;
+                   rdfs:comment "The verifiability of a shared research artifact"@en ;
+                   rdfs:label "data verifiability"@en .
+
+
+###  https://purl.org/rpi/dso#hasDOI
+:hasDOI rdf:type owl:DatatypeProperty ;
+        rdfs:domain :ResearchArtifactReuse ;
+        rdfs:range xsd:string ;
+        rdfs:comment "The digital object identifier of a publication in the form of a string"@en ;
+        rdfs:label "has DOI"@en .
+
+
+###  https://purl.org/rpi/dso#hasSCIENCEindex
+:hasSCIENCEindex rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :researcher ;
+                 rdfs:range xsd:float ;
+                 rdfs:comment "The SCIENCE-index of a given researcher, in the form of xsd:float"@en ;
+                 rdfs:label "has SCIENCE-index"@en .
+
+
+###  https://purl.org/rpi/dso#hascollaborationstate
+:hascollaborationstate rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :collaborationevent ;
+                       rdfs:range :collaborationstate ;
+                       rdfs:comment "The collaboration state which a given collaboration is in"@en ;
+                       rdfs:label "has collaboration state"@en .
+
+
+###  https://purl.org/rpi/dso#hasdescription
+:hasdescription rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdfs:domain :researchartifact ,
+                            :review ;
+                rdfs:range xsd:string ;
+                rdfs:comment "A natural language description of a research artifact or review of a researcher"@en ;
+                rdfs:label "has description"@en .
+
+
+###  https://purl.org/rpi/dso#hasformat
+:hasformat rdf:type owl:DatatypeProperty ;
+           rdfs:domain :researchartifact ;
+           rdfs:range xsd:string ;
+           rdfs:comment "The format of a research artifact, including the technology used/required to interact with the dataset"@en ;
+           rdfs:label "has format"@en .
+
+
+###  https://purl.org/rpi/dso#haspeerreviewscore
+:haspeerreviewscore rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :researcher ;
+                    rdfs:range xsd:float ;
+                    rdfs:comment "The peer review score of a given researcher, in the form xsd:float"@en ;
+                    rdfs:label "has peer review score"@en .
+
+
+###  https://purl.org/rpi/dso#hindex
+:hindex rdf:type owl:DatatypeProperty ;
+        rdfs:domain :researcher ;
+        rdfs:range xsd:integer ;
+        rdfs:comment "The h-index is an author-level metric that measures both the productivity and citation impact of the publications, initially used for an individual scientist or scholar. The h-index is defined as the maximum value of h such that the given author/journal has published at least h papers that have each been cited at least h times."@en ;
+        rdfs:isDefinedBy "https://doi.org/10.1073/pnas.0507655102"@en ;
+        rdfs:label "h-index"@en .
+
+
+###  https://purl.org/rpi/dso#intendedUse
+:intendedUse rdf:type owl:DatatypeProperty ;
+             rdfs:domain :datarequest ;
+             rdfs:range xsd:string ;
+             rdfs:comment "A natural language description for the intended use of a requested dataset"@en ;
+             rdfs:label "intended use"@en .
+
+
+###  https://purl.org/rpi/dso#lengthofcareer
+:lengthofcareer rdf:type owl:DatatypeProperty ;
+                rdfs:domain :researcher ;
+                rdfs:range xsd:integer ;
+                rdfs:comment "The length of a Researcher's career, measured in years, derived from the year of their first publication to the current year"@en ;
+                rdfs:label "length of career"@en .
+
+
+###  https://purl.org/rpi/dso#name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:domain :researcher ;
+      rdfs:range xsd:string ;
+      rdfs:comment "a researcher's name"@en ;
+      rdfs:label "name"@en .
+
+
+###  https://purl.org/rpi/dso#orcidid
+:orcidid rdf:type owl:DatatypeProperty ;
+         rdfs:domain :researcher ;
+         rdfs:range xsd:string ;
+         rdfs:comment "A 16 alphanumeric identifier for a researcher within the ORCID database"@en ;
+         rdfs:label "ORCID id"@en .
+
+
+###  https://purl.org/rpi/dso#publicationcount
+:publicationcount rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :researcher ;
+                  rdfs:range xsd:integer ;
+                  rdfs:comment "The total number of publications a Researcher has published"@en ;
+                  rdfs:label "publication count"@en .
+
+
+###  https://purl.org/rpi/dso#reviewscore
+:reviewscore rdf:type owl:DatatypeProperty ;
+             rdfs:domain :review ;
+             rdfs:range [ rdf:type rdfs:Datatype ;
+                          owl:onDatatype xsd:integer ;
+                          owl:withRestrictions ( [ xsd:minInclusive 1
+                                                 ]
+                                                 [ xsd:maxInclusive 5
+                                                 ]
+                                               )
+                        ] ;
+             rdfs:comment "The adsociated scores of a collaborating researcher's provided review"@en ;
+             rdfs:label "review score"@en .
+
+
+###  https://purl.org/rpi/dso#semanticscholarid
+:semanticscholarid rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :researcher ;
+                   rdfs:range xsd:integer ;
+                   rdfs:comment "A unique 7 digit identifier for a researcher with Semantic Scholar's open academic knowledge graph"@en ;
+                   rdfs:label "semantic scholar ID"@en .
+
+
+###  https://purl.org/rpi/dso#timelinessscore
+:timelinessscore rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :reviewscore ;
+                 rdfs:domain :review ;
+                 rdfs:range [ rdf:type rdfs:Datatype ;
+                              owl:onDatatype xsd:integer ;
+                              owl:withRestrictions ( [ xsd:minInclusive 1
+                                                     ]
+                                                     [ xsd:maxInclusive 5
+                                                     ]
+                                                   )
+                            ] ;
+                 rdfs:comment "A researcher's ability to respond and collaborate in a distributed setting in a timely manner"@en ;
+                 rdfs:label "timeliness score"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://purl.org/rpi/dso#ResearchArtifactReuse
+:ResearchArtifactReuse rdf:type owl:Class ;
+                       owl:equivalentClass [ rdf:type owl:Restriction ;
+                                             owl:onProperty <http://semanticscience.org/resource/SIO_000277> ;
+                                             owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                             owl:onClass :researchartifact
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty <http://semanticscience.org/resource/SIO_000364> ;
+                                             owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                             owl:onClass :researcher
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty :hasDOI ;
+                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                             owl:onDataRange xsd:string
+                                           ] ;
+                       rdfs:comment "The publication published by the Data Seeker containing his findings from utilizing the shared research artifact. This must contain the expected citation to the artifact."@en ;
+                       rdfs:label "publication using research artifact"@en .
+
+
+###  https://purl.org/rpi/dso#answerrequest
+:answerrequest rdf:type owl:Class ;
+               owl:equivalentClass [ rdf:type owl:Restriction ;
+                                     owl:onProperty <http://www.w3.org/ns/prov#value> ;
+                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onDataRange xsd:boolean
+                                   ] ;
+               rdfs:label "answer request"@en .
+
+
+###  https://purl.org/rpi/dso#collaborationevent
+:collaborationevent rdf:type owl:Class ;
+                    owl:equivalentClass [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://semanticscience.org/resource/SIO_000332> ;
+                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onClass :researchartifact
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :hasdatarequest ;
+                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onClass :datarequest
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :hasdataseeker ;
+                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onClass :researcher
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :hasdatasharer ;
+                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onClass :researcher
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://www.w3.org/ns/prov#activity> ;
+                                          owl:maxQualifiedCardinality "7"^^xsd:nonNegativeInteger ;
+                                          owl:onClass :researcheractivity
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :hascollaborationstate ;
+                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange :collaborationstate
+                                        ] ;
+                    rdfs:comment "An event encompassing the entire collaboration between two or more researchers from start to finish"@en ;
+                    rdfs:label "collaboration event"@en .
+
+
+###  https://purl.org/rpi/dso#datarequest
+:datarequest rdf:type owl:Class ;
+             owl:equivalentClass [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://semanticscience.org/resource/SIO_001403> ;
+                                   owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass :researcher
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :affiliatedinstitution ;
+                                   owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:string
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :intendedUse ;
+                                   owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:string
+                                 ] ;
+             rdfs:comment "The request sent to data sharer from the data seeker"@en ;
+             rdfs:label "data request"@en .
+
+
+###  https://purl.org/rpi/dso#receivedata
+:receivedata rdf:type owl:Class ;
+             owl:equivalentClass [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://www.w3.org/ns/prov#value> ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:boolean
+                                 ] ;
+             rdfs:label "receive data"@en .
+
+
+###  https://purl.org/rpi/dso#reportpolicyviolation
+:reportpolicyviolation rdf:type owl:Class ;
+                       owl:equivalentClass [ rdf:type owl:Restriction ;
+                                             owl:onProperty <http://semanticscience.org/resource/SIO_000332> ;
+                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                             owl:onClass :researcher
+                                           ] ;
+                       rdfs:label "report policy violation"@en .
+
+
+###  https://purl.org/rpi/dso#reportreuse
+:reportreuse rdf:type owl:Class ;
+             owl:equivalentClass [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://semanticscience.org/resource/SIO_000230> ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass :ResearchArtifactReuse
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://semanticscience.org/resource/SIO_000300> ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:boolean
+                                 ] ;
+             rdfs:label "report reuse"@en .
+
+
+###  https://purl.org/rpi/dso#researchartifact
+:researchartifact rdf:type owl:Class ;
+                  owl:equivalentClass [ rdf:type owl:Restriction ;
+                                        owl:onProperty <http://semanticscience.org/resource/SIO_000278> ;
+                                        owl:someValuesFrom :ResearchArtifactReuse
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty <http://semanticscience.org/resource/SIO_000224> ;
+                                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onClass :researcher
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :hasformat ;
+                                        owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onDataRange xsd:string
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :hasdescription ;
+                                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onDataRange xsd:string
+                                      ] ;
+                  rdfs:comment "An exisiting piece of work that is byproduct from Academic Research"@en ;
+                  rdfs:label "research artifact"@en .
+
+
+###  https://purl.org/rpi/dso#researcher
+:researcher rdf:type owl:Class ;
+            owl:equivalentClass [ rdf:type owl:Restriction ;
+                                  owl:onProperty :affiliatedinstitution ;
+                                  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onDataRange xsd:string
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :blockchainaddress ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onDataRange xsd:string
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :citationcount ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onDataRange xsd:integer
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :collaboratorcount ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onDataRange xsd:integer
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasSCIENCEindex ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onDataRange xsd:float
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :haspeerreviewscore ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onDataRange xsd:float
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hindex ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onDataRange xsd:integer
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :lengthofcareer ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onDataRange xsd:integer
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :name ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onDataRange xsd:string
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :orcidid ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onDataRange xsd:string
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :publicationcount ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onDataRange xsd:integer
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :semanticscholarid ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onDataRange xsd:integer
+                                ] ;
+            rdfs:comment "A person who carries out academic or scientific research"@en ;
+            rdfs:label "researcher"@en .
+
+
+###  https://purl.org/rpi/dso#researcheractivity
+:researcheractivity rdf:type owl:Class ;
+                    owl:equivalentClass [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://www.w3.org/ns/prov#atTime> ;
+                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange xsd:dateTimeStamp
+                                        ] ;
+                    rdfs:label "researcher activity"@en .
+
+
+###  https://purl.org/rpi/dso#review
+:review rdf:type owl:Class ;
+        owl:equivalentClass [ rdf:type owl:Restriction ;
+                              owl:onProperty <http://semanticscience.org/resource/SIO_000066> ;
+                              owl:someValuesFrom :researcher
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty <http://semanticscience.org/resource/SIO_000332> ;
+                              owl:someValuesFrom :researcher
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty <http://semanticscience.org/resource/SIO_001403> ;
+                              owl:someValuesFrom :collaborationevent
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :communicationscore ;
+                              owl:maxQualifiedCardinality "5"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:integer
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :datareproducibility ;
+                              owl:maxQualifiedCardinality "5"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:integer
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :dataverifiability ;
+                              owl:maxQualifiedCardinality "5"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:integer
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasdescription ;
+                              owl:maxQualifiedCardinality "5"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:string
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :timelinessscore ;
+                              owl:maxQualifiedCardinality "5"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:integer
+                            ] ;
+        rdfs:comment "A score and natural language review similar to that of online shopping. Each participant fills out a specific review after the 'Data Reuse Reporting Event' is concluded. These reviews are then included in their respective 'Peer Review Score'"@en ;
+        rdfs:label "review"@en .
+
+
+###  https://purl.org/rpi/dso#sharedata
+:sharedata rdf:type owl:Class ;
+           rdfs:label "share data"@en .
+
+
+###  https://purl.org/rpi/dso#submitrequest
+:submitrequest rdf:type owl:Class ;
+               owl:equivalentClass [ rdf:type owl:Restriction ;
+                                     owl:onProperty <http://semanticscience.org/resource/SIO_000230> ;
+                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass :datarequest
+                                   ] ;
+               rdfs:label "submit request"@en .
+
+
+###  https://purl.org/rpi/dso#submitreview
+:submitreview rdf:type owl:Class ;
+              owl:equivalentClass [ rdf:type owl:Restriction ;
+                                    owl:onProperty <http://semanticscience.org/resource/SIO_000230> ;
+                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass :review
+                                  ] ;
+              rdfs:label "submit review"@en .
+
+
+###  https://purl.org/rpi/dso#updateSCIENCEindex
+:updateSCIENCEindex rdf:type owl:Class ;
+                    owl:equivalentClass [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://semanticscience.org/resource/SIO_000332> ;
+                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onClass :researcher
+                                        ] ;
+                    rdfs:label "update SCIENCE-index"@en .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

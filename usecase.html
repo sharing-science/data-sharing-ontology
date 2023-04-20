@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>The Academic Incentive Ontology Use Case</title>
+    <title>The Data Sharing Ontology Use Case</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -32,7 +32,7 @@
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-                <div class="sidebar-brand-text mx-3">The AIO</div>
+                <div class="sidebar-brand-text mx-3">The DSO</div>
             </a>
 
             <!-- Divider -->
@@ -115,8 +115,8 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
                     
-                    <p class="mb-4">We demonstrate the use of the AIO with the use of a decentralized application,
-                        built with our AIO-driven smart contracts, geared towards peer-to-peer data
+                    <p class="mb-4">We demonstrate the use of the DSO with the use of a decentralized application,
+                        built with our DSO-driven smart contracts, geared towards peer-to-peer data
                         sharing in the field of biomedical research. Studies show it can take up to seventeen years for research to go from the bench (basic research) to bedside (clinical
                         applications). This could be mitigated by extending datasets to their full
                         potential. Often, Biomedical datasets have multiple implications, yet researchers</p>
@@ -124,19 +124,19 @@
                         <hr/>
                     <h1 class="h3 mb-2 text-gray-800">Smart Contract-managed Distributed Knowledge Graphs</h1>
                     <p class="mb-4">With distributed systems continually showing their advantages over centralized
-                        protocols, we present a use case for the AIO to build a fully decentralized knowledge graph managed by smart contracts. The IPFS network gives us a great
+                        protocols, we present a use case for the DSO to build a fully decentralized knowledge graph managed by smart contracts. The IPFS network gives us a great
                         solution for data storage. Specifically utilizing JSON Linked Data (JSON-LD),
-                        a system for linking data similar to RDF in JSON file format, to create AIO
+                        a system for linking data similar to RDF in JSON file format, to create DSO
                         ontology instances. JSON-LD is lightweight solution that would allow us to store
                         knowledge graphs in fragmented JSON files. However, instead of storing these
-                        instances of the AIO in a centralized manner, we can store them utilizing IPFS. Below a sequence diagram displays the process between the layers of the application of a researcher joining the protocol.</p>
+                        instances of the DSO in a centralized manner, we can store them utilizing IPFS. Below a sequence diagram displays the process between the layers of the application of a researcher joining the protocol.</p>
                     
                         <p style="text-align:center;"><img src= "img/dkg-sequence.png" style="width:70%; height:80%"></p>
                         <p class="mb-4">We utilize IPNS as a naming system to add mutability to immutable IPFS hashes.
-                            Each JSON-LD file would contain the aio attributes and the respective IPNS hashes they point to. We can
+                            Each JSON-LD file would contain the dso attributes and the respective IPNS hashes they point to. We can
                             then from any instance in IPNS, traverse the graph by following the contained
                             IPNS hashes. We further our decentralization by utilizing smart contracts to
-                            manage events and activites in the AIO in order to build and modify the graph.
+                            manage events and activites in the DSO in order to build and modify the graph.
                             Our current design flow utilizes smart contracts to manage the entities within
                             the knowledge graph. For example, when a researcher joins the protocol, our
                             application reaches out to the smart contract to get any necessary IPNS hashes
@@ -144,8 +144,7 @@
                             IPNS. A smart contract interaction then adds their IPNS hash to a mapping
                             within the smart contract. We can then search and traverse, by looking up an
                             IPNS hash stored within the smart contract, following then hash to the JSONLD file, and traverse in any direction necessary by continuing to follow the IPNS
-                            hashes. Given below is a snapshot of a sample IPNS instance resolved through an IPFS gateway</p>
-                        <p style="text-align:center;"><img src= "img/ipns-snip.png" style="width:70%; height:80%"></p>
+                            hashes.</p>
                             
                             <hr/>
                     <h1 class="h3 mb-2 text-gray-800">User Story</h1>
@@ -188,7 +187,7 @@
                             </div>
                         </div>
                         
-                        <p class="mb-4">Both participants have joined <a style="font-style: italic">Sharing-Science</a>, a new blockchain protocol, built upon the AIO, and Jeff Wen has come across Steven's dataset listed on the protocol and is interested in the applications of the individual SNP profiles in the set towards other types of cancer. He is concerned by Steven's low SCIENCE-index, but he is able to see that it is because of his low number of publications. His concerns are mitigated by Steven's peer review score, which include several rave reviews of his other datasets and his profile shows four other citations to the SNP dataset. Thus, he requests the SNP dataset. Steven, seeing Jeff's intended use in his data request, is concerned that Jeff will not give his data proper recognition. Understanding that Jeff will be penalized if he does so, Steven approves the request and shares the dataset with Jeff. Jeff has some questions upon attempting to use the data, while also finding the data to be incomplete. He is unable to contact Steven as he is overloaded with other work. Jeff, eventually publishes upon the dataset, citing the data in his work to avoid penalty. This is confirmed by the protocol, rewarding Steven for his contribution. However, the lack of communication and issues with the dataset is documented by the peer review system as Jeff brings up several concerns in his review of the young investigator.</p>
+                        <p class="mb-4">Both participants have joined <a style="font-style: italic">Sharing-Science</a>, a new blockchain protocol, built upon the DSO, and Jeff Wen has come across Steven's dataset listed on the protocol and is interested in the applications of the individual SNP profiles in the set towards other types of cancer. He is concerned by Steven's low SCIENCE-index, but he is able to see that it is because of his low number of publications. His concerns are mitigated by Steven's peer review score, which include several rave reviews of his other datasets and his profile shows four other citations to the SNP dataset. Thus, he requests the SNP dataset. Steven, seeing Jeff's intended use in his data request, is concerned that Jeff will not give his data proper recognition. Understanding that Jeff will be penalized if he does so, Steven approves the request and shares the dataset with Jeff. Jeff has some questions upon attempting to use the data, while also finding the data to be incomplete. He is unable to contact Steven as he is overloaded with other work. Jeff, eventually publishes upon the dataset, citing the data in his work to avoid penalty. This is confirmed by the protocol, rewarding Steven for his contribution. However, the lack of communication and issues with the dataset is documented by the peer review system as Jeff brings up several concerns in his review of the young investigator.</p>
                         
                     </div>
                     

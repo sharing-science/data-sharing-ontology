@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>The Academic Incentive Ontology Competency Questions</title>
+    <title>The Data Sharing Ontology Competency Questions</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -32,7 +32,7 @@
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-                <div class="sidebar-brand-text mx-3">The AIO</div>
+                <div class="sidebar-brand-text mx-3">The DSO</div>
             </a>
 
             <!-- Divider -->
@@ -116,9 +116,9 @@
                 <div class="container-fluid">
                     
                     <h1 class="h3 mb-2 text-gray-800">Example Competency Questions</h1>
-                    <p class="mb-4">We present a set of competency questions which display how our the AIO captures the semantics of Data Sharing. We provide a sample SPARQL query for each question and an answer within our <a href="usecase.html">Use Case</a>. We further provide versions of these competency questions within our aio-contracts repository in blockchain client code. A mapping of our two versions of the competency questions is shown below.</p>
+                    <p class="mb-4">We present a set of competency questions which display how our the DSO captures the semantics of Data Sharing. We provide a sample SPARQL query for each question and an answer within our <a href="usecase.html">Use Case</a>. We further provide versions of these competency questions within our dso-contracts repository in blockchain client code. A mapping of our two versions of the competency questions is shown below.</p>
                     
-                    <p style="text-align:center;"><img src= "img/sparql.png" style="width:70%; height:80%"></p>
+                    <p style="text-align:center;"><img src= "img/sparql.jpeg" style="width:70%; height:80%"></p>
                     
                     <hr/>
                     <article class="mb-5" id="competencyquestions">
@@ -141,7 +141,7 @@
                                                 <td>Q1. What does Jeff intend to use Steven’s SNP
                                                     Dataset for?
                                                     </td>
-                                                <td>aio:datarequest aio:intendeduse xsd:string</td> 
+                                                <td>dso:datarequest dso:intendeduse xsd:string</td> 
                                                 <td>Jeff intends to use the SNP
                                                     profiles towards personalized drug therapy research
                                                     for other types of cancer</td>
@@ -150,9 +150,9 @@
                                                 <td>Q2. Has Steven physically given the dataset to
                                                     Jeff?
                                                     </td>
-                                                <td>aio:collaborationevent
+                                                <td>dso:collaborationevent
                                                     prov:activity
-                                                    aio:sharedata
+                                                    dso:sharedata
                                                     </td> 
                                                 <td>Steven has shared the
                                                     Dataset with Jeff if the collaboration has an instance
@@ -165,9 +165,9 @@
                                                     by Jeff used the shared
                                                     dataset?
                                                     </td>
-                                                <td>aio:researchartifact
+                                                <td>dso:researchartifact
                                                     sio:‘is cited by’ some
-                                                    aio:publicationusingresearchartifact</td> 
+                                                    dso:publicationusingresearchartifact</td> 
                                                 <td>Steven’s research Artifact is
                                                     cited by the new publication
                                                     from Jef</td>
@@ -176,9 +176,9 @@
                                                 <td>Q4. How many researchers have cited
                                                     Steven’s SNP dataset
                                                     before?</td>
-                                                <td>count(aio:researchartifact
+                                                <td>count(dso:researchartifact
                                                     sio:’is cited by’
-                                                    aio:publicationusingresearchartifact)</td>
+                                                    dso:publicationusingresearchartifact)</td>
                                                 <td>4 citations from other
                                                     researchers to the SNP
                                                     dataset</td>
@@ -187,8 +187,8 @@
                                                 <td>Q5. Why has Jeff given
                                                     Steven a poor communication score in his review?
                                                     </td>
-                                                <td>aio:review
-                                                    aio:communicationscore
+                                                <td>dso:review
+                                                    dso:communicationscore
                                                     xsd:integer</td>
                                                 <td>Jeff iterates that Steven was
                                                     non-communicative during
@@ -197,8 +197,8 @@
                                             <tr>
                                                 <td>Q6. What factors go
                                                     into Steven’s SCIENCEindex and why is it low?</td>
-                                                <td>aio:researcher sio:’has
-                                                    attribute’ aio:hindex</td>
+                                                <td>dso:researcher sio:’has
+                                                    attribute’ dso:hindex</td>
                                                 <td>Jeff identifies that Steven’s
                                                     SCIENCE-index is low due
                                                     to a low h-index
@@ -217,14 +217,14 @@
                         <h6>Query:</h6>
                         <pre>
         PREFIX sio: &lt;http://semanticscience/org/resource/&gt;
-        PREFIX aio: &lt;http://semanticweb.org/ontologies/2021/9/AIO#&gt;
+        PREFIX dso: &lt;https://purl.org/rpi/dso#&gt;
         SELECT ?use
         WHERE {
-            ?event a aio:CollaborationEvent .​
+            ?event a dso:CollaborationEvent .​
             ?event sio:SIO_000300 ?val .            //'has value'​
             FILTER(?val = ?id) .​
             ?event sio:SIO_000369  ?subevent .      //'has component  part'​
-            ?subevent a aio:DataRequestEvent .
+            ?subevent a dso:DataRequestEvent .
             ?subevent sio:SIO_000300 ?use .         //'has value'​
         }
                         </pre>
@@ -240,13 +240,13 @@
                         <h6>Query:</h6>
                         <pre>
         PREFIX sio: &lt;http://semanticscience/org/resource/&gt;
-        PREFIX aio: &lt;http://semanticweb.org/ontologies/2021/9/AIO#&gt;
+        PREFIX dso: &lt;https://purl.org/rpi/dso#&gt;
         ASK {
-            ?event a aio:CollaborationEvent .​
+            ?event a dso:CollaborationEvent .​
             ?event sio:SIO_000300 ?val .            //'has value'​
             FILTER(?val = ?id) .​
             ?event sio:SIO_000369  ?subevent .      //'has component  part'​
-            ?subevent a aio:DataSharingEvent .
+            ?subevent a dso:DataSharingEvent .
             ?subevent sio:SIO_000300 ?bool .        //'has value'​
             FILTER(?bool) .
         }
@@ -263,14 +263,14 @@
                         <h6>Query:</h6>
                         <pre>
         PREFIX sio: &lt;http://semanticscience/org/resource/&gt;
-        PREFIX aio: &lt;http://semanticweb.org/ontologies/2021/9/AIO#&gt;
+        PREFIX dso: &lt;https://purl.org/rpi/dso#&gt;
         SELECT ?doi 
         WHERE {
-            ?event a aio:CollaborationEvent .
+            ?event a dso:CollaborationEvent .
             ?event sio:SIO_000300 ?val .                    //'has value'​
             FILTER(?val = ?id) .
             ?event sio:SIO_000369  ?subevent .              //'has component  part'​
-            ?subevent a aio:DataReuseReportingEvent .
+            ?subevent a dso:DataReuseReportingEvent .
             ?subevent sio:SIO_000312 ?publication .         //'has product'
             ?publication sio:SIO_000300 ?doi                //'has value'
         }
@@ -288,9 +288,9 @@
                         <h6>Query:</h6>
                         <pre>
         PREFIX sio: &lt;http://semanticscience/org/resource/&gt;
-        PREFIX aio: &lt;http://semanticweb.org/ontologies/2021/9/AIO#&gt;
+        PREFIX dso: &lt;https://purl.org/rpi/dso#&gt;
         ASK { 
-            ?event a aio:Collaboration_Event.​
+            ?event a dso:Collaboration_Event.​
             ?event sio:SIO_000300 ?val .                    //'has value'​
             FILTER(?val = ?id) .​
             ?event sio:SIO_000132 ?participant .            //'has participant'​
@@ -299,7 +299,7 @@
             ?expectcit sio:SIO_000300 ?cit1 .               //'has value'​
             ​
             ?event sio:SIO_000369  ?subevent .              //'has component part'​
-            ?subevent a aio:Data_Reuse_Reporting_Event .​
+            ?subevent a dso:Data_Reuse_Reporting_Event .​
             ?subevent sio:SIO_000312 ?publication .         //'has product'​
             ?publication sio:SIO_000028 ?actualcit .        //'has part'​
             ?actualcit sio:SIO_000300 ?cit2 .               //'has value'​
@@ -318,10 +318,10 @@
                         <pre>
         PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
         PREFIX sio: &lt;http://semanticscience/org/resource/&gt;
-        PREFIX aio: &lt;http://semanticweb.org/ontologies/2021/9/AIO#&gt;
+        PREFIX dso: &lt;https://purl.org/rpi/dso#&gt;
         SELECT ?title ?citval
         WHERE {​
-            ?etherobj a aio:Ethereum_Address .​
+            ?etherobj a dso:Ethereum_Address .​
             ?etherobj sio:SIO_000300 ?etheradd .            //'has value'​
             FILTER(?etheradd = ?queryaddress) . ​
             ?etherobj sio:SIO_000674 ?researcher .          //'is unique identifier for'
@@ -343,14 +343,14 @@
                         <h6>Query:</h6>
                         <pre>
         PREFIX sio: &lt;http://semanticscience/org/resource/&gt;
-        PREFIX aio: &lt;http://semanticweb.org/ontologies/2021/9/AIO#&gt;
+        PREFIX dso: &lt;https://purl.org/rpi/dso#&gt;
         SELECT ?revdescription
         WHERE { 
-            ?collabevent a aio:CollaborationEvent .
+            ?collabevent a dso:CollaborationEvent .
             ?collabevent sio:SIO_000300 ?val .              //'has value'​
             FILTER(?val = ?id) .​
             
-            ?review a aio:DataSharerReview .
+            ?review a dso:DataSharerReview .
             ?review sio:SIO_001403 ?collabevent .           //'is associated with'
             ?review sio:SIO_000300 ?revdescription          //'has value'
         }
@@ -367,27 +367,27 @@
                         <h6>Query:</h6>
                         <pre>
         PREFIX sio: &lt;http://semanticscience/org/resource/&gt;
-        PREFIX aio: &lt;http://semanticweb.org/ontologies/2021/9/AIO#&gt;
+        PREFIX dso: &lt;https://purl.org/rpi/dso#&gt;
         SELECT ?type​
         WHERE { ​
-            ?etherobj a aio:Ethereum_Address .​
+            ?etherobj a dso:Ethereum_Address .​
             ?etherobj sio:SIO_000300 ?etheradd .            //'has value'​
             FILTER(?etheradd = ?queryaddress) . ​
             ?etherobj sio:SIO_000674 ?researcher .          //'is unique identifier for'
 
             ?researcher sio:SIO_000008 ?SCindex .           //'has attribute'​
-            ?SCindex a aio:SCIENCE-index .​
+            ?SCindex a dso:SCIENCE-index .​
             ?SCindex sio:SIO_000369 ?stats .                //'has component part'  ​
             ?stats a ?type .               
         }
                         </pre>
                         <h6>Answer:</h6>
                         <pre>
-        "aio:CitationCount"
-        "aio:PublicationCount"
-        "aio:CollaboratorCount"
-        "aio:h-index"
-        "aio:DataSharingHistory"
+        "dso:CitationCount"
+        "dso:PublicationCount"
+        "dso:CollaboratorCount"
+        "dso:h-index"
+        "dso:DataSharingHistory"
                         </pre>
 
                         <hr/>

@@ -1,0 +1,652 @@
+<https://purl.org/rpi/dso#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://purl.org/rpi/dso#> <http://www.w3.org/2002/07/owl#versionIRI> <https://purl.org/rpi/dso/1.0> .
+<https://purl.org/rpi/dso#> <http://www.w3.org/2002/07/owl#imports> <http://semanticscience.org/ontology/sio/v1.54/sio-release.owl> .
+<https://purl.org/rpi/dso#> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/prov-o-20130430> .
+<https://purl.org/rpi/dso#> <http://protege.stanford.edu/plugins/owl/protege#defaultLanguage> "en" .
+<https://purl.org/rpi/dso#> <http://purl.org/dc/elements/1.1/description> "The Data Sharing Ontology (DSO) intends to provide a semantic model to power a blockchain application to handle, confirm, and incentivize research data sharing. The ontology is built upon basic blockchain components such as addresses and transaction hashes and uses simple logic such that it could be easily handled by smart contracts"@en .
+<https://purl.org/rpi/dso#> <http://purl.org/dc/elements/1.1/identifier> "dso.owl" .
+<https://purl.org/rpi/dso#> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0/> .
+<https://purl.org/rpi/dso#> <http://purl.org/dc/terms/title> "Data Sharing Ontology (dso)"@en .
+<https://purl.org/rpi/dso#> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://purl.org/rpi/dso> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://protege.stanford.edu/plugins/owl/protege#defaultLanguage
+<http://protege.stanford.edu/plugins/owl/protege#defaultLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://semanticscience.org/resource/SIO_000674
+<http://semanticscience.org/resource/SIO_000674> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# https://purl.org/rpi/dso#collaborationstate
+<https://purl.org/rpi/dso#collaborationstate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<https://purl.org/rpi/dso#collaborationstate> <http://www.w3.org/2000/01/rdf-schema#comment> "An enumeration of set states which a collaboration follows"@en .
+<https://purl.org/rpi/dso#collaborationstate> <http://www.w3.org/2000/01/rdf-schema#label> "collaboration state"@en .
+<https://purl.org/rpi/dso#collaborationstate> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#oneOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "collaboration destroyed" .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "awaiting reviews" .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "awaiting reuse report" .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "awaiting data share confirm" .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "awaiting data request approval" .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "awaiting data request" .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "awaiting data receive confirm" .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://semanticscience.org/resource/SIO_000068
+<http://semanticscience.org/resource/SIO_000068> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://semanticscience.org/resource/SIO_000673
+<http://semanticscience.org/resource/SIO_000673> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://purl.org/rpi/dso#hasdatarequest
+<https://purl.org/rpi/dso#hasdatarequest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://purl.org/rpi/dso#hasdatarequest> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://semanticscience.org/resource/SIO_000001> .
+<https://purl.org/rpi/dso#hasdatarequest> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/rpi/dso#collaborationevent> .
+<https://purl.org/rpi/dso#hasdatarequest> <http://www.w3.org/2000/01/rdf-schema#range> <https://purl.org/rpi/dso#datarequest> .
+<https://purl.org/rpi/dso#hasdatarequest> <http://www.w3.org/2000/01/rdf-schema#comment> "The data request submitted by the data seeker in a collaboration"@en .
+<https://purl.org/rpi/dso#hasdatarequest> <http://www.w3.org/2000/01/rdf-schema#label> "has data request"@en .
+# 
+# https://purl.org/rpi/dso#hasdataseeker
+<https://purl.org/rpi/dso#hasdataseeker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://purl.org/rpi/dso#hasdataseeker> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://semanticscience.org/resource/SIO_000001> .
+<https://purl.org/rpi/dso#hasdataseeker> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/rpi/dso#collaborationevent> .
+<https://purl.org/rpi/dso#hasdataseeker> <http://www.w3.org/2000/01/rdf-schema#range> <https://purl.org/rpi/dso#researcher> .
+<https://purl.org/rpi/dso#hasdataseeker> <http://www.w3.org/2000/01/rdf-schema#comment> "The Data Seeker in a collaboration event"@en .
+<https://purl.org/rpi/dso#hasdataseeker> <http://www.w3.org/2000/01/rdf-schema#label> "has data seeker"@en .
+# 
+# https://purl.org/rpi/dso#hasdatasharer
+<https://purl.org/rpi/dso#hasdatasharer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://purl.org/rpi/dso#hasdatasharer> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://semanticscience.org/resource/SIO_000001> .
+<https://purl.org/rpi/dso#hasdatasharer> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/rpi/dso#collaborationevent> .
+<https://purl.org/rpi/dso#hasdatasharer> <http://www.w3.org/2000/01/rdf-schema#range> <https://purl.org/rpi/dso#researcher> .
+<https://purl.org/rpi/dso#hasdatasharer> <http://www.w3.org/2000/01/rdf-schema#comment> "The Data Sharer in a collaboration event"@en .
+<https://purl.org/rpi/dso#hasdatasharer> <http://www.w3.org/2000/01/rdf-schema#label> "has data sharer"@en .
+# 
+# https://purl.org/rpi/dso#hasstate
+<https://purl.org/rpi/dso#hasstate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://purl.org/rpi/dso#hasstate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://semanticscience.org/resource/SIO_000008> .
+<https://purl.org/rpi/dso#hasstate> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifies the state which an entity is in"@en .
+<https://purl.org/rpi/dso#hasstate> <http://www.w3.org/2000/01/rdf-schema#label> "has state"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://semanticscience.org/resource/SIO_000300
+<http://semanticscience.org/resource/SIO_000300> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://purl.org/rpi/dso#affiliatedinstitution
+<https://purl.org/rpi/dso#affiliatedinstitution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://purl.org/rpi/dso#affiliatedinstitution> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/rpi/dso#datarequest> .
+<https://purl.org/rpi/dso#affiliatedinstitution> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/rpi/dso#researcher> .
+<https://purl.org/rpi/dso#affiliatedinstitution> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://purl.org/rpi/dso#affiliatedinstitution> <http://www.w3.org/2000/01/rdf-schema#comment> "The affiliated institutions of a researcher or project"@en .
+<https://purl.org/rpi/dso#affiliatedinstitution> <http://www.w3.org/2000/01/rdf-schema#label> "affiliated institutions"@en .
+# 
+# https://purl.org/rpi/dso#blockchainaddress
+<https://purl.org/rpi/dso#blockchainaddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://purl.org/rpi/dso#blockchainaddress> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/rpi/dso#researcher> .
+<https://purl.org/rpi/dso#blockchainaddress> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://purl.org/rpi/dso#blockchainaddress> <http://www.w3.org/2000/01/rdf-schema#comment> "A researcher's blockchain address"@en .
+<https://purl.org/rpi/dso#blockchainaddress> <http://www.w3.org/2000/01/rdf-schema#label> "blockchain address"@en .
+# 
+# https://purl.org/rpi/dso#citationcount
+<https://purl.org/rpi/dso#citationcount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://purl.org/rpi/dso#citationcount> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/rpi/dso#researcher> .
+<https://purl.org/rpi/dso#citationcount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://purl.org/rpi/dso#citationcount> <http://www.w3.org/2000/01/rdf-schema#comment> "The total number of citations a Researcher has"@en .
+<https://purl.org/rpi/dso#citationcount> <http://www.w3.org/2000/01/rdf-schema#label> "citation count"@en .
+# 
+# https://purl.org/rpi/dso#collaboratorcount
+<https://purl.org/rpi/dso#collaboratorcount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://purl.org/rpi/dso#collaboratorcount> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/rpi/dso#researcher> .
+<https://purl.org/rpi/dso#collaboratorcount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://purl.org/rpi/dso#collaboratorcount> <http://www.w3.org/2000/01/rdf-schema#comment> "The total number of co-authors and collaborators a Researcher has had over their career"@en .
+<https://purl.org/rpi/dso#collaboratorcount> <http://www.w3.org/2000/01/rdf-schema#label> "collaborator count"@en .
+# 
+# https://purl.org/rpi/dso#communicationscore
+<https://purl.org/rpi/dso#communicationscore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://purl.org/rpi/dso#communicationscore> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://purl.org/rpi/dso#reviewscore> .
+<https://purl.org/rpi/dso#communicationscore> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/rpi/dso#review> .
+<https://purl.org/rpi/dso#communicationscore> <http://www.w3.org/2000/01/rdf-schema#range> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid11 .
+_:genid11 <http://www.w3.org/2001/XMLSchema#maxInclusive> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid13 .
+_:genid13 <http://www.w3.org/2001/XMLSchema#minInclusive> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<https://purl.org/rpi/dso#communicationscore> <http://www.w3.org/2000/01/rdf-schema#comment> "A researcher's ability to communicate"@en .
+<https://purl.org/rpi/dso#communicationscore> <http://www.w3.org/2000/01/rdf-schema#label> "communication score"@en .
+# 
+# https://purl.org/rpi/dso#datareproducibility
+<https://purl.org/rpi/dso#datareproducibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://purl.org/rpi/dso#datareproducibility> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://purl.org/rpi/dso#reviewscore> .
+<https://purl.org/rpi/dso#datareproducibility> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/rpi/dso#review> .
+<https://purl.org/rpi/dso#datareproducibility> <http://www.w3.org/2000/01/rdf-schema#range> _:genid14 .
+_:genid14 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid16 .
+_:genid16 <http://www.w3.org/2001/XMLSchema#maxInclusive> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid18 .
+_:genid18 <http://www.w3.org/2001/XMLSchema#minInclusive> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<https://purl.org/rpi/dso#datareproducibility> <http://www.w3.org/2000/01/rdf-schema#comment> "The reproducibility of a shared research artifact"@en .
+<https://purl.org/rpi/dso#datareproducibility> <http://www.w3.org/2000/01/rdf-schema#label> "data reproducibility"@en .
+# 
+# https://purl.org/rpi/dso#dataverifiability
+<https://purl.org/rpi/dso#dataverifiability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://purl.org/rpi/dso#dataverifiability> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://purl.org/rpi/dso#reviewscore> .
+<https://purl.org/rpi/dso#dataverifiability> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/rpi/dso#review> .
+<https://purl.org/rpi/dso#dataverifiability> <http://www.w3.org/2000/01/rdf-schema#range> _:genid19 .
+_:genid19 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid21 .
+_:genid21 <http://www.w3.org/2001/XMLSchema#maxInclusive> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid23 .
+_:genid23 <http://www.w3.org/2001/XMLSchema#minInclusive> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<https://purl.org/rpi/dso#dataverifiability> <http://www.w3.org/2000/01/rdf-schema#comment> "The verifiability of a shared research artifact"@en .
+<https://purl.org/rpi/dso#dataverifiability> <http://www.w3.org/2000/01/rdf-schema#label> "data verifiability"@en .
+# 
+# https://purl.org/rpi/dso#hasDOI
+<https://purl.org/rpi/dso#hasDOI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://purl.org/rpi/dso#hasDOI> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/rpi/dso#ResearchArtifactReuse> .
+<https://purl.org/rpi/dso#hasDOI> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://purl.org/rpi/dso#hasDOI> <http://www.w3.org/2000/01/rdf-schema#comment> "The digital object identifier of a publication in the form of a string"@en .
+<https://purl.org/rpi/dso#hasDOI> <http://www.w3.org/2000/01/rdf-schema#label> "has DOI"@en .
+# 
+# https://purl.org/rpi/dso#hasSCIENCEindex
+<https://purl.org/rpi/dso#hasSCIENCEindex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://purl.org/rpi/dso#hasSCIENCEindex> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/rpi/dso#researcher> .
+<https://purl.org/rpi/dso#hasSCIENCEindex> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<https://purl.org/rpi/dso#hasSCIENCEindex> <http://www.w3.org/2000/01/rdf-schema#comment> "The SCIENCE-index of a given researcher, in the form of xsd:float"@en .
+<https://purl.org/rpi/dso#hasSCIENCEindex> <http://www.w3.org/2000/01/rdf-schema#label> "has SCIENCE-index"@en .
+# 
+# https://purl.org/rpi/dso#hascollaborationstate
+<https://purl.org/rpi/dso#hascollaborationstate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://purl.org/rpi/dso#hascollaborationstate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/rpi/dso#collaborationevent> .
+<https://purl.org/rpi/dso#hascollaborationstate> <http://www.w3.org/2000/01/rdf-schema#range> <https://purl.org/rpi/dso#collaborationstate> .
+<https://purl.org/rpi/dso#hascollaborationstate> <http://www.w3.org/2000/01/rdf-schema#comment> "The collaboration state which a given collaboration is in"@en .
+<https://purl.org/rpi/dso#hascollaborationstate> <http://www.w3.org/2000/01/rdf-schema#label> "has collaboration state"@en .
+# 
+# https://purl.org/rpi/dso#hasdescription
+<https://purl.org/rpi/dso#hasdescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://purl.org/rpi/dso#hasdescription> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://purl.org/rpi/dso#hasdescription> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/rpi/dso#researchartifact> .
+<https://purl.org/rpi/dso#hasdescription> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/rpi/dso#review> .
+<https://purl.org/rpi/dso#hasdescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://purl.org/rpi/dso#hasdescription> <http://www.w3.org/2000/01/rdf-schema#comment> "A natural language description of a research artifact or review of a researcher"@en .
+<https://purl.org/rpi/dso#hasdescription> <http://www.w3.org/2000/01/rdf-schema#label> "has description"@en .
+# 
+# https://purl.org/rpi/dso#hasformat
+<https://purl.org/rpi/dso#hasformat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://purl.org/rpi/dso#hasformat> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/rpi/dso#researchartifact> .
+<https://purl.org/rpi/dso#hasformat> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://purl.org/rpi/dso#hasformat> <http://www.w3.org/2000/01/rdf-schema#comment> "The format of a research artifact, including the technology used/required to interact with the dataset"@en .
+<https://purl.org/rpi/dso#hasformat> <http://www.w3.org/2000/01/rdf-schema#label> "has format"@en .
+# 
+# https://purl.org/rpi/dso#haspeerreviewscore
+<https://purl.org/rpi/dso#haspeerreviewscore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://purl.org/rpi/dso#haspeerreviewscore> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/rpi/dso#researcher> .
+<https://purl.org/rpi/dso#haspeerreviewscore> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<https://purl.org/rpi/dso#haspeerreviewscore> <http://www.w3.org/2000/01/rdf-schema#comment> "The peer review score of a given researcher, in the form xsd:float"@en .
+<https://purl.org/rpi/dso#haspeerreviewscore> <http://www.w3.org/2000/01/rdf-schema#label> "has peer review score"@en .
+# 
+# https://purl.org/rpi/dso#hindex
+<https://purl.org/rpi/dso#hindex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://purl.org/rpi/dso#hindex> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/rpi/dso#researcher> .
+<https://purl.org/rpi/dso#hindex> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://purl.org/rpi/dso#hindex> <http://www.w3.org/2000/01/rdf-schema#comment> "The h-index is an author-level metric that measures both the productivity and citation impact of the publications, initially used for an individual scientist or scholar. The h-index is defined as the maximum value of h such that the given author/journal has published at least h papers that have each been cited at least h times."@en .
+<https://purl.org/rpi/dso#hindex> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://doi.org/10.1073/pnas.0507655102"@en .
+<https://purl.org/rpi/dso#hindex> <http://www.w3.org/2000/01/rdf-schema#label> "h-index"@en .
+# 
+# https://purl.org/rpi/dso#intendedUse
+<https://purl.org/rpi/dso#intendedUse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://purl.org/rpi/dso#intendedUse> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/rpi/dso#datarequest> .
+<https://purl.org/rpi/dso#intendedUse> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://purl.org/rpi/dso#intendedUse> <http://www.w3.org/2000/01/rdf-schema#comment> "A natural language description for the intended use of a requested dataset"@en .
+<https://purl.org/rpi/dso#intendedUse> <http://www.w3.org/2000/01/rdf-schema#label> "intended use"@en .
+# 
+# https://purl.org/rpi/dso#lengthofcareer
+<https://purl.org/rpi/dso#lengthofcareer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://purl.org/rpi/dso#lengthofcareer> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/rpi/dso#researcher> .
+<https://purl.org/rpi/dso#lengthofcareer> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://purl.org/rpi/dso#lengthofcareer> <http://www.w3.org/2000/01/rdf-schema#comment> "The length of a Researcher's career, measured in years, derived from the year of their first publication to the current year"@en .
+<https://purl.org/rpi/dso#lengthofcareer> <http://www.w3.org/2000/01/rdf-schema#label> "length of career"@en .
+# 
+# https://purl.org/rpi/dso#name
+<https://purl.org/rpi/dso#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://purl.org/rpi/dso#name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/rpi/dso#researcher> .
+<https://purl.org/rpi/dso#name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://purl.org/rpi/dso#name> <http://www.w3.org/2000/01/rdf-schema#comment> "a researcher's name"@en .
+<https://purl.org/rpi/dso#name> <http://www.w3.org/2000/01/rdf-schema#label> "name"@en .
+# 
+# https://purl.org/rpi/dso#orcidid
+<https://purl.org/rpi/dso#orcidid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://purl.org/rpi/dso#orcidid> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/rpi/dso#researcher> .
+<https://purl.org/rpi/dso#orcidid> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://purl.org/rpi/dso#orcidid> <http://www.w3.org/2000/01/rdf-schema#comment> "A 16 alphanumeric identifier for a researcher within the ORCID database"@en .
+<https://purl.org/rpi/dso#orcidid> <http://www.w3.org/2000/01/rdf-schema#label> "ORCID id"@en .
+# 
+# https://purl.org/rpi/dso#publicationcount
+<https://purl.org/rpi/dso#publicationcount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://purl.org/rpi/dso#publicationcount> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/rpi/dso#researcher> .
+<https://purl.org/rpi/dso#publicationcount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://purl.org/rpi/dso#publicationcount> <http://www.w3.org/2000/01/rdf-schema#comment> "The total number of publications a Researcher has published"@en .
+<https://purl.org/rpi/dso#publicationcount> <http://www.w3.org/2000/01/rdf-schema#label> "publication count"@en .
+# 
+# https://purl.org/rpi/dso#reviewscore
+<https://purl.org/rpi/dso#reviewscore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://purl.org/rpi/dso#reviewscore> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/rpi/dso#review> .
+<https://purl.org/rpi/dso#reviewscore> <http://www.w3.org/2000/01/rdf-schema#range> _:genid24 .
+_:genid24 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid26 .
+_:genid26 <http://www.w3.org/2001/XMLSchema#maxInclusive> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid28 .
+_:genid28 <http://www.w3.org/2001/XMLSchema#minInclusive> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<https://purl.org/rpi/dso#reviewscore> <http://www.w3.org/2000/01/rdf-schema#comment> "The adsociated scores of a collaborating researcher's provided review"@en .
+<https://purl.org/rpi/dso#reviewscore> <http://www.w3.org/2000/01/rdf-schema#label> "review score"@en .
+# 
+# https://purl.org/rpi/dso#semanticscholarid
+<https://purl.org/rpi/dso#semanticscholarid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://purl.org/rpi/dso#semanticscholarid> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/rpi/dso#researcher> .
+<https://purl.org/rpi/dso#semanticscholarid> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://purl.org/rpi/dso#semanticscholarid> <http://www.w3.org/2000/01/rdf-schema#comment> "A unique 7 digit identifier for a researcher with Semantic Scholar's open academic knowledge graph"@en .
+<https://purl.org/rpi/dso#semanticscholarid> <http://www.w3.org/2000/01/rdf-schema#label> "semantic scholar ID"@en .
+# 
+# https://purl.org/rpi/dso#timelinessscore
+<https://purl.org/rpi/dso#timelinessscore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://purl.org/rpi/dso#timelinessscore> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://purl.org/rpi/dso#reviewscore> .
+<https://purl.org/rpi/dso#timelinessscore> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/rpi/dso#review> .
+<https://purl.org/rpi/dso#timelinessscore> <http://www.w3.org/2000/01/rdf-schema#range> _:genid29 .
+_:genid29 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid31 .
+_:genid31 <http://www.w3.org/2001/XMLSchema#maxInclusive> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid33 .
+_:genid33 <http://www.w3.org/2001/XMLSchema#minInclusive> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid29 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<https://purl.org/rpi/dso#timelinessscore> <http://www.w3.org/2000/01/rdf-schema#comment> "A researcher's ability to respond and collaborate in a distributed setting in a timely manner"@en .
+<https://purl.org/rpi/dso#timelinessscore> <http://www.w3.org/2000/01/rdf-schema#label> "timeliness score"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://purl.org/rpi/dso#ResearchArtifactReuse
+<https://purl.org/rpi/dso#ResearchArtifactReuse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/rpi/dso#ResearchArtifactReuse> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid34 .
+_:genid34 <http://www.w3.org/2002/07/owl#onClass> <https://purl.org/rpi/dso#researchartifact> .
+_:genid34 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000277> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://purl.org/rpi/dso#ResearchArtifactReuse> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid35 .
+_:genid35 <http://www.w3.org/2002/07/owl#onClass> <https://purl.org/rpi/dso#researcher> .
+_:genid35 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000364> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://purl.org/rpi/dso#ResearchArtifactReuse> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid36 .
+_:genid36 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid36 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/rpi/dso#hasDOI> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://purl.org/rpi/dso#ResearchArtifactReuse> <http://www.w3.org/2000/01/rdf-schema#comment> "The publication published by the Data Seeker containing his findings from utilizing the shared research artifact. This must contain the expected citation to the artifact."@en .
+<https://purl.org/rpi/dso#ResearchArtifactReuse> <http://www.w3.org/2000/01/rdf-schema#label> "publication using research artifact"@en .
+# 
+# https://purl.org/rpi/dso#answerrequest
+<https://purl.org/rpi/dso#answerrequest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/rpi/dso#answerrequest> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid37 .
+_:genid37 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid37 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#value> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://purl.org/rpi/dso#answerrequest> <http://www.w3.org/2000/01/rdf-schema#label> "answer request"@en .
+# 
+# https://purl.org/rpi/dso#collaborationevent
+<https://purl.org/rpi/dso#collaborationevent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/rpi/dso#collaborationevent> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid38 .
+_:genid38 <http://www.w3.org/2002/07/owl#onClass> <https://purl.org/rpi/dso#researchartifact> .
+_:genid38 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000332> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://purl.org/rpi/dso#collaborationevent> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid39 .
+_:genid39 <http://www.w3.org/2002/07/owl#onClass> <https://purl.org/rpi/dso#datarequest> .
+_:genid39 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/rpi/dso#hasdatarequest> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://purl.org/rpi/dso#collaborationevent> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid40 .
+_:genid40 <http://www.w3.org/2002/07/owl#onClass> <https://purl.org/rpi/dso#researcher> .
+_:genid40 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/rpi/dso#hasdataseeker> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://purl.org/rpi/dso#collaborationevent> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid41 .
+_:genid41 <http://www.w3.org/2002/07/owl#onClass> <https://purl.org/rpi/dso#researcher> .
+_:genid41 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/rpi/dso#hasdatasharer> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://purl.org/rpi/dso#collaborationevent> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid42 .
+_:genid42 <http://www.w3.org/2002/07/owl#onClass> <https://purl.org/rpi/dso#researcheractivity> .
+_:genid42 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "7"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#activity> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://purl.org/rpi/dso#collaborationevent> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid43 .
+_:genid43 <http://www.w3.org/2002/07/owl#onDataRange> <https://purl.org/rpi/dso#collaborationstate> .
+_:genid43 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/rpi/dso#hascollaborationstate> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://purl.org/rpi/dso#collaborationevent> <http://www.w3.org/2000/01/rdf-schema#comment> "An event encompassing the entire collaboration between two or more researchers from start to finish"@en .
+<https://purl.org/rpi/dso#collaborationevent> <http://www.w3.org/2000/01/rdf-schema#label> "collaboration event"@en .
+# 
+# https://purl.org/rpi/dso#datarequest
+<https://purl.org/rpi/dso#datarequest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/rpi/dso#datarequest> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid44 .
+_:genid44 <http://www.w3.org/2002/07/owl#onClass> <https://purl.org/rpi/dso#researcher> .
+_:genid44 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_001403> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://purl.org/rpi/dso#datarequest> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid45 .
+_:genid45 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid45 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/rpi/dso#affiliatedinstitution> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://purl.org/rpi/dso#datarequest> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid46 .
+_:genid46 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid46 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/rpi/dso#intendedUse> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://purl.org/rpi/dso#datarequest> <http://www.w3.org/2000/01/rdf-schema#comment> "The request sent to data sharer from the data seeker"@en .
+<https://purl.org/rpi/dso#datarequest> <http://www.w3.org/2000/01/rdf-schema#label> "data request"@en .
+# 
+# https://purl.org/rpi/dso#receivedata
+<https://purl.org/rpi/dso#receivedata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/rpi/dso#receivedata> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid47 .
+_:genid47 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid47 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#value> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://purl.org/rpi/dso#receivedata> <http://www.w3.org/2000/01/rdf-schema#label> "receive data"@en .
+# 
+# https://purl.org/rpi/dso#reportpolicyviolation
+<https://purl.org/rpi/dso#reportpolicyviolation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/rpi/dso#reportpolicyviolation> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid48 .
+_:genid48 <http://www.w3.org/2002/07/owl#onClass> <https://purl.org/rpi/dso#researcher> .
+_:genid48 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000332> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://purl.org/rpi/dso#reportpolicyviolation> <http://www.w3.org/2000/01/rdf-schema#label> "report policy violation"@en .
+# 
+# https://purl.org/rpi/dso#reportreuse
+<https://purl.org/rpi/dso#reportreuse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/rpi/dso#reportreuse> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid49 .
+_:genid49 <http://www.w3.org/2002/07/owl#onClass> <https://purl.org/rpi/dso#ResearchArtifactReuse> .
+_:genid49 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000230> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://purl.org/rpi/dso#reportreuse> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid50 .
+_:genid50 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid50 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000300> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://purl.org/rpi/dso#reportreuse> <http://www.w3.org/2000/01/rdf-schema#label> "report reuse"@en .
+# 
+# https://purl.org/rpi/dso#researchartifact
+<https://purl.org/rpi/dso#researchartifact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/rpi/dso#researchartifact> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid51 .
+_:genid51 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/rpi/dso#ResearchArtifactReuse> .
+_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000278> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://purl.org/rpi/dso#researchartifact> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid52 .
+_:genid52 <http://www.w3.org/2002/07/owl#onClass> <https://purl.org/rpi/dso#researcher> .
+_:genid52 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000224> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://purl.org/rpi/dso#researchartifact> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid53 .
+_:genid53 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid53 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/rpi/dso#hasformat> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://purl.org/rpi/dso#researchartifact> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid54 .
+_:genid54 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid54 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/rpi/dso#hasdescription> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://purl.org/rpi/dso#researchartifact> <http://www.w3.org/2000/01/rdf-schema#comment> "An exisiting piece of work that is byproduct from Academic Research"@en .
+<https://purl.org/rpi/dso#researchartifact> <http://www.w3.org/2000/01/rdf-schema#label> "research artifact"@en .
+# 
+# https://purl.org/rpi/dso#researcher
+<https://purl.org/rpi/dso#researcher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/rpi/dso#researcher> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid55 .
+_:genid55 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid55 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/rpi/dso#affiliatedinstitution> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://purl.org/rpi/dso#researcher> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid56 .
+_:genid56 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid56 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/rpi/dso#blockchainaddress> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://purl.org/rpi/dso#researcher> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid57 .
+_:genid57 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid57 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid57 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/rpi/dso#citationcount> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://purl.org/rpi/dso#researcher> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid58 .
+_:genid58 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid58 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid58 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/rpi/dso#collaboratorcount> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://purl.org/rpi/dso#researcher> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid59 .
+_:genid59 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid59 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid59 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/rpi/dso#hasSCIENCEindex> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://purl.org/rpi/dso#researcher> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid60 .
+_:genid60 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid60 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid60 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/rpi/dso#haspeerreviewscore> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://purl.org/rpi/dso#researcher> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid61 .
+_:genid61 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid61 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid61 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/rpi/dso#hindex> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://purl.org/rpi/dso#researcher> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid62 .
+_:genid62 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid62 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid62 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/rpi/dso#lengthofcareer> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://purl.org/rpi/dso#researcher> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid63 .
+_:genid63 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid63 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid63 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/rpi/dso#name> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://purl.org/rpi/dso#researcher> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid64 .
+_:genid64 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid64 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid64 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/rpi/dso#orcidid> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://purl.org/rpi/dso#researcher> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid65 .
+_:genid65 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid65 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid65 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/rpi/dso#publicationcount> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://purl.org/rpi/dso#researcher> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid66 .
+_:genid66 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid66 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid66 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/rpi/dso#semanticscholarid> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://purl.org/rpi/dso#researcher> <http://www.w3.org/2000/01/rdf-schema#comment> "A person who carries out academic or scientific research"@en .
+<https://purl.org/rpi/dso#researcher> <http://www.w3.org/2000/01/rdf-schema#label> "researcher"@en .
+# 
+# https://purl.org/rpi/dso#researcheractivity
+<https://purl.org/rpi/dso#researcheractivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/rpi/dso#researcheractivity> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid67 .
+_:genid67 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+_:genid67 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid67 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#atTime> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://purl.org/rpi/dso#researcheractivity> <http://www.w3.org/2000/01/rdf-schema#label> "researcher activity"@en .
+# 
+# https://purl.org/rpi/dso#review
+<https://purl.org/rpi/dso#review> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/rpi/dso#review> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid68 .
+_:genid68 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/rpi/dso#researcher> .
+_:genid68 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000066> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://purl.org/rpi/dso#review> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid69 .
+_:genid69 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/rpi/dso#researcher> .
+_:genid69 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000332> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://purl.org/rpi/dso#review> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid70 .
+_:genid70 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/rpi/dso#collaborationevent> .
+_:genid70 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_001403> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://purl.org/rpi/dso#review> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid71 .
+_:genid71 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid71 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "5"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid71 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/rpi/dso#communicationscore> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://purl.org/rpi/dso#review> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid72 .
+_:genid72 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid72 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "5"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid72 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/rpi/dso#datareproducibility> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://purl.org/rpi/dso#review> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid73 .
+_:genid73 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid73 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "5"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid73 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/rpi/dso#dataverifiability> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://purl.org/rpi/dso#review> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid74 .
+_:genid74 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid74 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "5"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid74 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/rpi/dso#hasdescription> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://purl.org/rpi/dso#review> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid75 .
+_:genid75 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid75 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "5"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid75 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/rpi/dso#timelinessscore> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://purl.org/rpi/dso#review> <http://www.w3.org/2000/01/rdf-schema#comment> "A score and natural language review similar to that of online shopping. Each participant fills out a specific review after the 'Data Reuse Reporting Event' is concluded. These reviews are then included in their respective 'Peer Review Score'"@en .
+<https://purl.org/rpi/dso#review> <http://www.w3.org/2000/01/rdf-schema#label> "review"@en .
+# 
+# https://purl.org/rpi/dso#sharedata
+<https://purl.org/rpi/dso#sharedata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/rpi/dso#sharedata> <http://www.w3.org/2000/01/rdf-schema#label> "share data"@en .
+# 
+# https://purl.org/rpi/dso#submitrequest
+<https://purl.org/rpi/dso#submitrequest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/rpi/dso#submitrequest> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid76 .
+_:genid76 <http://www.w3.org/2002/07/owl#onClass> <https://purl.org/rpi/dso#datarequest> .
+_:genid76 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid76 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000230> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://purl.org/rpi/dso#submitrequest> <http://www.w3.org/2000/01/rdf-schema#label> "submit request"@en .
+# 
+# https://purl.org/rpi/dso#submitreview
+<https://purl.org/rpi/dso#submitreview> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/rpi/dso#submitreview> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid77 .
+_:genid77 <http://www.w3.org/2002/07/owl#onClass> <https://purl.org/rpi/dso#review> .
+_:genid77 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid77 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000230> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://purl.org/rpi/dso#submitreview> <http://www.w3.org/2000/01/rdf-schema#label> "submit review"@en .
+# 
+# https://purl.org/rpi/dso#updateSCIENCEindex
+<https://purl.org/rpi/dso#updateSCIENCEindex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/rpi/dso#updateSCIENCEindex> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid78 .
+_:genid78 <http://www.w3.org/2002/07/owl#onClass> <https://purl.org/rpi/dso#researcher> .
+_:genid78 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid78 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000332> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://purl.org/rpi/dso#updateSCIENCEindex> <http://www.w3.org/2000/01/rdf-schema#label> "update SCIENCE-index"@en .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
